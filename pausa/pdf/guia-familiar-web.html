@@ -1,0 +1,227 @@
+<title>Guía Familiar Pausa</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Nunito:wght@400;600;700&display=swap">
+<style>
+/* Print document: US Letter, generous margins, one idea per page. Sage/clay/sand identity. */
+@page{ size: Letter; margin: 0 }
+:root{ --sand:#F7F3EC; --paper:#FFFFFF; --ink:#1F2A24; --ink-2:#4A5650; --muted:#8A948E; --line:#E4DED3; --sage:#6E8B74; --sage-ink:#3E5A45; --sage-soft:#DCE6DD; --sage-deep:#2F4536; --clay:#C96F4A; --clay-ink:#9A4E2E; --clay-soft:#F6E2D7 }
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink);font:12.5pt/1.55 "Nunito","Helvetica Neue",Arial,sans-serif}
+.page{width:8.5in;height:11in;padding:0.85in 0.9in;page-break-after:always;position:relative;overflow:hidden;background:var(--paper)}
+.page.sand{background:var(--sand)}
+.page.tight{font-size:11.2pt}
+.tight .box{padding:9pt 11pt}
+.tight td,.tight th{padding:4pt 7pt}
+.tight .callout{margin:7pt 0;padding:8pt 10pt}
+.tight h2{margin-bottom:8pt}
+.page.deep{background:var(--sage-deep);color:#F2F5F2}
+.page:last-child{page-break-after:auto}
+.fo{position:absolute;left:0.9in;right:0.9in;bottom:0.5in;display:flex;justify-content:space-between;font:9pt "Courier New",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.deep .fo{color:#9FB5A4}
+.eyebrow{font:bold 9pt "Courier New",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--clay)}
+.deep .eyebrow{color:#E8B79F}
+h1{font:600 40pt/1.02 "Fraunces","Fraunces",Georgia,serif;letter-spacing:-.01em;margin:10pt 0 14pt}
+h2{font:600 24pt/1.12 "Fraunces",Georgia,serif;margin:8pt 0 12pt;letter-spacing:-.005em}
+h3{font:bold 13pt/1.3 "Nunito",Arial,sans-serif;margin:14pt 0 4pt}
+p{margin:0 0 9pt;max-width:5.9in}
+.deep p{color:#D3DDD5}
+.lede{font-size:14.5pt;color:var(--ink-2)}
+.deep .lede{color:#E6ECE7}
+ul{margin:0 0 10pt;padding-left:16pt}
+li{margin:3pt 0}
+.disc{width:1.1in;height:1.1in;border-radius:50%;background:var(--sage);display:grid;place-items:center;margin-bottom:20pt}
+.disc::before{content:"";width:0.22in;height:0.34in;border-left:0.07in solid var(--sand);border-right:0.07in solid var(--sand)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:18pt}
+.box{border:1.5pt solid var(--line);border-radius:10pt;padding:12pt 14pt;background:var(--paper)}
+.sand .box{background:var(--paper)}
+.box .k{font:bold 8.5pt "Courier New",monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4pt}
+.callout{background:var(--clay-soft);border-left:4pt solid var(--clay);padding:10pt 12pt;margin:10pt 0;border-radius:0 8pt 8pt 0}
+.deep .callout{background:rgba(255,255,255,.08);border-left-color:#E8B79F}
+table{border-collapse:collapse;width:100%;font-size:11pt;margin:6pt 0 12pt}
+th,td{text-align:left;padding:6pt 8pt;border-bottom:1pt solid var(--line);vertical-align:top}
+th{font:bold 8.5pt "Courier New",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.steps{counter-reset:n;display:grid;gap:10pt}
+.steps>div{display:grid;grid-template-columns:26pt 1fr;gap:8pt;align-items:start}
+.steps>div::before{counter-increment:n;content:counter(n);width:22pt;height:22pt;border-radius:50%;background:var(--sage-soft);color:var(--sage-ink);display:grid;place-items:center;font:bold 10pt "Courier New",monospace}
+.script{background:var(--sand);border-radius:8pt;padding:10pt 12pt;font-style:italic;margin:6pt 0 10pt}
+.deep .script{background:rgba(255,255,255,.08)}
+.week{display:grid;grid-template-columns:52pt 1fr;gap:8pt;border-top:1pt solid var(--line);padding:8pt 0}
+.week b{font:bold 10pt "Courier New",monospace;color:var(--clay)}
+.check{display:grid;gap:6pt}
+.check>div{display:grid;grid-template-columns:14pt 1fr;gap:8pt;align-items:start}
+.check>div::before{content:"";width:11pt;height:11pt;border:1.5pt solid var(--sage);border-radius:2pt;margin-top:3pt}
+.big{font:600 48pt/1 "Fraunces",Georgia,serif;color:var(--sage-ink)}
+.sig{margin-top:28pt;font:italic 13pt "Fraunces",Georgia,serif}
+
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --sand:#121A16; --paper:#1A241F; --ink:#EEF2EE; --ink-2:#B9C4BC; --muted:#7E8A82; --line:#2A3630; --sage:#8FAC95; --sage-ink:#CFE0D2; --sage-soft:#243229; --clay:#E08A63; --clay-ink:#F0B394; --clay-soft:#3A2A22; color-scheme:dark } }
+:root[data-theme="dark"]{ --sand:#121A16; --paper:#1A241F; --ink:#EEF2EE; --ink-2:#B9C4BC; --muted:#7E8A82; --line:#2A3630; --sage:#8FAC95; --sage-ink:#CFE0D2; --sage-soft:#243229; --clay:#E08A63; --clay-ink:#F0B394; --clay-soft:#3A2A22; color-scheme:dark }
+
+/* screen: pages become flowing sections */
+@media screen{
+  html,body{background:var(--sand)}
+  body{padding-block:0 48px}
+  .page{width:auto;max-width:8.5in;height:auto;min-height:0;margin:0 auto;padding:40px max(16px,env(safe-area-inset-left,0px)) 56px max(16px,env(safe-area-inset-right,0px));page-break-after:auto;border-bottom:1px solid var(--line)}
+  .page.sand{background:var(--sand)}
+  .page.tight{font-size:12.5pt}
+  .fo{position:static;margin-top:28pt}
+  .cols{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .week{grid-template-columns:62pt 1fr}
+  table{display:block;overflow-x:auto;min-width:0}
+  h1{font-size:clamp(30pt,7vw,40pt)}
+}
+</style>
+<p style="max-width:8.5in;margin:0 auto;padding:14px max(16px,env(safe-area-inset-left,0px)) 0;font:600 12px/1.4 'Courier New',monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)">Versión web · el PDF imprimible (11 páginas, carta) está en <a href="programa-pausa.pdf" style="color:var(--sage-ink)">programa-pausa.pdf</a></p>
+
+
+<section class="page sand">
+  <div class="disc"></div>
+  <div class="eyebrow">Programa para madres y padres</div>
+  <h1>La Guía Familiar Pausa</h1>
+  <p class="lede">Cómo presentar el disco a tus hijos sin pelea, qué horarios funcionan por edad, y el plan de los primeros 30 días para recuperar la cena, la tarea y el sueño.</p>
+  <p style="margin-top:40pt;color:var(--ink-2)">Un toque. Una pausa. Una familia presente.</p>
+  <div class="fo"><span>Pausa · Guía Familiar</span><span>Edición 1 · 2026</span></div>
+</section>
+
+<section class="page">
+  <div class="eyebrow">Antes de empezar</div>
+  <h2>Una carta de nuestra familia a la tuya</h2>
+  <p>Si tienes este sobre en la mano, probablemente ya probaste de todo. Quitar el teléfono. Esconderlo. Poner contraseñas que duraron una semana. Gritar, y después sentirte mal por gritar. Nosotros también.</p>
+  <p>Pausa nació en nuestra cocina cuando entendimos algo simple: el problema nunca fue que faltaran reglas en nuestra casa. Era que cada regla vivía en nuestra boca, y cada noche había que volver a decirla. Eso cansa a cualquiera. Y cansa más a los hijos, que aprenden a esperar a que te rindas.</p>
+  <p>El disco saca la regla de tu boca y la pone en la cocina. A la hora que tú elijas, las apps se apagan. Para encenderlas, hay que caminar hasta el disco y tocarlo. Nadie negocia con un disco. Nadie le ruega. Y como está a la vista, tus hijos saben que no es una trampa: es una regla de la casa, igual para todos.</p>
+  <p>Esta guía es lo que nos hubiera gustado tener la primera semana. Léela completa una vez (son 20 minutos). Después vuelve a la página 9 cada domingo durante un mes.</p>
+  <p>Somos una familia de tu comunidad, no una corporación. Cada disco que vendemos nos permite seguir apoyando a las familias que vienen detrás. Gracias por ser una de ellas.</p>
+  <p class="sig">Con cariño,<br>la familia detrás de Pausa</p>
+  <div class="fo"><span>Pausa · Guía Familiar</span><span>2</span></div>
+</section>
+
+<section class="page tight">
+  <div class="eyebrow">Qué hay en el sobre</div>
+  <h2>Cinco minutos para dejarlo listo</h2>
+  <div class="cols">
+    <div class="box"><div class="k">En el sobre</div><ul><li><b>El disco</b> (uno, o tres en el Pack Familiar). Cerámica mate, 8 cm. No lleva batería. No se carga. Dura años.</li><li><b>Adhesivo de montaje</b> para pared o repisa. También funciona suelto sobre la encimera.</li><li><b>Tarjeta de inicio</b> con el código QR de la app.</li></ul></div>
+    <div class="box"><div class="k">Compatibilidad</div><ul><li>iPhone 7 o más nuevo.</li><li>Android desde 2016 con NFC (el chip del pago sin contacto; casi todos lo tienen).</li><li>Un solo disco funciona con todos los teléfonos de la casa.</li></ul></div>
+  </div>
+  <h3>Instalación</h3>
+  <div class="steps">
+    <div><div><b>Descarga la app Pausa</b> en tu teléfono (el de madre o padre). Es gratis, sin suscripción. Crea tu PIN de 4 dígitos. Ese PIN es tuyo; no lo compartas.</div></div>
+    <div><div><b>Toca el disco con tu teléfono.</b> Acerca la parte de arriba del teléfono al centro del disco. La app dirá “Disco emparejado”. Ponle nombre: “Cocina”, “Entrada”, “Mi cuarto”.</div></div>
+    <div><div><b>Agrega los teléfonos de tus hijos.</b> En la app, toca “Agregar hijo”, escribe su nombre, y escanea el código que aparece desde su teléfono. La app Pausa Hijo se instala sola en ese paso.</div></div>
+    <div><div><b>Elige apps y horarios.</b> Marca las apps que se apagan (TikTok, Instagram, YouTube, juegos) y define tus bloques: Tarea, Cena, Dormir. Empieza con uno solo. Ver página 6.</div></div>
+    <div><div><b>Coloca el disco.</b> Donde tú estás a esa hora. La cocina para tarea y cena. Tu mesa de noche para dormir. La entrada para cuando llegan de la escuela.</div></div>
+  </div>
+  <div class="callout"><b>Cómo se desbloquea.</b> Cuando un bloque está activo, las apps marcadas no abren. Para volver a usarlas, tu hijo tiene que tocar su teléfono contra el disco. Si el bloque sigue activo, se abren por el tiempo que tú definiste (por ejemplo, 10 minutos) y se vuelven a cerrar. Tú puedes desbloquear desde tu teléfono en cualquier momento.</div>
+  <div class="fo"><span>Pausa · Guía Familiar</span><span>3</span></div>
+</section>
+
+<section class="page deep">
+  <div class="eyebrow">Lo que Pausa hace y lo que no hace</div>
+  <h2>Ves el patrón. Nunca el contenido.</h2>
+  <p class="lede">Esto importa más de lo que parece. Los límites claros crían hijos que confían en ti. La vigilancia escondida cría hijos que aprenden a esconderse.</p>
+  <div class="cols">
+    <div class="box" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.18)"><div class="k" style="color:#9FB5A4">Pausa sí</div><ul><li>Apaga las apps que tú eliges, a la hora que tú eliges.</li><li>Exige tocar el disco para encenderlas.</li><li>Te manda un reporte semanal: horas con apps apagadas, cuántos toques, a qué hora.</li><li>Te avisa si desinstalan la app o reinician el teléfono.</li></ul></div>
+    <div class="box" style="background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.18)"><div class="k" style="color:#9FB5A4">Pausa no</div><ul><li>No lee mensajes.</li><li>No ve fotos ni historial.</li><li>No rastrea ubicación.</li><li>No bloquea llamadas, mensajes de texto ni apps de emergencia. Nunca.</li></ul></div>
+  </div>
+  <div class="callout"><b>Dilo así a tus hijos:</b> “Esto no es para espiarte. Es para que a ciertas horas el teléfono descanse, igual para todos, y para que yo no tenga que pelear contigo todas las noches. Yo también tengo reglas con mi teléfono.”</div>
+  <div class="fo"><span>Pausa · Guía Familiar</span><span>4</span></div>
+</section>
+
+<section class="page tight">
+  <div class="eyebrow">El impacto en tu familia</div>
+  <h2>Qué cambia en una casa cuando la regla vive en la cocina</h2>
+  <div class="cols">
+    <div class="box"><div class="k">Para ti</div><p>Dejas de ser el policía. La regla ya no depende de tu memoria ni de tu humor a las 9 de la noche. Recuperas la cena y, con ella, las conversaciones que no habías escuchado en semanas.</p></div>
+    <div class="box"><div class="k">Para tus hijos</div><p>Un límite predecible es un alivio, aunque protesten la primera semana. Duermen más. La tarea se termina más rápido porque no hay nada que mirar. Y aprenden algo que no se enseña con palabras: que el aburrimiento se sobrevive.</p></div>
+    <div class="box"><div class="k">Para la relación</div><p>Cuando el “no” lo dice el disco, tú puedes decir “ven, vamos a cenar”. La pelea desaparece porque no hay con quién pelear. Lo que queda es la familia.</p></div>
+    <div class="box"><div class="k">Para la comunidad</div><p>Cuando funciona en tu casa, cuéntalo. La abuela, la vecina, la mamá del equipo. Cada familia que recupera su mesa hace más fácil que la siguiente lo intente.</p></div>
+  </div>
+  <h3>Lo que verás en el reporte semanal</h3>
+  <table><tr><th>Dato</th><th>Qué significa</th><th>Un buen número al mes</th></tr>
+  <tr><td>Horas recuperadas</td><td>Horas en que las apps marcadas estuvieron apagadas en horario activo.</td><td>10 a 15 por semana</td></tr>
+  <tr><td>Toques en el disco</td><td>Cuántas veces vinieron a desbloquear. Muchos toques al inicio es normal.</td><td>Baja semana a semana</td></tr>
+  <tr><td>Noche más larga sin apps</td><td>Desde el bloque “Dormir” hasta el primer toque de la mañana.</td><td>8 horas o más</td></tr>
+  <tr><td>Avisos</td><td>Intentos de desinstalar o reiniciar.</td><td>0</td></tr></table>
+  <div class="fo"><span>Pausa · Guía Familiar</span><span>5</span></div>
+</section>
+
+<section class="page sand">
+  <div class="eyebrow">Horarios que funcionan</div>
+  <h2>Por edad, y empezando por uno solo</h2>
+  <p class="lede">La regla de oro: empieza con un bloque. Cuando ese bloque ya no genera discusión (unas dos semanas), agrega el siguiente.</p>
+  <table><tr><th>Edad</th><th>Primer bloque</th><th>Segundo bloque</th><th>Tercer bloque</th><th>Minutos por toque</th></tr>
+  <tr><td>8–10</td><td>Dormir: 8:00 pm a 7:00 am</td><td>Cena: 6:30 a 7:30 pm</td><td>Tarea: 3:30 a 5:00 pm</td><td>10</td></tr>
+  <tr><td>11–13</td><td>Cena: 7:00 a 8:00 pm</td><td>Dormir: 9:30 pm a 6:30 am</td><td>Tarea: 4:00 a 6:30 pm</td><td>10</td></tr>
+  <tr><td>14–17</td><td>Dormir: 10:30 pm a 6:30 am</td><td>Tarea: 4:00 a 7:00 pm</td><td>Cena: 7:00 a 8:00 pm</td><td>15</td></tr></table>
+  <div class="cols">
+    <div class="box"><div class="k">Apps que casi todas las familias apagan</div><p>TikTok, Instagram, YouTube, Snapchat, Roblox, Fortnite, Discord. Deja abiertas: llamadas, mensajes, mapas, música, Duolingo o la app de la escuela.</p></div>
+    <div class="box"><div class="k">Dónde va el disco en cada bloque</div><p><b>Tarea y cena:</b> cocina.<br><b>Dormir:</b> tu mesa de noche, nunca la de ellos.<br><b>Fin de semana:</b> entrada, para “al llegar de la calle, el teléfono se queda aquí”.</p></div>
+  </div>
+  <div class="callout"><b>Los fines de semana</b> aflojan, no desaparecen. Mantén “Dormir” los siete días. Quita “Tarea”. Mueve “Cena” si cenan más tarde.</div>
+  <div class="fo"><span>Pausa · Guía Familiar</span><span>6</span></div>
+</section>
+
+<section class="page">
+  <div class="eyebrow">La conversación</div>
+  <h2>Cómo presentarlo sin que sea una pelea</h2>
+  <p class="lede">La mayoría de las peleas por el teléfono no son por el teléfono. Son por sentirse controlado por sorpresa. Por eso el disco se presenta de día, con calma, y antes de activar nada.</p>
+  <h3>Con hijos de 8 a 11</h3>
+  <div class="script">“Mira lo que llegó. Es un disco mágico para la casa: a la hora de dormir, los juegos del teléfono se van a dormir también. Y en la mañana se despiertan cuando tocas aquí. ¿Dónde crees que debería vivir el disco?”</div>
+  <p>Déjalos elegir el lugar (dentro de dos opciones tuyas). Déjalos hacer el primer toque. Que sea suyo.</p>
+  <h3>Con hijos de 12 a 17</h3>
+  <div class="script">“Estoy cansada de pelear contigo por el teléfono, y creo que tú también. Esto es un disco. A estas horas, estas apps se apagan. Para encenderlas, tocas el disco, que va a estar en la cocina. No lee nada tuyo, no ve nada tuyo; solo apaga apps a ciertas horas. Las horas las decidimos hoy, juntos. Las apps las decido yo.”</div>
+  <p>Negocia las horas, no la existencia del disco. Si pide 10:30 en vez de 10:00 para dormir, acepta y escríbelo. Lo que no se negocia: dormir, y que el disco está donde tú estás.</p>
+  <h3>Las tres frases que evitan el 80% de las peleas</h3>
+  <ul><li>“Es igual para todos.” (Y cumple: pon tu propio teléfono en el disco a la hora de la cena.)</li><li>“No es un castigo. Es el horario de la casa.”</li><li>“Si necesitas algo urgente, las llamadas y los mensajes siempre funcionan.”</li></ul>
+  <div class="fo"><span>Pausa · Guía Familiar</span><span>7</span></div>
+</section>
+
+<section class="page tight">
+  <div class="eyebrow">Cuando protestan</div>
+  <h2>Lo que va a pasar la primera semana, y qué hacer</h2>
+  <table><tr><th>Lo que dicen o hacen</th><th>Qué significa</th><th>Qué haces</th></tr>
+  <tr><td>“Es injusto, nadie más tiene esto.”</td><td>Está probando si la regla se mueve.</td><td>“Puede ser. En esta casa es así. Igual para todos.” No expliques más.</td></tr>
+  <tr><td>Toca el disco 15 veces en una tarde.</td><td>Normal. Está midiendo cuánto rinde cada toque.</td><td>Nada. El reporte lo mostrará. Baja solo en la semana 2.</td></tr>
+  <tr><td>“Necesito YouTube para la tarea.”</td><td>A veces es verdad.</td><td>Crea una lista “Tarea” con las apps de la escuela abiertas. YouTube se abre con toque, 10 minutos.</td></tr>
+  <tr><td>Reinicia el teléfono o intenta desinstalar.</td><td>Te llega un aviso.</td><td>Conversación, no castigo: “Vi el aviso. ¿Qué pasó?” El bloque se reactiva solo.</td></tr>
+  <tr><td>Silencio total, portazo.</td><td>Está procesando. Es la parte difícil.</td><td>Déjalo. A la cena, habla de otra cosa. No menciones el disco.</td></tr>
+  <tr><td>Semana 3: “¿Puedo poner el disco en mi cuarto para la tarea?”</td><td>Funcionó.</td><td>Sí. Con el Pack, dale su propio disco para “Tarea”. El de “Dormir” sigue contigo.</td></tr></table>
+  <div class="callout"><b>Tu única tarea esa semana:</b> no discutir. El disco discute por ti. Tú solo dices “ven a cenar”.</div>
+  <div class="fo"><span>Pausa · Guía Familiar</span><span>8</span></div>
+</section>
+
+<section class="page sand">
+  <div class="eyebrow">El plan de 30 días</div>
+  <h2>Un bloque a la vez. Un domingo a la vez.</h2>
+  <div class="week"><b>Día 0</b><div><b>Llega el sobre.</b> Instala la app (5 min). Presenta el disco de día, con el guion de la página 7. Deja que ellos hagan el primer toque. No actives ningún bloque todavía.</div></div>
+  <div class="week"><b>Semana 1</b><div><b>Un solo bloque.</b> Cena o Dormir (la tabla de la página 6 te dice cuál por edad). Pon tu propio teléfono en el disco a esa hora. Espera protestas. No discutas.</div></div>
+  <div class="week"><b>Semana 2</b><div><b>Mismo bloque.</b> Abre el primer reporte el domingo y léelo con ellos: “Esta semana el disco contó 9 horas.” Sin juicio. Si el bloque ya no genera pelea, prepara el segundo.</div></div>
+  <div class="week"><b>Semana 3</b><div><b>Segundo bloque.</b> Casi siempre Tarea. Crea la lista de apps de escuela que se quedan abiertas. Con el Pack, mueve un disco a la entrada.</div></div>
+  <div class="week"><b>Semana 4</b><div><b>Tercer bloque, o ajuste.</b> Si dormir mejoró y la tarea se termina, agrega el tercero. Si no, quédate con dos. Dos bloques que se cumplen valen más que tres que se pelean.</div></div>
+  <div class="week"><b>Día 30</b><div><b>La pregunta.</b> Te mandamos un correo: ¿cuántas horas contó el disco? Respóndenos. Leemos todos. Y si no cenan juntos más seguido, te devolvemos el dinero.</div></div>
+  <div class="fo"><span>Pausa · Guía Familiar</span><span>9</span></div>
+</section>
+
+<section class="page">
+  <div class="eyebrow">Lista de control</div>
+  <h2>Pégala en el refrigerador</h2>
+  <div class="cols">
+    <div><h3>Día 0</h3><div class="check"><div>App instalada, PIN creado</div><div>Disco emparejado y con nombre</div><div>Teléfonos de los hijos agregados</div><div>Apps marcadas (y las de escuela abiertas)</div><div>Conversación hecha, de día, con calma</div><div>Ellos hicieron el primer toque</div></div></div>
+    <div><h3>Cada domingo</h3><div class="check"><div>Leí el reporte con ellos</div><div>Dije “gracias” por lo que sí se cumplió</div><div>Ajusté una hora, no una regla</div><div>Mi teléfono también estuvo en el disco</div><div>No mencioné el disco en la cena</div><div>Decidí si agrego el siguiente bloque</div></div></div>
+  </div>
+  <h3>Las reglas de la casa (escríbelas aquí)</h3>
+  <table><tr><th>Bloque</th><th>Hora</th><th>Apps que se apagan</th><th>Dónde está el disco</th></tr>
+  <tr><td style="height:28pt">Cena</td><td></td><td></td><td></td></tr><tr><td style="height:28pt">Dormir</td><td></td><td></td><td></td></tr><tr><td style="height:28pt">Tarea</td><td></td><td></td><td></td></tr></table>
+  <div class="fo"><span>Pausa · Guía Familiar</span><span>10</span></div>
+</section>
+
+<section class="page deep">
+  <div class="eyebrow">Ayuda y garantía</div>
+  <h2>Una familia responde tus correos.</h2>
+  <p class="lede">Escríbenos a <b>hola@pausa.family</b>. Si es de noche, igual escribe; respondemos en la mañana.</p>
+  <h3 style="color:#F2F5F2">Problemas comunes</h3>
+  <ul><li><b>“No empareja.”</b> Quita la funda del teléfono y toca con la parte de arriba, no con el centro. Activa NFC en Ajustes (Android).</li><li><b>“Las apps no se apagaron.”</b> Revisa que el teléfono del hijo tenga la app Pausa Hijo con permisos de “Tiempo en pantalla” (iPhone) o “Accesibilidad” (Android). La app te guía.</li><li><b>“Perdimos el disco.”</b> Desbloquea desde tu teléfono. Pide un repuesto dentro de la app ($24) o escríbenos.</li><li><b>“Mi hijo tiene dos teléfonos.”</b> Agrega los dos. Un disco los cubre a todos.</li></ul>
+  <div class="callout"><b>Garantía de 30 días.</b> Si en 30 días no cenan juntos más seguido, te devolvemos el dinero. Sin preguntas. Te quedas con el disco. Un correo y listo.</div>
+  <p style="margin-top:30pt">Gracias por confiar en una familia y no en una corporación. Cada disco nos permite seguir apoyando a las familias que vienen detrás.</p>
+  <p class="sig" style="color:#F2F5F2">La familia detrás de Pausa</p>
+  <div class="fo"><span>Pausa · Guía Familiar</span><span>11 · hola@pausa.family</span></div>
+</section>
+

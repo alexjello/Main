@@ -1,0 +1,98 @@
+<title>Gracias · Pausa</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Nunito:wght@400;600;700;800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: confirmation first, three next steps, one upsell, then the family note. Single column, 68ch. */
+:root{ --bg:#F7F3EC; --paper:#FFFFFF; --ink:#1F2A24; --ink-2:#4A5650; --muted:#8A948E; --line:#E4DED3; --sage:#6E8B74; --sage-ink:#3E5A45; --sage-soft:#DCE6DD; --clay:#C96F4A; --clay-ink:#9A4E2E; --clay-soft:#F6E2D7; --display:"Fraunces",Georgia,serif; --body:"Nunito","Segoe UI",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace }
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --bg:#121A16; --paper:#1A241F; --ink:#EEF2EE; --ink-2:#B9C4BC; --muted:#7E8A82; --line:#2A3630; --sage:#8FAC95; --sage-ink:#CFE0D2; --sage-soft:#243229; --clay:#E08A63; --clay-ink:#F0B394; --clay-soft:#3A2A22; color-scheme:dark } }
+:root[data-theme="dark"]{ --bg:#121A16; --paper:#1A241F; --ink:#EEF2EE; --ink-2:#B9C4BC; --muted:#7E8A82; --line:#2A3630; --sage:#8FAC95; --sage-ink:#CFE0D2; --sage-soft:#243229; --clay:#E08A63; --clay-ink:#F0B394; --clay-soft:#3A2A22; color-scheme:dark }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--body)}
+img{max-width:100%;display:block}
+.in{max-width:760px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:16px;border-bottom:1px solid var(--line)}
+.wordmark{font:700 24px/1 var(--display);display:flex;align-items:center;gap:8px}
+.wordmark .disc{width:20px;height:20px;border-radius:50%;background:var(--sage);display:inline-grid;place-items:center}
+.wordmark .disc::before{content:"";width:5px;height:8px;border-left:2px solid var(--bg);border-right:2px solid var(--bg)}
+.steps{display:flex;gap:14px;font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.steps b{color:var(--clay)}
+main{display:grid;gap:36px;padding-block:36px 72px}
+.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--clay)}
+h1{font:600 clamp(32px,5vw,46px)/1.08 var(--display);margin:10px 0 12px;text-wrap:balance}
+h2{font:600 26px/1.15 var(--display);margin:0 0 12px}
+p{margin:0 0 10px;max-width:62ch}
+.lede{font-size:19px;color:var(--ink-2)}
+.todo{display:grid;gap:12px;counter-reset:n}
+.todo div{display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:start;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px}
+.todo div::before{counter-increment:n;content:counter(n);width:30px;height:30px;border-radius:50%;background:var(--sage-soft);color:var(--sage-ink);display:grid;place-items:center;font:700 14px var(--mono)}
+.todo b{display:block;margin-bottom:3px}
+.todo p{font-size:15.5px;color:var(--ink-2);margin:0}
+.chip{display:inline-block;font:500 12px var(--mono);padding:4px 8px;border-radius:999px;background:var(--sage-soft);color:var(--sage-ink)}
+.up{display:grid;grid-template-columns:200px 1fr;gap:20px;align-items:center;background:var(--clay-soft);border-radius:16px;padding:22px}
+.up img{border-radius:12px;aspect-ratio:4/5;object-fit:cover}
+.up .price{font:600 34px var(--display)}
+.up .price small{font:500 14px var(--mono);color:var(--muted);margin-left:6px}
+.btn{display:inline-flex;align-items:center;justify-content:center;font:800 16px/1 var(--body);padding:15px 22px;border-radius:999px;border:0;cursor:pointer;background:var(--clay);color:#FFF8F3;text-decoration:none}
+.btn:hover{background:var(--clay-ink)}
+.btn.ghost{background:transparent;border:2px solid var(--ink);color:var(--ink)}
+.btn:focus-visible{outline:3px solid var(--sage);outline-offset:3px}
+.ok{display:none;background:var(--sage-soft);color:var(--sage-ink);border-radius:12px;padding:14px 16px;font-weight:700}
+.fam{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}
+.fam img{border-radius:14px}
+footer{padding-block:24px;font-size:13.5px;color:var(--muted);border-top:1px solid var(--line)}
+@media (max-width:640px){ .up,.fam{grid-template-columns:1fr} .up img{max-width:220px} }
+</style>
+
+<div class="in"><nav><div class="wordmark"><span class="disc"></span>Pausa</div><div class="steps"><span>Elegir</span><span>Pago</span><b>Listo</b></div></nav></div>
+
+<main class="in">
+  <section>
+    <div class="eyebrow">Pedido confirmado</div>
+    <h1>Gracias, <span id="nm">familia</span>. Tu sobre sale mañana.</h1>
+    <p class="lede">Te acabamos de mandar la confirmación por correo y un mensaje de texto. El sobre llega en 3 a 5 días y cabe en el buzón. Mientras tanto, hay tres cosas que puedes hacer hoy para que el primer día sea fácil.</p>
+    <p id="sum" class="chip">Pack Familiar · 3 discos</p>
+  </section>
+
+  <section>
+    <h2>Antes de que llegue el sobre</h2>
+    <div class="todo">
+      <div><div><b>Descarga la app Pausa (gratis)</b><p>Busca “Pausa” en App Store o Google Play, o espera el enlace que ya está en tu correo. Crea tu PIN de madre o padre. No necesitas el disco para este paso.</p></div></div>
+      <div><div><b>Lee la Guía Familiar (PDF, 20 minutos)</b><p>Ya está en tu correo. Lo más importante son las páginas 6 a 9: cómo presentar el disco a tus hijos sin que sea una pelea, y el plan de los primeros 30 días.</p></div></div>
+      <div><div><b>Elige UNA hora que quieres recuperar</b><p>Solo una. La cena es la más fácil para empezar. Cuando llegue el disco, esa será la primera regla. Las demás vienen después.</p></div></div>
+    </div>
+  </section>
+
+  <section class="up" id="upsell">
+    <img src="../assets/images/08-abuela.jpg" alt="Abuela y nieta cocinando juntas, con el disco en la encimera">
+    <div>
+      <div class="eyebrow">Solo en esta página</div>
+      <h2 style="margin-top:6px">Pack Comunidad: 2 discos para regalar</h2>
+      <p>Uno para casa de la abuela, que los cuida por la tarde. Otro para esa amiga que te dijo “yo también estoy cansada de pelear por el teléfono”. Van en tu mismo sobre o en sobres aparte, tú eliges al recibir el correo de envío.</p>
+      <div class="price">$39<small>2 discos · normalmente $68</small></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px"><button class="btn" id="add" type="button">Agregar a mi pedido</button><a class="btn ghost" href="#fin">No, gracias</a></div>
+      <p style="font-size:13px;color:var(--muted);margin-top:10px">Se cobra a la misma tarjeta. Al importar esta página en GoHighLevel, conecta este botón al producto de un clic del embudo.</p>
+    </div>
+  </section>
+  <div class="ok" id="ok">Listo. Agregamos el Pack Comunidad a tu pedido. Gracias por apoyar a otra familia.</div>
+
+  <section class="fam" id="fin">
+    <img src="../assets/images/11-familia.jpg" alt="La familia detrás de Pausa, riendo en su sala">
+    <div>
+      <div class="eyebrow">De nuestra familia a la tuya</div>
+      <h2>Gracias por confiar en una familia y no en una corporación.</h2>
+      <p>Pausa nació en nuestra cocina. Cada disco que vendemos nos ayuda a seguir apoyando a las familias que vienen detrás, en nuestra comunidad. Si algo no funciona, si tienes una duda a las 10 de la noche, escríbenos a <b>hola@pausa.family</b>. Una persona de la familia te responde.</p>
+      <p>En 7 días te mandamos un correo con una sola pregunta: ¿cuántas horas contó el disco?</p>
+    </div>
+  </section>
+</main>
+
+<footer><div class="in">© Pausa · Negocio familiar · Garantía 30 días · hola@pausa.family</div></footer>
+
+<script>
+(function(){
+  var q=new URLSearchParams(location.search), n=q.get('n'); if(n){ document.getElementById('nm').textContent=n; }
+  var sku=q.get('sku')==='disco'?'Disco Pausa · 1 disco':'Pack Familiar · 3 discos'; if(q.get('bump')==='1') sku+=' + disco extra';
+  document.getElementById('sum').textContent=sku;
+  document.getElementById('add').addEventListener('click',function(){ document.getElementById('upsell').hidden=true; var ok=document.getElementById('ok'); ok.style.display='block'; try{ if(window.fbq) fbq('track','Purchase',{value:39,currency:'USD',content_name:'Pack Comunidad'}); }catch(e){} });
+})();
+</script>

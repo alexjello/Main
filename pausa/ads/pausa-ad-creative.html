@@ -1,0 +1,177 @@
+<title>Pausa Ad Creative</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: creative review board. Each concept = image + the copy that runs with it. Stage filter at top. */
+:root{ --bg:#F7F3EC; --paper:#FFFFFF; --ink:#1F2A24; --ink-2:#4A5650; --muted:#8A948E; --line:#E4DED3; --sage:#6E8B74; --sage-ink:#3E5A45; --sage-soft:#DCE6DD; --clay:#C96F4A; --clay-ink:#9A4E2E; --clay-soft:#F6E2D7; --display:"Fraunces",Georgia,serif; --body:"Nunito","Segoe UI",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace }
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --bg:#121A16; --paper:#1A241F; --ink:#EEF2EE; --ink-2:#B9C4BC; --muted:#7E8A82; --line:#2A3630; --sage:#8FAC95; --sage-ink:#CFE0D2; --sage-soft:#243229; --clay:#E08A63; --clay-ink:#F0B394; --clay-soft:#3A2A22; color-scheme:dark } }
+:root[data-theme="dark"]{ --bg:#121A16; --paper:#1A241F; --ink:#EEF2EE; --ink-2:#B9C4BC; --muted:#7E8A82; --line:#2A3630; --sage:#8FAC95; --sage-ink:#CFE0D2; --sage-soft:#243229; --clay:#E08A63; --clay-ink:#F0B394; --clay-soft:#3A2A22; color-scheme:dark }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15.5px/1.55 var(--body);padding-block:0 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto}
+header{padding-block:36px 20px;border-bottom:2px solid var(--ink);display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:flex-end}
+.eyebrow{font:600 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--sage-ink)}
+h1{font:700 clamp(32px,5vw,48px)/1.02 var(--display);margin:8px 0 0;letter-spacing:-.01em}
+h2{font:700 clamp(22px,3vw,28px)/1.15 var(--display);margin:0 0 14px}
+h3{font:800 17px/1.3 var(--body);margin:0 0 4px}
+p{margin:0 0 8px;max-width:64ch}
+.lede{color:var(--ink-2);font-size:16.5px;max-width:70ch}
+.links{display:flex;flex-wrap:wrap;gap:8px}
+.links a{font:600 12.5px var(--mono);padding:8px 12px;border:1.5px solid var(--line);border-radius:999px;color:var(--ink);text-decoration:none;background:var(--paper)}
+.links a:hover{border-color:var(--sage)}
+section{padding-block:32px;border-bottom:1px solid var(--line)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.filters button{font:700 13px var(--body);padding:8px 14px;border-radius:999px;border:1.5px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.filters button:focus-visible{outline:3px solid var(--sage);outline-offset:2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.ad{background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:grid;grid-template-rows:auto 1fr;min-width:0}
+.ad[hidden]{display:none}
+.ad img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.ad .sq img{aspect-ratio:1}
+.ad .tall img{aspect-ratio:9/16;max-height:420px}
+.ad .b{padding:14px 16px;display:grid;gap:8px;align-content:start}
+.meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.chip{font:600 11px/1 var(--mono);padding:5px 8px;border-radius:999px;background:var(--sage-soft);color:var(--sage-ink);white-space:nowrap}
+.chip.clay{background:var(--clay-soft);color:var(--clay-ink)}
+.chip.id{background:var(--line);color:var(--ink-2)}
+.copy{font-size:14.5px;color:var(--ink-2);border-left:3px solid var(--line);padding-left:10px}
+.copy b{color:var(--ink)}
+.cta{font:700 12.5px var(--mono);color:var(--clay)}
+.vo{display:grid;gap:14px}
+.voc{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:grid;grid-template-columns:1fr;gap:10px;min-width:0}
+.voc audio{width:100%;max-width:520px}
+.voc .t{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.script{font-size:14.5px;color:var(--ink-2);font-style:italic;max-width:72ch}
+.tbl{overflow-x:auto;border:1px solid var(--line);background:var(--paper);border-radius:10px}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:13.5px}
+th,td{padding:8px 10px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{font:600 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--bg)}
+tr:last-child td{border-bottom:0}
+.hooks{columns:2;column-gap:28px;max-width:900px;padding-left:20px;margin:0}
+.hooks li{break-inside:avoid;margin:0 0 8px;color:var(--ink-2)}
+.hooks li b{color:var(--ink)}
+.caps{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.cap{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px;font-size:14px;color:var(--ink-2);min-width:0}
+.cap .k{font:600 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.cap .tags{font:500 12px var(--mono);color:var(--sage-ink);margin-top:8px;word-break:break-word}
+.note{background:var(--clay-soft);border-left:4px solid var(--clay);padding:10px 14px;max-width:72ch;font-size:14px;border-radius:0 8px 8px 0}
+@media (max-width:640px){ .hooks{columns:1} }
+</style>
+
+<div class="wrap">
+<header>
+  <div>
+    <div class="eyebrow">Disco Pausa · Spanish-first · 12 stills · 8 clips · 5 Ana voiceovers</div>
+    <h1>Pausa Ad Creative</h1>
+    <p class="lede" style="margin-top:10px">Every ad concept with the copy that runs next to it, filterable by funnel stage. Stills were generated with Higgsfield (GPT Image 2.5); the motion clips with Seedance 2.5; the voice is ElevenLabs “Ana”. Final cut videos are assembled with <b>assets/build-videos.sh</b> in the repo.</p>
+  </div>
+  <div class="links">
+    <a href="https://elevenlabs.io/app/flows/ONdyhhCogJtcztV5RdCY" target="_blank" rel="noopener">ElevenLabs flow ↗</a>
+    <a href="https://higgsfield.ai" target="_blank" rel="noopener">Higgsfield library ↗</a>
+  </div>
+</header>
+
+<section>
+  <h2>Static and carousel concepts</h2>
+  <div class="filters" role="group" aria-label="Filter by stage">
+    <button type="button" data-f="all" aria-pressed="true">All</button>
+    <button type="button" data-f="tof" aria-pressed="false">TOF · cold</button>
+    <button type="button" data-f="mof" aria-pressed="false">MOF · warm</button>
+    <button type="button" data-f="bof" aria-pressed="false">BOF · close</button>
+    <button type="button" data-f="rtg" aria-pressed="false">Retargeting</button>
+    <button type="button" data-f="ret" aria-pressed="false">Retention</button>
+  </div>
+  <div class="grid" id="grid">
+    <article class="ad" data-s="tof bof"><div class="sq"><img src="assets/images/01-hero-disco.jpg" alt="Hero shot of the Pausa disc on a kitchen counter"></div><div class="b"><div class="meta"><span class="chip id">S-A · img 01</span><span class="chip">TOF</span><span class="chip clay">1:1 · 4:5</span></div><h3>Un toque. Una pausa. Una familia presente.</h3><div class="copy">Pausa es un disco del tamaño de un posavasos. Las apps que tú elijas se apagan a la hora que tú elijas, y solo se encienden cuando el teléfono toca el disco. Sin contraseñas. Sin peleas de media hora. Llega a tu buzón en un sobre. App gratis. Garantía de 30 días.</div><div class="cta">CTA · Comprar · $34</div></div></article>
+    <article class="ad" data-s="tof"><img src="assets/images/04-cena.jpg" alt="Family dinner with phones face down next to the disc"><div class="b"><div class="meta"><span class="chip id">S-B · img 04</span><span class="chip">TOF</span><span class="chip clay">4:5</span></div><h3>La cena vuelve a ser cena.</h3><div class="copy">Los teléfonos descansan sobre el disco. Las apps duermen hasta que termina la cena. Nadie negocia, nadie suplica. Así funciona Pausa en nuestra casa y en la tuya. Pack Familiar: 3 discos, $79, envío gratis.</div><div class="cta">CTA · Ver cómo funciona</div></div></article>
+    <article class="ad" data-s="mof"><img src="assets/images/05-tarea.jpg" alt="Teen doing homework with her phone face down on the disc"><div class="b"><div class="meta"><span class="chip id">S-C · img 05</span><span class="chip">MOF</span><span class="chip clay">4:5</span></div><h3>De 4 a 7, la tarea se termina.</h3><div class="copy">TikTok, YouTube y los juegos se bloquean en el horario de tarea. Para desbloquear, el teléfono tiene que tocar físicamente el disco que está en la cocina. Tu hijo lo sabe. Tú lo ves. Nadie grita.</div><div class="cta">CTA · Comprar</div></div></article>
+    <article class="ad" data-s="tof"><img src="assets/images/06-antes-despues.jpg" alt="Before and after: a boy on his phone at 1 a.m. and the same boy asleep"><div class="b"><div class="meta"><span class="chip id">S-D · img 06</span><span class="chip">TOF</span><span class="chip clay">4:5</span></div><h3>1:00 a.m. vs. dormido.</h3><div class="copy">El disco en tu mesa de noche, no en la de él. A las 10 las apps se apagan. Para encenderlas tendría que venir a tu cuarto. Spoiler: no viene. Duerme.</div><div class="cta">CTA · Comprar</div></div></article>
+    <article class="ad" data-s="bof rtg"><div class="sq"><img src="assets/images/07-sobre.jpg" alt="Open mailer with the disc, a card and an adhesive pad"></div><div class="b"><div class="meta"><span class="chip id">S-E · img 07</span><span class="chip">BOF · RTG</span><span class="chip clay">1:1 · 9:16</span></div><h3>Llega en un sobre. Se instala en 5 minutos.</h3><div class="copy">Abres el sobre, descargas la app gratis, tocas el disco una vez. Listo. Eliges apps y horarios. El disco se encarga del resto. 30 días de garantía, sin preguntas.</div><div class="cta">CTA · Pedir el mío</div></div></article>
+    <article class="ad" data-s="bof"><img src="assets/images/11-familia.jpg" alt="The family behind Pausa laughing on their sofa"><div class="b"><div class="meta"><span class="chip id">S-F · img 11</span><span class="chip">BOF</span><span class="chip clay">4:5</span></div><h3>Somos una familia, no una corporación.</h3><div class="copy">Pausa nació en nuestra cocina, en nuestra comunidad, cuando vimos a nuestros hijos desaparecer dentro de una pantalla. Cada disco que vendemos nos permite seguir apoyando a las familias que vienen detrás. Gracias por ser parte.</div><div class="cta">CTA · Conocer a la familia</div></div></article>
+    <article class="ad" data-s="tof mof"><div class="tall"><img src="assets/images/03-hijo-cocina-9x16.jpg" alt="Teen taps his phone on the disc mounted on the kitchen wall"></div><div class="b"><div class="meta"><span class="chip id">Story · img 03</span><span class="chip">TOF · MOF</span><span class="chip clay">9:16</span></div><h3>Si el disco está en la cocina, mi hijo viene a la cocina.</h3><div class="copy">Story / Reel cover. Text on screen: <b>“Para desbloquear, hay que tocar el disco.”</b> Sticker: “Link en bio · $34”.</div><div class="cta">CTA · Comprar</div></div></article>
+    <article class="ad" data-s="tof"><div class="tall"><img src="assets/images/10-entrada-9x16.jpg" alt="Entryway shelf with keys, a family photo and the disc holding a phone"></div><div class="b"><div class="meta"><span class="chip id">Story · img 10</span><span class="chip">TOF</span><span class="chip clay">9:16</span></div><h3>Donde se quedan las llaves, se queda el teléfono.</h3><div class="copy">Story. Text on screen: <b>“Lo pones donde pones las llaves.”</b> Poll sticker: “¿Dónde lo pondrías tú? Cocina / Entrada”.</div><div class="cta">CTA · Ver más</div></div></article>
+    <article class="ad" data-s="mof"><img src="assets/images/02-mano-toque.jpg" alt="Mother's hand holds the disc while her son taps his phone on it"><div class="b"><div class="meta"><span class="chip id">S-“No espía” · img 02</span><span class="chip">MOF</span><span class="chip clay">4:5</span></div><h3>No espía. Pone límites.</h3><div class="copy">Pausa no lee mensajes. No ve fotos. No rastrea. Solo pone un límite físico: a esta hora, estas apps se apagan, y solo se encienden tocando el disco. Tus hijos saben que está ahí. Esa es la idea.</div><div class="cta">CTA · Ver cómo funciona</div></div></article>
+    <article class="ad" data-s="tof mof"><div class="sq"><img src="assets/images/09-flatlay-pack.jpg" alt="Three discs, the phone with the app and the guide on linen"></div><div class="b"><div class="meta"><span class="chip id">C-1 · carousel</span><span class="chip">TOF · MOF</span><span class="chip clay">1:1 × 5</span></div><h3>Así funciona Pausa en 5 pasos</h3><div class="copy">1 Abre el sobre (img 07) · 2 Descarga la app gratis (img 09) · 3 Elige apps y horarios (img 05) · 4 Para desbloquear, hay que tocar el disco (img 03) · 5 Cada semana, un reporte (img 04).</div><div class="cta">CTA · Comprar · $34</div></div></article>
+    <article class="ad" data-s="ret"><img src="assets/images/08-abuela.jpg" alt="Grandmother and granddaughter making tamales, the disc on the counter"><div class="b"><div class="meta"><span class="chip id">S-G · img 08</span><span class="chip">Retention</span><span class="chip clay">4:5</span></div><h3>Uno para casa de la abuela.</h3><div class="copy">Mi mamá cuida a mis hijos por la tarde. Le mandamos un disco para su casa. Ella no sabe de apps, pero sabe dónde está el disco: en su cocina. Y los nietos también. Disco extra $19 para clientes.</div><div class="cta">CTA · Agregar un disco</div></div></article>
+    <article class="ad" data-s="bof rtg"><div class="sq"><img src="assets/images/12-macro-sobre.jpg" alt="Side view of the slim disc next to an envelope for scale"></div><div class="b"><div class="meta"><span class="chip id">S-H · img 12</span><span class="chip">BOF · RTG</span><span class="chip clay">1:1</span></div><h3>Cabe en un sobre. Cabe en tu buzón.</h3><div class="copy">6 milímetros de cerámica. Sin batería, sin cargador, sin mensualidad. Llega en 3 a 5 días. 30 días de garantía: si no cenan juntos más seguido, te devolvemos el dinero y te quedas con el disco.</div><div class="cta">CTA · Pedir el mío</div></div></article>
+  </div>
+</section>
+
+<section>
+  <h2>Voiceovers · Ana (ElevenLabs)</h2>
+  <p class="lede">Press play to hear each one. The storyboards below map every line to a clip; the repo script assembles the finished 9:16 videos.</p>
+  <div class="vo">
+    <div class="voc"><div class="t"><span class="chip id">V1</span><span class="chip">TOF</span><b>“La cena” · 24.7 s</b></div><audio controls preload="none" src="assets/audio/vo1-cena.mp3"></audio><div class="script">¿Cuándo fue la última vez que cenaron sin un teléfono en la mesa? No eres mala madre por preguntártelo. Pausa es un disco pequeño que vive en tu cocina. Las apps de tus hijos se apagan a la hora que tú eliges, y solo se encienden cuando el teléfono toca el disco. Sin peleas. Sin contraseñas. Un toque, y la familia vuelve a la mesa. Somos una familia como la tuya, y lo hicimos para la nuestra.</div></div>
+    <div class="voc"><div class="t"><span class="chip id">V2</span><span class="chip">TOF · MOF</span><b>“La tarea” · 22.2 s</b></div><audio controls preload="none" src="assets/audio/vo2-tarea.mp3"></audio><div class="script">Mi hijo juraba que estaba haciendo la tarea. El teléfono decía otra cosa. Con Pausa, TikTok, los juegos y YouTube se bloquean de cuatro a siete. Para desbloquear, tiene que venir a la cocina y tocar el disco. Yo lo veo. Él lo sabe. Y la tarea se termina. Llega a tu buzón en un sobre, se instala en cinco minutos, y la app es gratis.</div></div>
+    <div class="voc"><div class="t"><span class="chip id">V3</span><span class="chip">BOF</span><b>“Somos familia” · 29.2 s</b></div><audio controls preload="none" src="assets/audio/vo3-familia.mp3"></audio><div class="script">No somos una empresa de tecnología. Somos una familia de tu comunidad que vio a sus hijos desaparecer dentro de una pantalla, y decidió hacer algo. Pausa es un disco. Nada más. Pero cambia la casa. Las reglas las pones tú. El disco las cumple. Y cada disco que vendemos nos ayuda a seguir apoyando a las familias que vienen detrás. Pide el tuyo hoy. Llega en un sobre, con garantía de treinta días.</div></div>
+    <div class="voc"><div class="t"><span class="chip id">V4</span><span class="chip clay">Retargeting</span><b>“Sigue aquí” · 11.6 s</b></div><audio controls preload="none" src="assets/audio/vo5-retargeting.mp3"></audio><div class="script">El disco sigue aquí. Y la cena sigue esperando. Pausa llega a tu buzón en un sobre, con garantía de treinta días. Pídelo hoy, y esta semana cenan juntos.</div></div>
+    <div class="voc"><div class="t"><span class="chip id">V5</span><span class="chip">Landing</span><b>Explainer · 52.4 s</b></div><audio controls preload="none" src="assets/audio/vo4-landing.mp3"></audio><div class="script">Hola. Si estás aquí, probablemente ya probaste de todo: quitar el teléfono, poner contraseñas, gritar, rogar. Nosotros también. Pausa nació en nuestra cocina. Es un disco del tamaño de un posavasos. Lo pones donde quieras: la cocina, la entrada, tu mesa de noche. En la app gratuita eliges qué apps se bloquean y en qué horario. Cuando llega la hora, esas apps se apagan en el teléfono de tu hijo. Para volver a usarlas, el teléfono tiene que tocar físicamente el disco. No hay truco, no hay contraseña que adivinar. Si el disco está en la cocina, tu hijo viene a la cocina. Cada semana recibes un reporte: cuántas horas recuperaron. Somos una familia de aquí, y creemos que las familias que vienen merecen crecer mirándose a los ojos. El disco llega a tu buzón en un sobre. Garantía de treinta días. Bienvenidos a Pausa.</div></div>
+  </div>
+</section>
+
+<section>
+  <h2>Motion clips (Seedance 2.5, 5–6 s each)</h2>
+  <p class="lede">Eight image-to-video clips cut from the stills. They open in Higgsfield; the build script downloads and stitches them.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Clip</th><th>From still</th><th>Motion</th><th>Used in</th><th>Open</th></tr></thead>
+    <tbody>
+      <tr><td>clip 1 · 6 s</td><td>01 hero</td><td>Slow push-in, light shifts across the disc</td><td>V3, V4, V5</td><td><a href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095120_06c17f64-1177-47c8-bea9-11804b0890c9.mp4" target="_blank" rel="noopener">mp4 ↗</a></td></tr>
+      <tr><td>clip 2 · 6 s · 9:16</td><td>03 hijo cocina</td><td>Teen taps phone on the wall disc, mother looks over</td><td>V1, V2, V5</td><td><a href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095120_ff9c7809-6325-4d0a-919a-f92e73b7b84c.mp4" target="_blank" rel="noopener">mp4 ↗</a></td></tr>
+      <tr><td>clip 3 · 6 s</td><td>04 cena</td><td>Hands pass tortillas, phones stay on the tray</td><td>V1, V3, V5</td><td><a href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_bdd9356e-c527-469b-ba08-c9b598de16b7.mp4" target="_blank" rel="noopener">mp4 ↗</a></td></tr>
+      <tr><td>clip 4 · 5 s</td><td>02 mano toque</td><td>Phone lowers onto the disc, pause, lifts away</td><td>V1, V2, V5</td><td><a href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_418fffb8-4b86-4534-92ca-c4354fb281cf.mp4" target="_blank" rel="noopener">mp4 ↗</a></td></tr>
+      <tr><td>clip 5 · 5 s</td><td>11 familia</td><td>Family laughs on the sofa, slow push-in</td><td>V1, V3, V5</td><td><a href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_a48a71a1-c783-4f79-878c-7cbc426aae7f.mp4" target="_blank" rel="noopener">mp4 ↗</a></td></tr>
+      <tr><td>clip 6 · 5 s</td><td>07 sobre</td><td>Hands slide the disc out of the mailer</td><td>V2, V3, V4, V5</td><td><a href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_c2547bd6-7029-4654-b668-493e9d011d3b.mp4" target="_blank" rel="noopener">mp4 ↗</a></td></tr>
+      <tr><td>clip 7 · 5 s</td><td>06 antes/después</td><td>Left: phone flickers. Right: he sleeps</td><td>V3, V5</td><td><a href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_7382ff3f-7908-4bb3-8cbf-9e7ba6701706.mp4" target="_blank" rel="noopener">mp4 ↗</a></td></tr>
+      <tr><td>clip 8 · 5 s</td><td>05 tarea</td><td>She writes, glances at the phone, shrugs</td><td>V2, V5</td><td><a href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_baaee3e3-b070-4271-a0df-06798b823a8a.mp4" target="_blank" rel="noopener">mp4 ↗</a></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>Storyboards (text on screen)</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Video</th><th>0–6 s</th><th>6–12 s</th><th>12–18 s</th><th>18–24 s</th><th>End card</th></tr></thead>
+    <tbody>
+      <tr><td><b>V1 La cena</b></td><td>clip 3 · “¿Cuándo fue la última cena sin teléfonos?”</td><td>clip 2 · “Las apps se apagan a TU hora”</td><td>clip 4 · “Solo se encienden con un toque”</td><td>clip 5 · “Sin peleas. Sin contraseñas.”</td><td>img 07 · “Pausa · $34 · llega en un sobre”</td></tr>
+      <tr><td><b>V2 La tarea</b></td><td>clip 8 · “Estoy haciendo la tarea”</td><td>clip 2 · “4:00–7:00 · bloqueado”</td><td>clip 4 · “Yo lo veo. Él lo sabe.”</td><td>clip 6 · “Y la tarea se termina.”</td><td>img 07 · “App gratis · 30 días de garantía”</td></tr>
+      <tr><td><b>V3 Somos familia</b></td><td>clip 5 · “Somos una familia, no una corporación”</td><td>clip 7 · (no text)</td><td>clip 1 · “Un disco. Nada más.”</td><td>clip 3 · “Tú pones las reglas”</td><td>clip 6 + img 01 · “$34 · Pack Familiar $79”</td></tr>
+      <tr><td><b>V4 Sigue aquí</b></td><td>clip 1 · “Sigue aquí.”</td><td>clip 6 · “Envío gratis · 30 días”</td><td colspan="3">img 07 end card</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>Hooks (first 3 seconds)</h2>
+  <ol class="hooks">
+    <li><b>¿Cuándo fue la última vez que cenaron sin un teléfono en la mesa?</b></li><li>Mi hijo “hacía la tarea”. El teléfono decía otra cosa.</li><li>No le quité el teléfono. Le puse una pausa.</li><li>Las contraseñas se adivinan. La cocina no se mueve.</li><li>Esto llegó en un sobre y cambió mi casa.</li><li>Un disco. Un toque. Y TikTok se apaga a las 8.</li><li>No soy mala madre por querer cenar en paz.</li><li>Lo que hice cuando dejé de pelear por el teléfono.</li><li><b>Si el disco está en la cocina, mi hijo viene a la cocina.</b></li><li>Esto no espía a tus hijos. Les pone un límite.</li><li>La abuela puede usarlo. En serio.</li><li>Costó menos que una pizza familiar y recuperamos las cenas.</li><li><b>Pregunta honesta: ¿quién manda en tu casa, tú o la pantalla?</b></li><li>Mi hija de 15 me dijo “gracias” por esto. Tardó tres semanas.</li><li>Somos una familia, no una empresa de tecnología.</li><li>Cuatro a siete, sin juegos. Así de simple.</li><li>Lo pones donde pones las llaves.</li><li><b>No hay app que un niño de 12 no sepa burlar. Esto no es una app.</b></li><li>Las horas que recuperamos esta semana: 11. Las cuenta el disco.</li><li>Por cada disco vendido, apoyamos a otra familia de nuestra comunidad.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Captions (organic and boosted)</h2>
+  <div class="caps">
+    <div class="cap"><div class="k">Cena</div>Pusimos el disco en la cocina un martes. El miércoles cenamos sin teléfonos por primera vez en meses. Nadie lo pidió. Simplemente las apps se apagaron a las 7 y el disco estaba lejos del sofá. 🫶 Pausa llega en un sobre. Link en bio.<div class="tags">#familia #tiempoenfamilia #hijosypantallas #crianza #mamalatina #cenaenfamilia</div></div>
+    <div class="cap"><div class="k">Tarea</div>“Ya terminé la tarea” ahora significa que terminó la tarea. De 4 a 7 no hay TikTok ni juegos, y para desbloquear tiene que venir a la cocina y tocar el disco. Yo lo veo. Él lo sabe. Fin de la discusión. 📵<div class="tags">#tarea #adolescentes #crianzaconsciente #pausa</div></div>
+    <div class="cap"><div class="k">Somos familia</div>No somos una empresa de tecnología. Somos una familia de aquí que se cansó de pelear por el teléfono y construyó algo pequeño que sí funciona. Cada disco que vendemos nos deja seguir apoyando a otras familias de nuestra comunidad. 💛<div class="tags">#negociofamiliar #comunidad #familiaslatinas</div></div>
+    <div class="cap"><div class="k">No espía</div>Pausa no lee mensajes. No ve fotos. No rastrea. Solo pone un límite físico: a esta hora, estas apps se apagan, y solo se encienden tocando el disco. Tus hijos saben que está ahí. Esa es la idea. 🤍<div class="tags">#limitessanos #saludmental #hijos</div></div>
+    <div class="cap"><div class="k">Precio</div>$34. Un sobre. Cinco minutos de instalación. Y la primera cena sin pantallas de este año. Garantía de 30 días si no les funciona. Link en bio. ✉️</div>
+    <div class="cap"><div class="k">TikTok · texto en pantalla</div>POV: tu hijo de 13 descubre que la única forma de volver a sus juegos es ir a la cocina… donde estás tú. 😌<div class="tags">#pausa #mamádeadolescente</div></div>
+    <div class="cap"><div class="k">Abuela</div>Mi mamá cuida a mis hijos por la tarde. Le mandamos un disco para su casa. Ella no sabe de apps, pero sabe dónde está el disco: en su cocina. Y los nietos también. 👵🏽<div class="tags">#abuelas #familia</div></div>
+    <div class="cap"><div class="k">Reporte semanal</div>Esta semana el disco contó 11 horas que antes se iban en pantallas. Once. No las contamos nosotros, las contó el disco. ¿Qué harías con 11 horas más de tus hijos?</div>
+  </div>
+</section>
+
+<section>
+  <h2>Claims we keep to</h2>
+  <p class="note">Pausa <b>blocks apps on a schedule and reports time</b>. Never say it reads messages, tracks location or is unbreakable. “Horas recuperadas” means hours with the chosen apps blocked, as measured by the app. Works with NFC phones (most since 2016). Guarantee: 30 days, full refund, customer keeps the disc.</p>
+</section>
+</div>
+
+<script>
+(function(){
+  var bs=document.querySelectorAll('.filters button'), ads=document.querySelectorAll('#grid .ad');
+  bs.forEach(function(b){ b.addEventListener('click',function(){ var f=b.dataset.f; bs.forEach(function(x){ x.setAttribute('aria-pressed',String(x===b)); }); ads.forEach(function(a){ a.hidden=!(f==='all'||a.dataset.s.split(' ').indexOf(f)>=0); }); }); });
+})();
+</script>

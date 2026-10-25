@@ -1,0 +1,38 @@
+{
+  "note": "Generated 2026-10-25 with Higgsfield (gpt_image_2_5 stills, seedance_2_5 clips) and ElevenLabs (voice 'Ana', tr6YFWVGFIcVUGrOMYMV). Higgsfield URLs are permanent; ElevenLabs URLs are signed and expire ~2h after generation (re-download from the flow if needed: https://elevenlabs.io/app/flows/ONdyhhCogJtcztV5RdCY). Run fetch-assets.sh on a machine with open internet to pull everything into assets/.",
+  "images": {
+    "01-hero-disco": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094654_33ea4eb1-5fb9-48e6-a2f0-6d12c44cee50.png",
+    "02-mano-toque": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094654_c9c7c8ba-4c1d-4230-b358-cd4032d42b60.png",
+    "03-hijo-cocina-9x16": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094653_15a2ffe2-6547-4130-92fe-36b7570d245c.png",
+    "04-cena": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094653_900682dd-1840-4f6a-8c5e-403de3732c8a.png",
+    "05-tarea": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094652_f4dc52b4-380a-4b9b-b74b-0b91e54c06d4.png",
+    "06-antes-despues": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094653_11003cdd-4f31-44a3-8cad-360003c0863b.png",
+    "07-sobre": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094655_f3756e71-92cc-4430-b485-3458063104bd.png",
+    "08-abuela": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094653_7f7a6038-051a-46c1-a41f-5c90d917886d.png",
+    "09-flatlay-pack": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094652_4873a080-0d19-436c-b860-dfff6b91c370.png",
+    "10-entrada-9x16": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094655_88dae3ec-c16b-4ac2-a57c-3da5a01d8f48.png",
+    "11-familia": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094654_976669d6-51fa-44d8-9b2d-de4bf324960c.png",
+    "12-macro-sobre": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094653_92830bf9-fb41-44ef-b58a-6e207138bd0e.png"
+  },
+  "video_clips": {
+    "clip1-hero-pushin-6s": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095120_06c17f64-1177-47c8-bea9-11804b0890c9.mp4",
+    "clip2-hijo-toque-9x16-6s": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095120_ff9c7809-6325-4d0a-919a-f92e73b7b84c.mp4",
+    "clip3-cena-6s": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_bdd9356e-c527-469b-ba08-c9b598de16b7.mp4",
+    "clip4-mano-toque-5s": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_418fffb8-4b86-4534-92ca-c4354fb281cf.mp4",
+    "clip5-familia-sofa-5s": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_a48a71a1-c783-4f79-878c-7cbc426aae7f.mp4",
+    "clip6-sobre-unboxing-5s": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_c2547bd6-7029-4654-b668-493e9d011d3b.mp4",
+    "clip7-antes-despues-5s": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_7382ff3f-7908-4bb3-8cbf-9e7ba6701706.mp4",
+    "clip8-tarea-5s": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_baaee3e3-b070-4271-a0df-06798b823a8a.mp4"
+  },
+  "voiceovers_local": {
+    "vo1-cena": "audio/vo1-cena.mp3 (24.7 s)",
+    "vo2-tarea": "audio/vo2-tarea.mp3 (22.2 s)",
+    "vo3-familia": "audio/vo3-familia.mp3 (29.2 s)",
+    "vo4-landing": "audio/vo4-landing.mp3 (52.4 s)",
+    "vo5-retargeting": "audio/vo5-retargeting.mp3 (11.6 s)"
+  },
+  "higgsfield_job_ids": {
+    "images": ["33ea4eb1-5fb9-48e6-a2f0-6d12c44cee50","c9c7c8ba-4c1d-4230-b358-cd4032d42b60","15a2ffe2-6547-4130-92fe-36b7570d245c","900682dd-1840-4f6a-8c5e-403de3732c8a","f4dc52b4-380a-4b9b-b74b-0b91e54c06d4","11003cdd-4f31-44a3-8cad-360003c0863b","f3756e71-92cc-4430-b485-3458063104bd","7f7a6038-051a-46c1-a41f-5c90d917886d","4873a080-0d19-436c-b860-dfff6b91c370","88dae3ec-c16b-4ac2-a57c-3da5a01d8f48","976669d6-51fa-44d8-9b2d-de4bf324960c","92830bf9-fb41-44ef-b58a-6e207138bd0e"],
+    "videos": ["06c17f64-1177-47c8-bea9-11804b0890c9","ff9c7809-6325-4d0a-919a-f92e73b7b84c","bdd9356e-c527-469b-ba08-c9b598de16b7","418fffb8-4b86-4534-92ca-c4354fb281cf","a48a71a1-c783-4f79-878c-7cbc426aae7f","c2547bd6-7029-4654-b668-493e9d011d3b","7382ff3f-7908-4bb3-8cbf-9e7ba6701706","baaee3e3-b070-4271-a0df-06798b823a8a"]
+  }
+}

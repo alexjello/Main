@@ -1,0 +1,270 @@
+<title>Pausa Media Plan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: one long operating document, left-aligned, 72ch measure, data tables full width. */
+:root{
+  --bg:#F7F3EC; --surface:#FFFFFF; --ink:#1F2A24; --ink-2:#4F5B55; --muted:#8A948E; --line:#E3DDD2;
+  --sage:#6E8B74; --sage-ink:#3E5A45; --sage-soft:#DCE6DD; --clay:#C96F4A; --clay-soft:#F6E2D7;
+  --good:#2E7D4F; --warn:#B7791F; --bad:#B23A3A;
+  --display:"Fraunces",Georgia,serif; --body:"Nunito","Segoe UI",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#121A16; --surface:#1A241F; --ink:#EEF2EE; --ink-2:#B9C4BC; --muted:#7E8A82; --line:#2A3630;
+  --sage:#8FAC95; --sage-ink:#CFE0D2; --sage-soft:#243229; --clay:#E08A63; --clay-soft:#3A2A22;
+  --good:#6CC08F; --warn:#E0B35C; --bad:#E07A7A; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#121A16; --surface:#1A241F; --ink:#EEF2EE; --ink-2:#B9C4BC; --muted:#7E8A82; --line:#2A3630;
+  --sage:#8FAC95; --sage-ink:#CFE0D2; --sage-soft:#243229; --clay:#E08A63; --clay-soft:#3A2A22;
+  --good:#6CC08F; --warn:#E0B35C; --bad:#E07A7A; color-scheme:dark }
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 var(--body);margin:0;padding-block:0 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1040px;margin:0 auto}
+header.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;padding-block:40px 24px;border-bottom:2px solid var(--ink)}
+.eyebrow{font:600 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--sage-ink)}
+h1{font:700 clamp(34px,5vw,52px)/1.02 var(--display);margin:8px 0 0;letter-spacing:-.01em;text-wrap:balance}
+h2{font:700 clamp(24px,3vw,30px)/1.15 var(--display);margin:0 0 6px;text-wrap:balance}
+h3{font:700 18px/1.3 var(--body);margin:0 0 6px}
+p{margin:0}
+.lede{max-width:72ch;color:var(--ink-2);font-size:17px}
+section{padding-block:36px;border-bottom:1px solid var(--line)}
+section>.wrap{display:grid;gap:18px}
+.stamp{font:600 12px var(--mono);color:var(--muted);text-align:right}
+.stamp b{display:block;color:var(--ink);font-size:14px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);padding:14px 16px;min-width:0}
+.kpi .lab{font:600 11px/1.2 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.kpi .val{font:700 28px/1.1 var(--display);margin-top:6px;font-variant-numeric:tabular-nums}
+.kpi .sub{font-size:13px;color:var(--ink-2);margin-top:4px}
+.note{background:var(--clay-soft);border-left:4px solid var(--clay);padding:12px 16px;max-width:72ch;font-size:15px}
+.tbl{overflow-x:auto;border:1px solid var(--line);background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:14.5px}
+th,td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{font:600 11.5px/1.2 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--bg)}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;font-family:var(--mono);font-size:13.5px}
+.chip{display:inline-block;font:600 11.5px/1 var(--mono);padding:5px 8px;border-radius:999px;background:var(--sage-soft);color:var(--sage-ink);white-space:nowrap}
+.chip.tof{background:var(--sage-soft);color:var(--sage-ink)}
+.chip.clay{background:var(--clay-soft);color:var(--clay)}
+.chip.good{background:color-mix(in srgb,var(--good) 18%,transparent);color:var(--good)}
+.chip.warn{background:color-mix(in srgb,var(--warn) 18%,transparent);color:var(--warn)}
+.chip.bad{background:color-mix(in srgb,var(--bad) 18%,transparent);color:var(--bad)}
+.bars{display:grid;gap:10px;max-width:720px}
+.bar{display:grid;grid-template-columns:150px 1fr 64px;align-items:center;gap:12px;font-size:14px}
+.bar .track{height:14px;background:var(--line);position:relative;min-width:0}
+.bar .fill{position:absolute;inset:0 auto 0 0;background:var(--sage);border-radius:0 4px 4px 0}
+.bar .pct{font:600 13px var(--mono);text-align:right;font-variant-numeric:tabular-nums}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);padding:16px 18px;min-width:0}
+.card ul{margin:8px 0 0;padding-left:18px}
+.card li{margin:4px 0}
+.card .tag{font:600 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.steps{counter-reset:s;display:grid;gap:10px;max-width:72ch}
+.steps div{display:grid;grid-template-columns:34px 1fr;gap:10px;align-items:start}
+.steps div::before{counter-increment:s;content:counter(s);font:700 14px var(--mono);color:var(--clay);border:1.5px solid var(--clay);width:28px;height:28px;display:grid;place-items:center;border-radius:50%}
+pre.mermaid{background:var(--surface);border:1px solid var(--line);padding:12px;overflow-x:auto;margin:0}
+code{font:600 13px var(--mono);background:var(--sage-soft);color:var(--sage-ink);padding:1px 5px;border-radius:3px}
+.foot{font-size:13px;color:var(--muted);padding-top:24px}
+a{color:var(--sage-ink)}
+@media (max-width:560px){ .bar{grid-template-columns:110px 1fr 56px} }
+@media (prefers-reduced-motion:no-preference){ .bar .fill{transition:width .4s ease} }
+</style>
+
+<div class="wrap">
+<header class="top">
+  <div>
+    <div class="eyebrow">Discos únicamente · Spanish-first · Meta + TikTok</div>
+    <h1>Pausa Media Plan</h1>
+    <p class="lede" style="margin-top:10px">Full-funnel buying map for the <b>Disco Pausa</b> ($34) and <b>Pack Familiar</b> ($79). Built to sell from day one with the creative already produced: 12 stills, 8 motion clips, 5 Ana voiceovers. Nothing here is live; you import it into GoHighLevel and Ads Manager yourself.</p>
+  </div>
+  <div class="stamp">Version 1 · 25 Oct 2026<b>Launch-ready</b></div>
+</header>
+
+<section>
+<div class="wrap">
+  <div class="eyebrow">Unit economics the plan is built on</div>
+  <div class="kpis">
+    <div class="kpi"><div class="lab">Price</div><div class="val">$34</div><div class="sub">single disc · Pack Familiar $79</div></div>
+    <div class="kpi"><div class="lab">Target AOV</div><div class="val">$46</div><div class="sub">with $19 bump taken by ~35%</div></div>
+    <div class="kpi"><div class="lab">Landed COGS</div><div class="val">$7.20</div><div class="sub">disc $4.10 · mailer $0.60 · USPS $1.90 · card/adhesive $0.60</div></div>
+    <div class="kpi"><div class="lab">Break-even CPA</div><div class="val">$33</div><div class="sub">AOV − COGS − fees (3.4%)</div></div>
+    <div class="kpi"><div class="lab">Target CPA</div><div class="val">$18</div><div class="sub">blended, all stages</div></div>
+    <div class="kpi"><div class="lab">Target ROAS</div><div class="val">2.5×</div><div class="sub">floor 1.6× in week 1</div></div>
+  </div>
+  <p class="note">COGS and AOV are planning assumptions. Replace them with the real supplier quote before you trust the CPA ceilings; everything downstream (budgets, kill rules) recalculates from these four numbers.</p>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <h2>Funnel map</h2>
+  <p class="lede">Five stages. Each one has its own objective, audience, creative set and budget share. Creative IDs refer to <code>ads/copy-and-captions.md</code> and the asset files in <code>assets/</code>.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Stage</th><th>Job</th><th>Audience</th><th>Creative</th><th>Objective / placement</th><th class="num">Share</th></tr></thead>
+    <tbody>
+      <tr><td><span class="chip tof">TOF · cold</span></td><td>Stop the scroll with the physical trick (tap to unlock) and the dinner-table feeling.</td><td>Spanish-dominant parents 28–50, kids 8–16, US Hispanic DMAs (TX, CA, FL, AZ, NV, IL, NY/NJ). Broad + 2 interest stacks (crianza, escuela, familia). Lookalike 1–3% of buyers once ≥100 purchases.</td><td>Video 1 “La cena”, Video 2 “La tarea”, Static A, Static D, Carousel “Cómo funciona”</td><td>Meta Sales (purchase), Advantage+ placements; TikTok Spark Ads on Video 1 & 2</td><td class="num">55%</td></tr>
+      <tr><td><span class="chip">MOF · warm</span></td><td>Answer “does it spy?” and “will my kid beat it?”. Testimonial tone.</td><td>Engaged 30 d (video 50%+, IG/FB engagers), site visitors 30 d who did not reach checkout, email list, Messenger contacts.</td><td>Video 2 “La tarea”, Static C, Caption 4 “No espía” as a static, Carousel</td><td>Meta Sales; Reels + Feed + Stories; TikTok retargeting of video viewers</td><td class="num">15%</td></tr>
+      <tr><td><span class="chip clay">BOF · hot</span></td><td>Family story + envelope + guarantee. Close.</td><td>Add-to-cart / checkout 7 d, product page viewers 14 d, landing video 75%+ viewers.</td><td>Video 3 “Somos familia”, Static E “Llega en un sobre”, Static F</td><td>Meta Sales; manual placements Feed/Reels/Stories; frequency cap 4 / 7 d</td><td class="num">15%</td></tr>
+      <tr><td><span class="chip clay">Retargeting · DPA</span></td><td>Price + guarantee reminder. Recover carts.</td><td>Cart abandoners 1–7 d; checkout starters 1–3 d. Exclude purchasers 30 d.</td><td>Video 4 “El disco sigue aquí” (10 s), Static E; SMS/email sequence runs in parallel</td><td>Meta Sales (catalog not required: one SKU); Stories + Reels</td><td class="num">10%</td></tr>
+      <tr><td><span class="chip good">Retention · referral</span></td><td>Second disc for abuela / car, Pack Comunidad gift, reviews.</td><td>Purchasers 7–60 d. Engaged purchasers (opened Day-7 email).</td><td>Caption 7 “Abuela”, Pack Comunidad static (reuse flat-lay image 9)</td><td>Email/SMS first; Meta Sales at 5% only after month 2</td><td class="num">5%</td></tr>
+    </tbody>
+  </table></div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <h2>Budget scenarios</h2>
+  <div class="grid2">
+    <div class="card">
+      <div class="tag">Starter · $50/day · $1,500/mo</div>
+      <h3>Prove the creative, find the CPA</h3>
+      <div class="bars" style="margin-top:10px">
+        <div class="bar"><span>TOF</span><div class="track"><div class="fill" style="width:60%"></div></div><span class="pct">$900</span></div>
+        <div class="bar"><span>MOF</span><div class="track"><div class="fill" style="width:13%"></div></div><span class="pct">$200</span></div>
+        <div class="bar"><span>BOF</span><div class="track"><div class="fill" style="width:13%"></div></div><span class="pct">$200</span></div>
+        <div class="bar"><span>Retargeting</span><div class="track"><div class="fill" style="width:10%"></div></div><span class="pct">$150</span></div>
+        <div class="bar"><span>Retention</span><div class="track"><div class="fill" style="width:4%"></div></div><span class="pct">$50</span></div>
+      </div>
+      <ul>
+        <li>Expected at $0.55 CPC, 2.8% landing CVR: <b>~75 orders</b>, CPA ≈ $20, revenue ≈ $3,450.</li>
+        <li>Meta only for the first 14 days. Add TikTok Spark on day 15 with the winning video.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="tag">Scale · $170/day · $5,000/mo</div>
+      <h3>Once CPA ≤ $22 holds for 7 days</h3>
+      <div class="bars" style="margin-top:10px">
+        <div class="bar"><span>TOF</span><div class="track"><div class="fill" style="width:55%"></div></div><span class="pct">$2,750</span></div>
+        <div class="bar"><span>MOF</span><div class="track"><div class="fill" style="width:15%"></div></div><span class="pct">$750</span></div>
+        <div class="bar"><span>BOF</span><div class="track"><div class="fill" style="width:15%"></div></div><span class="pct">$750</span></div>
+        <div class="bar"><span>Retargeting</span><div class="track"><div class="fill" style="width:10%"></div></div><span class="pct">$500</span></div>
+        <div class="bar"><span>Retention</span><div class="track"><div class="fill" style="width:5%"></div></div><span class="pct">$250</span></div>
+      </div>
+      <ul>
+        <li>Expected: <b>~260 orders</b>, CPA ≈ $19, revenue ≈ $12,000, contribution after COGS and ads ≈ $5,100.</li>
+        <li>Split TOF 70% Meta / 30% TikTok. Raise budgets 20% every 3 days, never more.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <h2>Account structure (Meta)</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Campaign</th><th>Ad sets</th><th>Ads inside</th><th>Budget</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td><b>PAUSA · TOF · Prospecting</b> (Sales, CBO)</td><td>1. Broad ES, parents 28–50 · 2. Interests: crianza + escuela + familia · 3. LAL 1–3% buyers (add later)</td><td>Video 1, Video 2, Static A, Static D, Carousel (5 ads per set, same 5 in every set)</td><td>55%</td><td>Language targeting: Spanish. Advantage+ placements on. Exclude purchasers 60 d and site visitors 30 d.</td></tr>
+      <tr><td><b>PAUSA · MOF · Engaged</b> (Sales, CBO)</td><td>1. Video viewers 50% 30 d + engagers · 2. Site visitors 30 d (no checkout)</td><td>Video 2, Static C, “No espía” static, Carousel</td><td>15%</td><td>Frequency cap 3 / 7 d.</td></tr>
+      <tr><td><b>PAUSA · BOF · Close</b> (Sales, ABO)</td><td>1. Product viewers 14 d · 2. Landing video 75% viewers 14 d</td><td>Video 3, Static E, Static F</td><td>15%</td><td>Manual placements: Feed, Reels, Stories. Frequency cap 4 / 7 d.</td></tr>
+      <tr><td><b>PAUSA · RTG · Carts</b> (Sales, ABO)</td><td>1. ATC/IC 1–7 d</td><td>Video 4 (10 s), Static E</td><td>10%</td><td>Runs with the SMS/email cart sequence from GHL.</td></tr>
+      <tr><td><b>PAUSA · RET · Buyers</b> (Sales, ABO)</td><td>1. Purchasers 7–60 d</td><td>Abuela static, Pack Comunidad static</td><td>5%</td><td>Start month 2.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="grid2">
+    <div class="card"><div class="tag">TikTok</div><h3>Spark Ads only</h3><ul><li>Post Video 1 and Video 2 organically on the brand account, then boost as Spark Ads (Sales objective, Complete Payment).</li><li>Audience: Spanish language, 25–54, US. Let the algorithm find parents; the hook does the targeting.</li><li>Captions 6 and 8 as the organic copy.</li></ul></div>
+    <div class="card"><div class="tag">Google</div><h3>Brand search only, $5/day</h3><ul><li>Keywords: <code>pausa disco</code>, <code>disco pausa teléfono</code>, <code>pausa app niños</code>.</li><li>Nothing else on Google until month 3; demand is created on social, not searched.</li></ul></div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <h2>Creative matrix</h2>
+  <p class="lede">Every asset mapped to its stage, format and the file it lives in. Produce the 9:16 cuts first; 1:1 and 4:5 are crops.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>ID</th><th>Asset</th><th>Stage</th><th>Format</th><th>Source files</th><th>Hook (first line)</th></tr></thead>
+    <tbody>
+      <tr><td class="num">V1</td><td>“La cena” · 22 s · Ana VO</td><td>TOF</td><td>9:16, 4:5</td><td>clips 3, 4, 2, 5 · <code>audio/vo1-cena.mp3</code></td><td>¿Cuándo fue la última cena sin teléfonos?</td></tr>
+      <tr><td class="num">V2</td><td>“La tarea” · 20 s · Ana VO</td><td>TOF / MOF</td><td>9:16</td><td>clips 8, 2, 6 · <code>audio/vo2-tarea.mp3</code></td><td>Mi hijo “hacía la tarea”.</td></tr>
+      <tr><td class="num">V3</td><td>“Somos familia” · 26 s · Ana VO</td><td>BOF</td><td>9:16, 1:1</td><td>clips 5, 7, 1, 6 · <code>audio/vo3-familia.mp3</code></td><td>No somos una empresa de tecnología.</td></tr>
+      <tr><td class="num">V4</td><td>“Sigue aquí” · 10 s · Ana VO</td><td>Retargeting</td><td>9:16</td><td>clip 1, image 7 · <code>audio/vo5-retargeting.mp3</code></td><td>El disco sigue aquí.</td></tr>
+      <tr><td class="num">V5</td><td>Landing explainer · 52 s · Ana VO</td><td>Landing page</td><td>16:9, 9:16</td><td>clips 1–8 · <code>audio/vo4-landing.mp3</code></td><td>Si estás aquí, ya probaste de todo.</td></tr>
+      <tr><td class="num">S-A</td><td>Hero disc</td><td>TOF</td><td>1:1, 4:5</td><td>image 01</td><td>Un toque. Una pausa. Una familia presente.</td></tr>
+      <tr><td class="num">S-B</td><td>Dinner tray</td><td>TOF</td><td>4:5</td><td>image 04</td><td>La cena vuelve a ser cena.</td></tr>
+      <tr><td class="num">S-C</td><td>Homework</td><td>MOF</td><td>4:5</td><td>image 05</td><td>De 4 a 7, la tarea se termina.</td></tr>
+      <tr><td class="num">S-D</td><td>Before / after</td><td>TOF</td><td>4:5</td><td>image 06</td><td>1:00 a.m. vs. dormido.</td></tr>
+      <tr><td class="num">S-E</td><td>Envelope</td><td>BOF / RTG</td><td>1:1, 9:16</td><td>image 07</td><td>Llega en un sobre. Se instala en 5 minutos.</td></tr>
+      <tr><td class="num">S-F</td><td>Family portrait</td><td>BOF</td><td>4:5</td><td>image 11</td><td>Somos una familia, no una corporación.</td></tr>
+      <tr><td class="num">C-1</td><td>Carousel “Cómo funciona” (5 cards)</td><td>TOF / MOF</td><td>1:1</td><td>images 07, 09, 05, 03, 04</td><td>Así funciona Pausa en 5 pasos</td></tr>
+      <tr><td class="num">S-G</td><td>Abuela</td><td>Retention</td><td>4:5</td><td>image 08</td><td>Uno para casa de la abuela.</td></tr>
+    </tbody>
+  </table></div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <h2>Funnel flow and tracking</h2>
+  <pre class="mermaid">
+flowchart LR
+  A[Ad click] --> B[Landing · video + oferta]
+  B -->|Comprar| C[Sales page · Disco $34 / Pack $79]
+  C --> D[Checkout · bump +$19]
+  D --> E[Gracias · upsell Pack Comunidad $39]
+  E --> F[PDF Programa + app]
+  B -. 30 d .-> M[MOF retargeting]
+  C -. 14 d .-> H[BOF close]
+  D -. 1–7 d .-> R[Cart retargeting + SMS]
+  F -. día 7 .-> T[Email reporte + referido]
+  </pre>
+  <div class="grid2">
+    <div class="card"><div class="tag">Pixels and events</div><ul>
+      <li>Meta Pixel + Conversions API through GoHighLevel (Settings → Integrations). Events: <code>ViewContent</code> on landing, <code>AddToCart</code> on sales page CTA, <code>InitiateCheckout</code>, <code>Purchase</code> with value.</li>
+      <li>TikTok Pixel: <code>ViewContent</code>, <code>AddToCart</code>, <code>CompletePayment</code>.</li>
+      <li>Custom event <code>VideoWatched75</code> fired from the landing video player (already wired in <code>landing/index.html</code>).</li>
+    </ul></div>
+    <div class="card"><div class="tag">UTM convention</div><ul>
+      <li><code>utm_source=meta|tiktok</code> · <code>utm_medium=paid</code> · <code>utm_campaign=tof|mof|bof|rtg|ret</code> · <code>utm_content=V1|S-A|C-1…</code></li>
+      <li>GHL: map <code>utm_content</code> to a contact field so the Day-7 email can reference the ad they came from.</li>
+    </ul></div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <h2>Launch calendar (first 4 weeks)</h2>
+  <div class="steps">
+    <div><div><b>Week 0 · build</b> — Import landing, sales, checkout and thank-you pages into GHL. Install pixels. Upload 12 stills and the 5 cut videos. Create audiences (they populate from day 1).</div></div>
+    <div><div><b>Week 1 · $50/day, TOF only</b> — 1 CBO campaign, 2 ad sets (Broad, Interests), 5 ads each. Judge nothing before 50 clicks per ad. Kill any ad above $1.10 CPC or below 1.5% CTR after 1,500 impressions.</div></div>
+    <div><div><b>Week 2 · add MOF + RTG</b> — Turn on MOF (15%) and cart retargeting (10%) once 300 site visitors exist. Start the SMS cart sequence. Duplicate the winning TOF ad into TikTok Spark.</div></div>
+    <div><div><b>Week 3 · BOF + first scale</b> — Turn on BOF close. If blended CPA ≤ $22 for 7 days, raise daily budget 20%. Refresh one TOF hook (use hooks 9, 13, 18).</div></div>
+    <div><div><b>Week 4 · read + decide</b> — Build LAL 1% from buyers if ≥100 purchases. Launch retention email. Move to the Scale scenario if ROAS ≥ 2.2× and refund rate &lt; 5%.</div></div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <h2>KPI targets and kill rules</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Metric</th><th class="num">Target</th><th class="num">Watch</th><th class="num">Kill / fix</th><th>Where</th></tr></thead>
+    <tbody>
+      <tr><td>Hook rate (3 s views / impressions)</td><td class="num"><span class="chip good">≥ 30%</span></td><td class="num"><span class="chip warn">22–30%</span></td><td class="num"><span class="chip bad">&lt; 22%</span></td><td>Replace first line; use another hook from the 20.</td></tr>
+      <tr><td>CTR (link)</td><td class="num"><span class="chip good">≥ 1.8%</span></td><td class="num"><span class="chip warn">1.2–1.8%</span></td><td class="num"><span class="chip bad">&lt; 1.2%</span></td><td>Creative problem; swap visual, keep VO.</td></tr>
+      <tr><td>CPC</td><td class="num"><span class="chip good">≤ $0.60</span></td><td class="num"><span class="chip warn">$0.60–1.10</span></td><td class="num"><span class="chip bad">&gt; $1.10</span></td><td>Audience too narrow; go broad.</td></tr>
+      <tr><td>Landing → sales page</td><td class="num"><span class="chip good">≥ 45%</span></td><td class="num"><span class="chip warn">30–45%</span></td><td class="num"><span class="chip bad">&lt; 30%</span></td><td>Video not playing or offer unclear; check page speed first.</td></tr>
+      <tr><td>Landing CVR (purchase)</td><td class="num"><span class="chip good">≥ 2.8%</span></td><td class="num"><span class="chip warn">1.8–2.8%</span></td><td class="num"><span class="chip bad">&lt; 1.8%</span></td><td>Test guarantee placement and Pack default.</td></tr>
+      <tr><td>Blended CPA</td><td class="num"><span class="chip good">≤ $18</span></td><td class="num"><span class="chip warn">$18–26</span></td><td class="num"><span class="chip bad">&gt; $33</span></td><td>$33 is break-even. Above it, pause scale and reset to Starter.</td></tr>
+      <tr><td>Bump take rate</td><td class="num"><span class="chip good">≥ 35%</span></td><td class="num"><span class="chip warn">20–35%</span></td><td class="num"><span class="chip bad">&lt; 20%</span></td><td>Rewrite bump copy (“para casa de la abuela”).</td></tr>
+      <tr><td>Refund rate (30 d)</td><td class="num"><span class="chip good">&lt; 4%</span></td><td class="num"><span class="chip warn">4–7%</span></td><td class="num"><span class="chip bad">&gt; 7%</span></td><td>Onboarding problem; check the PDF and Day-1 email.</td></tr>
+    </tbody>
+  </table></div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <h2>What stays out of this plan, on purpose</h2>
+  <div class="grid2">
+    <div class="card"><h3>Larger products</h3><p>Lockboxes, routers, bundles. Nothing here advertises them. If a parent asks, the reply is: start with the disc.</p></div>
+    <div class="card"><h3>Claims we never make</h3><p>Reading messages, tracking location, “100% unbreakable”. Pausa blocks apps on a schedule and reports time. That is the honest, defensible claim.</p></div>
+    <div class="card"><h3>Discounting</h3><p>No coupon codes in month 1. The Pack Familiar is the only price lever; it protects margin and raises AOV.</p></div>
+  </div>
+  <p class="foot">Companion files: <code>landing/index.html</code>, <code>funnel/sales.html</code>, <code>funnel/checkout.html</code>, <code>funnel/gracias.html</code>, <code>pdf/programa-pausa.pdf</code>, <code>ads/copy-and-captions.md</code>, <code>brand/brand.md</code>. Everything is static HTML you paste into a GHL custom-code page.</p>
+</div>
+</section>
+</div>

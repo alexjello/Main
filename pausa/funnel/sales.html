@@ -1,0 +1,180 @@
+<title>Disco Pausa</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito:wght@400;600;700;800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: long-form sales page; product left, sticky order box right on desktop; order box becomes the bottom section on phones. */
+:root{
+  --bg:#F7F3EC; --paper:#FFFFFF; --ink:#1F2A24; --ink-2:#4A5650; --muted:#8A948E; --line:#E4DED3;
+  --sage:#6E8B74; --sage-ink:#3E5A45; --sage-soft:#DCE6DD; --clay:#C96F4A; --clay-ink:#9A4E2E; --clay-soft:#F6E2D7;
+  --display:"Fraunces",Georgia,serif; --body:"Nunito","Segoe UI",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --bg:#121A16; --paper:#1A241F; --ink:#EEF2EE; --ink-2:#B9C4BC; --muted:#7E8A82; --line:#2A3630; --sage:#8FAC95; --sage-ink:#CFE0D2; --sage-soft:#243229; --clay:#E08A63; --clay-ink:#F0B394; --clay-soft:#3A2A22; color-scheme:dark } }
+:root[data-theme="dark"]{ --bg:#121A16; --paper:#1A241F; --ink:#EEF2EE; --ink-2:#B9C4BC; --muted:#7E8A82; --line:#2A3630; --sage:#8FAC95; --sage-ink:#CFE0D2; --sage-soft:#243229; --clay:#E08A63; --clay-ink:#F0B394; --clay-soft:#3A2A22; color-scheme:dark }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--body)}
+img{max-width:100%;display:block}
+.in{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:16px;border-bottom:1px solid var(--line)}
+.wordmark{font:700 24px/1 var(--display);display:flex;align-items:center;gap:8px}
+.wordmark .disc{width:20px;height:20px;border-radius:50%;background:var(--sage);display:inline-grid;place-items:center}
+.wordmark .disc::before{content:"";width:5px;height:8px;border-left:2px solid var(--bg);border-right:2px solid var(--bg)}
+.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--clay)}
+h1{font:600 clamp(32px,4.8vw,50px)/1.05 var(--display);letter-spacing:-.012em;margin:10px 0 14px;text-wrap:balance}
+h2{font:600 clamp(24px,3.2vw,32px)/1.15 var(--display);margin:0 0 12px;text-wrap:balance}
+h3{font:700 18px/1.3 var(--body);margin:0 0 6px}
+p{margin:0 0 12px;max-width:62ch}
+.lede{font-size:19px;color:var(--ink-2)}
+.layout{display:grid;grid-template-columns:1fr 380px;gap:40px;align-items:start;padding-block:36px 64px}
+.main{display:grid;gap:44px;min-width:0}
+.side{position:sticky;top:calc(16px + env(safe-area-inset-top,0px))}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:800 16px/1 var(--body);padding:16px 22px;border-radius:999px;text-decoration:none;border:2px solid transparent;cursor:pointer;width:100%}
+.btn.primary{background:var(--clay);color:#FFF8F3}
+.btn.primary:hover{background:var(--clay-ink)}
+.btn:focus-visible{outline:3px solid var(--sage);outline-offset:3px}
+.hero img{border-radius:14px;aspect-ratio:1;object-fit:cover;width:100%;max-width:560px}
+.list{display:grid;gap:12px;padding:0;margin:0;list-style:none}
+.list li{display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start}
+.list li::before{content:"";width:20px;height:20px;border-radius:50%;background:var(--sage-soft);display:block;margin-top:3px;background-image:linear-gradient(var(--sage-ink),var(--sage-ink)),linear-gradient(var(--sage-ink),var(--sage-ink));background-size:2px 9px,2px 9px;background-position:7px 5px,11px 5px;background-repeat:no-repeat}
+.scenes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.scene{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px;min-width:0}
+.scene .t{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.scene p{font-size:15.5px;color:var(--ink-2);margin:0}
+.mech{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.mech div{border-top:3px solid var(--sage);padding-top:10px}
+.mech b{font:600 22px var(--display);display:block;margin-bottom:4px}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+.gal img{border-radius:10px;aspect-ratio:4/5;object-fit:cover;width:100%}
+/* order box */
+.box{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px;display:grid;gap:14px}
+.box h3{font:600 22px var(--display)}
+.opt{display:grid;grid-template-columns:24px 1fr auto;gap:12px;align-items:center;border:2px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer}
+.opt:has(input:checked){border-color:var(--clay);background:var(--clay-soft)}
+.opt input{accent-color:var(--clay);width:18px;height:18px;margin:0}
+.opt .n{font-weight:800}
+.opt .d{font-size:13.5px;color:var(--ink-2)}
+.opt .p{font:600 18px var(--mono);font-variant-numeric:tabular-nums}
+.bump{display:grid;grid-template-columns:24px 1fr;gap:12px;align-items:start;border:2px dashed var(--clay);border-radius:12px;padding:12px 14px;background:var(--bg);cursor:pointer}
+.bump input{accent-color:var(--clay);width:18px;height:18px;margin:4px 0 0}
+.bump .n{font-weight:800}
+.bump .d{font-size:14px;color:var(--ink-2)}
+.tot{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--line);padding-top:12px;font-variant-numeric:tabular-nums}
+.tot b{font:600 30px var(--display)}
+.fine{font-size:13px;color:var(--muted);text-align:center;margin:0}
+.badges{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--ink-2)}
+.badges span::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--sage);margin-right:7px}
+.guar{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;background:var(--clay-soft);border-radius:14px;padding:20px}
+.guar .seal{width:76px;height:76px;border-radius:50%;border:3px solid var(--clay);display:grid;place-items:center;font:700 12.5px/1.1 var(--display);text-align:center;color:var(--clay-ink)}
+details{border-top:1px solid var(--line);padding:12px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font:700 16.5px var(--body);list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";font:500 22px var(--mono);color:var(--clay)}
+details[open] summary::after{content:"–"}
+details p{margin-top:8px;color:var(--ink-2);font-size:15.5px}
+footer{padding-block:24px;font-size:13.5px;color:var(--muted);border-top:1px solid var(--line)}
+.mobilebar{position:fixed;left:0;right:0;bottom:0;padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:var(--paper);border-top:1px solid var(--line);display:none;justify-content:space-between;align-items:center;gap:12px;z-index:20}
+.mobilebar .btn{width:auto}
+@media (max-width:900px){ .layout{grid-template-columns:1fr} .side{position:static} .mobilebar{display:flex} body{padding-bottom:84px} }
+</style>
+
+<div class="in">
+<nav><div class="wordmark"><span class="disc"></span>Pausa</div><span class="eyebrow" style="color:var(--muted)">Envío gratis · Garantía 30 días</span></nav>
+</div>
+
+<div class="in layout">
+<div class="main">
+
+  <section class="hero">
+    <div class="eyebrow">Disco Pausa · lo único que necesitas</div>
+    <h1>El disco que devuelve la cena, la tarea y el sueño a tu casa.</h1>
+    <p class="lede">Un disco de cerámica del tamaño de un posavasos. Lo pones en la cocina. Las apps que elijas se apagan a la hora que elijas, y solo vuelven cuando el teléfono lo toca. La app es gratis. El disco llega en un sobre.</p>
+    <img src="../assets/images/09-flatlay-pack.jpg" alt="Tres discos Pausa, el teléfono con la app y la guía familiar sobre lino">
+  </section>
+
+  <section>
+    <h2>Qué recibes en el sobre</h2>
+    <ul class="list">
+      <li><div><b>El Disco Pausa</b> (o tres, en el Pack Familiar). Cerámica mate, 8 cm, 6 mm. No necesita batería ni carga. Dura años.</div></li>
+      <li><div><b>Adhesivo de montaje</b> para la pared de la cocina o la repisa de la entrada. También funciona suelto.</div></li>
+      <li><div><b>Tarjeta de inicio</b> con el código QR de la app y los tres pasos para el primer día.</div></li>
+      <li><div><b>La Guía Familiar Pausa</b> en PDF: cómo presentarlo a tus hijos sin pelea, qué horarios funcionan por edad, y el plan de 30 días.</div></li>
+      <li><div><b>La app Pausa</b>, gratis para siempre, iPhone y Android. Sin mensualidad, sin cuenta de pago.</div></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Por qué funciona cuando las apps no</h2>
+    <div class="mech">
+      <div><b>Es físico</b>Un código se adivina o se pide. Un disco hay que ir a buscarlo. El límite deja de depender de tu memoria.</div>
+      <div><b>Es visible</b>Tus hijos saben que existe y dónde está. No es vigilancia escondida; es una regla de la casa, igual para todos.</div>
+      <div><b>Es tuyo</b>Los horarios y las apps se cambian solo desde tu teléfono, con tu PIN. El reporte semanal te llega a ti.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tres tardes con Pausa</h2>
+    <p class="lede">Así se ve en una casa real. Son escenas de cómo lo usan las familias, para que te imagines la tuya.</p>
+    <div class="scenes">
+      <div class="scene"><div class="t">Martes · 4:00 pm</div><p>Las apps se apagan solas. Tu hijo suspira, cierra el teléfono y abre el cuaderno. A las 6:40 viene a la cocina, toca el disco y te pregunta qué hay de cenar. No hubo discusión porque no hubo nadie con quien discutir.</p></div>
+      <div class="scene"><div class="t">Viernes · 7:30 pm</div><p>Cena. Los tres teléfonos están boca abajo en la bandeja junto al disco. Nadie los tocó porque hasta las 8:30 no sirve de nada tocarlos. Tu hija cuenta algo de la escuela que no habías escuchado en semanas.</p></div>
+      <div class="scene"><div class="t">Domingo · 10:00 pm</div><p>El disco está en tu mesa de noche. A las 10 TikTok se apagó en el cuarto de tu hijo. Para encenderlo tendría que cruzar el pasillo y entrar a tu cuarto. No viene. Duerme. El lunes se levanta sin pelear.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Un disco para cada lugar que quieres recuperar</h2>
+    <div class="gal">
+      <img src="../assets/images/01-hero-disco.jpg" alt="Disco en la cocina">
+      <img src="../assets/images/10-entrada-9x16.jpg" alt="Disco en la entrada">
+      <img src="../assets/images/06-antes-despues.jpg" alt="Disco en la mesa de noche">
+      <img src="../assets/images/08-abuela.jpg" alt="Disco en casa de la abuela">
+    </div>
+    <p style="margin-top:12px;color:var(--ink-2)">La cocina para la tarea y la cena. La entrada para cuando llegan de la escuela. Tu mesa de noche para dormir. Y uno más para casa de la abuela, que los cuida por la tarde y no quiere pelear con apps.</p>
+  </section>
+
+  <section class="guar">
+    <div class="seal">30 días<br>garantía</div>
+    <div><h3>Si en 30 días no cenan juntos más seguido, te devolvemos el dinero.</h3><p style="margin:0">Sin preguntas. Te quedas con el disco. Nos escribes y una persona de nuestra familia te responde.</p></div>
+  </section>
+
+  <section>
+    <h2>Preguntas antes de comprar</h2>
+    <details open><summary>¿Con qué teléfonos funciona?</summary><p>iPhone 7 o más nuevo y casi cualquier Android desde 2016 (los que tienen NFC, el chip del pago sin contacto). Un disco sirve para todos los teléfonos de la casa.</p></details>
+    <details><summary>¿Mi hijo puede desactivarlo?</summary><p>Los horarios se cambian solo desde tu teléfono con tu PIN. Si desinstala la app o reinicia el teléfono, te avisa. Y para desbloquear no hay código: hay que tocar el disco.</p></details>
+    <details><summary>¿Hay mensualidad?</summary><p>No. Pagas el disco una vez. La app es gratis para siempre.</p></details>
+    <details><summary>¿Lee mensajes o ve fotos?</summary><p>No. Pausa bloquea apps por horario y cuenta el tiempo. No lee contenido ni rastrea ubicación.</p></details>
+    <details><summary>¿Cuánto tarda en llegar?</summary><p>3 a 5 días en un sobre acolchado. Cabe en el buzón.</p></details>
+  </section>
+
+</div>
+
+<aside class="side">
+  <form class="box" id="order">
+    <div><div class="eyebrow">Tu pedido</div><h3 style="margin-top:6px">Elige tu Pausa</h3></div>
+    <label class="opt"><input type="radio" name="sku" value="disco" id="sku-disco"><div><div class="n">Disco Pausa</div><div class="d">1 disco · app gratis · guía PDF</div></div><div class="p">$34</div></label>
+    <label class="opt"><input type="radio" name="sku" value="pack" id="sku-pack" checked><div><div class="n">Pack Familiar</div><div class="d">3 discos · cocina, entrada, mesa de noche · ahorras $23</div></div><div class="p">$79</div></label>
+    <label class="bump"><input type="checkbox" name="bump" id="bump"><div><div class="n">Sí, agrega un disco extra por $19</div><div class="d">Para casa de la abuela, el carro o el cuarto de juegos. Solo con este pedido; dentro de la app cuesta $24.</div></div></label>
+    <div class="tot"><span>Total hoy</span><b id="total">$79</b></div>
+    <button class="btn primary" type="submit" id="buy">Continuar al pago</button>
+    <p class="fine">Envío gratis en sobre · 3–5 días · Garantía 30 días</p>
+    <div class="badges"><span>Pago seguro</span><span>Sin mensualidad</span><span>Negocio familiar</span></div>
+  </form>
+</aside>
+</div>
+
+<footer><div class="in">© Pausa · Negocio familiar · hola@pausa.family · Apoyamos a las familias que vienen detrás</div></footer>
+
+<div class="mobilebar"><span><b id="mtotal">$79</b> · envío gratis</span><a class="btn primary" href="#order">Elegir y pagar</a></div>
+
+<script>
+(function(){
+  var P={disco:34,pack:79}, BUMP=19;
+  var f=document.getElementById('order'), t=document.getElementById('total'), mt=document.getElementById('mtotal');
+  var q=new URLSearchParams(location.search); if(q.get('sku')==='disco'){ document.getElementById('sku-disco').checked=true; }
+  function calc(){ var sku=f.sku.value, tot=P[sku]+(f.bump.checked?BUMP:0); t.textContent='$'+tot; mt.textContent='$'+tot; return {sku:sku,bump:f.bump.checked,total:tot}; }
+  f.addEventListener('change',calc); calc();
+  function track(n,d){ try{ if(window.fbq) fbq('track',n,d||{}); if(window.ttq) ttq.track(n,d||{}); }catch(e){} }
+  f.addEventListener('submit',function(e){ e.preventDefault(); var o=calc(); track('InitiateCheckout',{value:o.total,currency:'USD',content_name:o.sku});
+    location.href='checkout.html?sku='+o.sku+'&bump='+(o.bump?1:0); });
+  track('ViewContent',{content_name:'Disco Pausa',value:34,currency:'USD'});
+})();
+</script>
