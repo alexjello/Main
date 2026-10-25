@@ -1,0 +1,45 @@
+# Pausa · links de todo el material
+
+## Artefactos (Claude)
+- Media plan: https://claude.ai/artifact/QSK38pJQYWkMPPhadxZQnm
+- Landing + sales + checkout + gracias: https://claude.ai/artifact/KBfLw97L8TLZS9FqMEawsZ
+- Ad creative board: https://claude.ai/artifact/ACn6LU81e25QcaXK2or5nb
+- Guía Familiar: https://claude.ai/artifact/LamAC9sX36ZhEeiE7Mnfzp
+- ElevenLabs flow (voces Ana + stills): https://elevenlabs.io/app/flows/ONdyhhCogJtcztV5RdCY
+- Repo: https://github.com/alexjello/Main/tree/claude/pausa-launch-kit/pausa
+
+## Videos UGC (lip-sync, 9:16)
+- ugc1-cena-25s (VO1): https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101825_86f946c4-4535-4b1d-9ab3-0b054e8f80f2.mp4
+- ugc2-tarea-23s (VO2): https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101826_1933ea8f-7049-4551-885e-b205b412cf54.mp4
+- ugc3-familia-30s (VO3): https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101825_e0d27459-4910-4382-8dc5-40445246a7ef.mp4
+- ugc4-sobre-12s (VO5): https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101826_6c69fdb7-8152-4085-8345-a9e5b90d61ba.mp4
+
+## Frames selfie UGC
+- ugc1-cena-selfie: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101730_046689a6-f58c-471d-a94c-28ac5781b390.png
+- ugc2-tarea-selfie: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101730_a69d43bd-c69e-450f-8cf9-6822f02f3fbe.png
+- ugc3-familia-selfie: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101729_7479527e-9a9c-4ec1-9ad0-a3761acfc222.png
+- ugc4-sobre-selfie: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101730_6d4c4170-49b1-41f6-ac59-a751c72525b7.png
+
+## Clips b-roll (5–6 s)
+- clip1-hero-pushin-6s: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095120_06c17f64-1177-47c8-bea9-11804b0890c9.mp4
+- clip2-hijo-toque-9x16-6s: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095120_ff9c7809-6325-4d0a-919a-f92e73b7b84c.mp4
+- clip3-cena-6s: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_bdd9356e-c527-469b-ba08-c9b598de16b7.mp4
+- clip4-mano-toque-5s: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_418fffb8-4b86-4534-92ca-c4354fb281cf.mp4
+- clip5-familia-sofa-5s: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_a48a71a1-c783-4f79-878c-7cbc426aae7f.mp4
+- clip6-sobre-unboxing-5s: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_c2547bd6-7029-4654-b668-493e9d011d3b.mp4
+- clip7-antes-despues-5s: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_7382ff3f-7908-4bb3-8cbf-9e7ba6701706.mp4
+- clip8-tarea-5s: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_baaee3e3-b070-4271-a0df-06798b823a8a.mp4
+
+## Stills
+- 01-hero-disco: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094654_33ea4eb1-5fb9-48e6-a2f0-6d12c44cee50.png
+- 02-mano-toque: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094654_c9c7c8ba-4c1d-4230-b358-cd4032d42b60.png
+- 03-hijo-cocina-9x16: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094653_15a2ffe2-6547-4130-92fe-36b7570d245c.png
+- 04-cena: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094653_900682dd-1840-4f6a-8c5e-403de3732c8a.png
+- 05-tarea: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094652_f4dc52b4-380a-4b9b-b74b-0b91e54c06d4.png
+- 06-antes-despues: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094653_11003cdd-4f31-44a3-8cad-360003c0863b.png
+- 07-sobre: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094655_f3756e71-92cc-4430-b485-3458063104bd.png
+- 08-abuela: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094653_7f7a6038-051a-46c1-a41f-5c90d917886d.png
+- 09-flatlay-pack: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094652_4873a080-0d19-436c-b860-dfff6b91c370.png
+- 10-entrada-9x16: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094655_88dae3ec-c16b-4ac2-a57c-3da5a01d8f48.png
+- 11-familia: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094654_976669d6-51fa-44d8-9b2d-de4bf324960c.png
+- 12-macro-sobre: https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094653_92830bf9-fb41-44ef-b58a-6e207138bd0e.png

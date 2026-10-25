@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pausa Descargas</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Nunito:wght@400;700;800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+:root{--bg:#F7F3EC;--paper:#fff;--ink:#1F2A24;--ink-2:#4A5650;--muted:#8A948E;--line:#E4DED3;--sage:#6E8B74;--clay:#C96F4A;--clay-ink:#9A4E2E}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121A16;--paper:#1A241F;--ink:#EEF2EE;--ink-2:#B9C4BC;--muted:#7E8A82;--line:#2A3630;--sage:#8FAC95;--clay:#E08A63;--clay-ink:#F0B394;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121A16;--paper:#1A241F;--ink:#EEF2EE;--ink-2:#B9C4BC;--muted:#7E8A82;--line:#2A3630;--sage:#8FAC95;--clay:#E08A63;--clay-ink:#F0B394;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Nunito,system-ui,sans-serif}
+.in{max-width:960px;margin:0 auto;padding:32px 16px 64px}
+h1{font:600 clamp(32px,5vw,48px)/1.05 Fraunces,Georgia,serif;margin:8px 0 10px}h2{font:600 26px/1.15 Fraunces,Georgia,serif;margin:6px 0 8px}
+p{color:var(--ink-2);max-width:64ch;margin:0 0 14px}
+.eyebrow{font:500 12px "JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--clay)}
+section{margin-top:44px}
+.list{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.list a{display:grid;grid-template-columns:1fr auto;gap:2px 12px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 14px;text-decoration:none;color:var(--ink)}
+.list a b{font-weight:800}.list a span{grid-column:1;font-size:13px;color:var(--muted)}.list a i{grid-row:1/3;font:800 13px Nunito;color:var(--clay);font-style:normal;white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+figure{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:10px;overflow:hidden}figure img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+figcaption{padding:8px 10px;font-size:12.5px;display:grid;gap:2px}figcaption a{color:var(--ink);font-weight:800;text-decoration:none;word-break:break-all}.full{color:var(--muted);text-decoration:none}a.full:hover{color:var(--clay)}
+.aud li{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 14px}.ar{display:grid;gap:8px}.ar audio{width:100%;max-width:520px}.ar a{color:var(--clay);font-weight:800;text-decoration:none;font-size:14px}
+.note{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--sage);border-radius:10px;padding:14px 16px;margin-top:18px}
+.note ol{margin:6px 0 0;padding-left:20px}
+.bundles{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 6px}
+.btn{display:inline-flex;align-items:center;font:800 15px Nunito;padding:12px 18px;border-radius:999px;background:var(--clay);color:#FFF8F3;text-decoration:none;border:2px solid var(--clay)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.busy,[data-dl].busy,[data-zip].busy{opacity:.55;pointer-events:none}
+#toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:999px;font-size:14px;display:none;z-index:9}
+</style></head><body><div class="in">
+<div class="eyebrow">Pausa · launch kit · archivos</div>
+<h1>Todo el material, para descargar.</h1>
+<p>Fotos, voces, estáticos UGC y la guía PDF están alojados en esta página. Los videos viven en el CDN de Higgsfield (links permanentes).</p>
+<div class="bundles"><a class="btn" href="#" data-zip="todo" data-name="pausa-todo.zip">Descargar todo (.zip)</a><a class="btn ghost" href="#" data-zip="fotos" data-name="pausa-fotos.zip">Solo fotos (.zip)</a><a class="btn ghost" href="#" data-zip="voces" data-name="pausa-voces-ana.zip">Solo voces (.zip)</a><a class="btn ghost" href="pdf/programa-pausa.pdf" data-dl>Guía PDF</a></div>
+<div class="note"><b>Para llevarlo a Drive › CLIENTS MAIN › Pausa</b><ol><li>Descarga lo que necesites desde aquí (o selecciona todo con el gestor de descargas del navegador).</li><li>Arrástralo a la subcarpeta correspondiente: 02 Ad creative (fotos, estáticos, videos), 04 Guía Familiar (PDF), 05 Voiceovers (MP3).</li><li>Los videos: abre el link, botón de descarga del reproductor, y arrastra a 02 Ad creative.</li></ol></div>
+<section><div class="eyebrow">01</div><h2>Videos UGC · listos para subtítulos</h2><p>Lip-sync 9:16 con la voz de Ana. Viven en el CDN de Higgsfield; el link es permanente. Clic derecho › Guardar enlace como, o abre y usa el botón de descarga del reproductor.</p><ul class="list">
+<li><a href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101825_86f946c4-4535-4b1d-9ab3-0b054e8f80f2.mp4" target="_blank" rel="noopener"><b>ugc1-cena-25s (VO1)</b><span>MP4 · 9:16 · Higgsfield CDN</span><i>Abrir</i></a></li>
+<li><a href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101826_1933ea8f-7049-4551-885e-b205b412cf54.mp4" target="_blank" rel="noopener"><b>ugc2-tarea-23s (VO2)</b><span>MP4 · 9:16 · Higgsfield CDN</span><i>Abrir</i></a></li>
+<li><a href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101825_e0d27459-4910-4382-8dc5-40445246a7ef.mp4" target="_blank" rel="noopener"><b>ugc3-familia-30s (VO3)</b><span>MP4 · 9:16 · Higgsfield CDN</span><i>Abrir</i></a></li>
+<li><a href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101826_6c69fdb7-8152-4085-8345-a9e5b90d61ba.mp4" target="_blank" rel="noopener"><b>ugc4-sobre-12s (VO5)</b><span>MP4 · 9:16 · Higgsfield CDN</span><i>Abrir</i></a></li>
+</ul></section>
+<section><div class="eyebrow">02</div><h2>Clips b-roll · 5–6 s</h2><p>Para montar las versiones V1–V4 con assets/build-videos.sh o en CapCut.</p><ul class="list">
+<li><a href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095120_06c17f64-1177-47c8-bea9-11804b0890c9.mp4" target="_blank" rel="noopener"><b>clip1-hero-pushin-6s</b><span>MP4 · Higgsfield CDN</span><i>Abrir</i></a></li>
+<li><a href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095120_ff9c7809-6325-4d0a-919a-f92e73b7b84c.mp4" target="_blank" rel="noopener"><b>clip2-hijo-toque-9x16-6s</b><span>MP4 · Higgsfield CDN</span><i>Abrir</i></a></li>
+<li><a href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_bdd9356e-c527-469b-ba08-c9b598de16b7.mp4" target="_blank" rel="noopener"><b>clip3-cena-6s</b><span>MP4 · Higgsfield CDN</span><i>Abrir</i></a></li>
+<li><a href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_418fffb8-4b86-4534-92ca-c4354fb281cf.mp4" target="_blank" rel="noopener"><b>clip4-mano-toque-5s</b><span>MP4 · Higgsfield CDN</span><i>Abrir</i></a></li>
+<li><a href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_a48a71a1-c783-4f79-878c-7cbc426aae7f.mp4" target="_blank" rel="noopener"><b>clip5-familia-sofa-5s</b><span>MP4 · Higgsfield CDN</span><i>Abrir</i></a></li>
+<li><a href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_c2547bd6-7029-4654-b668-493e9d011d3b.mp4" target="_blank" rel="noopener"><b>clip6-sobre-unboxing-5s</b><span>MP4 · Higgsfield CDN</span><i>Abrir</i></a></li>
+<li><a href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_7382ff3f-7908-4bb3-8cbf-9e7ba6701706.mp4" target="_blank" rel="noopener"><b>clip7-antes-despues-5s</b><span>MP4 · Higgsfield CDN</span><i>Abrir</i></a></li>
+<li><a href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_095103_baaee3e3-b070-4271-a0df-06798b823a8a.mp4" target="_blank" rel="noopener"><b>clip8-tarea-5s</b><span>MP4 · Higgsfield CDN</span><i>Abrir</i></a></li>
+</ul></section>
+<section><div class="eyebrow">03</div><h2>Fotos · stills y frames selfie</h2><p>JPG a 1024 px (alojados aquí, descarga directa). Los PNG originales a resolución completa están en el CDN, link a la derecha.</p><div class="grid">
+<figure><a href="assets/images/01-hero-disco.jpg" data-dl><img src="assets/images/01-hero-disco.jpg" alt="01-hero-disco" loading="lazy"></a><figcaption><a href="assets/images/01-hero-disco.jpg" data-dl>01-hero-disco.jpg</a><a class="full" href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094654_33ea4eb1-5fb9-48e6-a2f0-6d12c44cee50.png" target="_blank" rel="noopener">PNG original</a></figcaption></figure>
+<figure><a href="assets/images/02-mano-toque.jpg" data-dl><img src="assets/images/02-mano-toque.jpg" alt="02-mano-toque" loading="lazy"></a><figcaption><a href="assets/images/02-mano-toque.jpg" data-dl>02-mano-toque.jpg</a><a class="full" href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094654_c9c7c8ba-4c1d-4230-b358-cd4032d42b60.png" target="_blank" rel="noopener">PNG original</a></figcaption></figure>
+<figure><a href="assets/images/03-hijo-cocina-9x16.jpg" data-dl><img src="assets/images/03-hijo-cocina-9x16.jpg" alt="03-hijo-cocina-9x16" loading="lazy"></a><figcaption><a href="assets/images/03-hijo-cocina-9x16.jpg" data-dl>03-hijo-cocina-9x16.jpg</a><a class="full" href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094653_15a2ffe2-6547-4130-92fe-36b7570d245c.png" target="_blank" rel="noopener">PNG original</a></figcaption></figure>
+<figure><a href="assets/images/04-cena.jpg" data-dl><img src="assets/images/04-cena.jpg" alt="04-cena" loading="lazy"></a><figcaption><a href="assets/images/04-cena.jpg" data-dl>04-cena.jpg</a><a class="full" href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094653_900682dd-1840-4f6a-8c5e-403de3732c8a.png" target="_blank" rel="noopener">PNG original</a></figcaption></figure>
+<figure><a href="assets/images/05-tarea.jpg" data-dl><img src="assets/images/05-tarea.jpg" alt="05-tarea" loading="lazy"></a><figcaption><a href="assets/images/05-tarea.jpg" data-dl>05-tarea.jpg</a><a class="full" href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094652_f4dc52b4-380a-4b9b-b74b-0b91e54c06d4.png" target="_blank" rel="noopener">PNG original</a></figcaption></figure>
+<figure><a href="assets/images/06-antes-despues.jpg" data-dl><img src="assets/images/06-antes-despues.jpg" alt="06-antes-despues" loading="lazy"></a><figcaption><a href="assets/images/06-antes-despues.jpg" data-dl>06-antes-despues.jpg</a><a class="full" href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094653_11003cdd-4f31-44a3-8cad-360003c0863b.png" target="_blank" rel="noopener">PNG original</a></figcaption></figure>
+<figure><a href="assets/images/07-sobre.jpg" data-dl><img src="assets/images/07-sobre.jpg" alt="07-sobre" loading="lazy"></a><figcaption><a href="assets/images/07-sobre.jpg" data-dl>07-sobre.jpg</a><a class="full" href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094655_f3756e71-92cc-4430-b485-3458063104bd.png" target="_blank" rel="noopener">PNG original</a></figcaption></figure>
+<figure><a href="assets/images/08-abuela.jpg" data-dl><img src="assets/images/08-abuela.jpg" alt="08-abuela" loading="lazy"></a><figcaption><a href="assets/images/08-abuela.jpg" data-dl>08-abuela.jpg</a><a class="full" href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094653_7f7a6038-051a-46c1-a41f-5c90d917886d.png" target="_blank" rel="noopener">PNG original</a></figcaption></figure>
+<figure><a href="assets/images/09-flatlay-pack.jpg" data-dl><img src="assets/images/09-flatlay-pack.jpg" alt="09-flatlay-pack" loading="lazy"></a><figcaption><a href="assets/images/09-flatlay-pack.jpg" data-dl>09-flatlay-pack.jpg</a><a class="full" href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094652_4873a080-0d19-436c-b860-dfff6b91c370.png" target="_blank" rel="noopener">PNG original</a></figcaption></figure>
+<figure><a href="assets/images/10-entrada-9x16.jpg" data-dl><img src="assets/images/10-entrada-9x16.jpg" alt="10-entrada-9x16" loading="lazy"></a><figcaption><a href="assets/images/10-entrada-9x16.jpg" data-dl>10-entrada-9x16.jpg</a><a class="full" href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094655_88dae3ec-c16b-4ac2-a57c-3da5a01d8f48.png" target="_blank" rel="noopener">PNG original</a></figcaption></figure>
+<figure><a href="assets/images/11-familia.jpg" data-dl><img src="assets/images/11-familia.jpg" alt="11-familia" loading="lazy"></a><figcaption><a href="assets/images/11-familia.jpg" data-dl>11-familia.jpg</a><a class="full" href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094654_976669d6-51fa-44d8-9b2d-de4bf324960c.png" target="_blank" rel="noopener">PNG original</a></figcaption></figure>
+<figure><a href="assets/images/12-macro-sobre.jpg" data-dl><img src="assets/images/12-macro-sobre.jpg" alt="12-macro-sobre" loading="lazy"></a><figcaption><a href="assets/images/12-macro-sobre.jpg" data-dl>12-macro-sobre.jpg</a><a class="full" href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_094653_92830bf9-fb41-44ef-b58a-6e207138bd0e.png" target="_blank" rel="noopener">PNG original</a></figcaption></figure>
+<figure><a href="assets/images/ugc-static-notes-4x5.jpg" data-dl><img src="assets/images/ugc-static-notes-4x5.jpg" alt="ugc-static-notes-4x5" loading="lazy"></a><figcaption><a href="assets/images/ugc-static-notes-4x5.jpg" data-dl>ugc-static-notes-4x5.jpg</a><span class="full">1080×1350 · estático UGC</span></figcaption></figure>
+<figure><a href="assets/images/ugc-static-whatsapp-4x5.jpg" data-dl><img src="assets/images/ugc-static-whatsapp-4x5.jpg" alt="ugc-static-whatsapp-4x5" loading="lazy"></a><figcaption><a href="assets/images/ugc-static-whatsapp-4x5.jpg" data-dl>ugc-static-whatsapp-4x5.jpg</a><span class="full">1080×1350 · estático UGC</span></figcaption></figure>
+<figure><a href="assets/images/ugc1-cena-selfie.jpg" data-dl><img src="assets/images/ugc1-cena-selfie.jpg" alt="ugc1-cena-selfie" loading="lazy"></a><figcaption><a href="assets/images/ugc1-cena-selfie.jpg" data-dl>ugc1-cena-selfie.jpg</a><a class="full" href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101730_046689a6-f58c-471d-a94c-28ac5781b390.png" target="_blank" rel="noopener">PNG original</a></figcaption></figure>
+<figure><a href="assets/images/ugc2-tarea-selfie.jpg" data-dl><img src="assets/images/ugc2-tarea-selfie.jpg" alt="ugc2-tarea-selfie" loading="lazy"></a><figcaption><a href="assets/images/ugc2-tarea-selfie.jpg" data-dl>ugc2-tarea-selfie.jpg</a><a class="full" href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101730_a69d43bd-c69e-450f-8cf9-6822f02f3fbe.png" target="_blank" rel="noopener">PNG original</a></figcaption></figure>
+<figure><a href="assets/images/ugc3-familia-selfie.jpg" data-dl><img src="assets/images/ugc3-familia-selfie.jpg" alt="ugc3-familia-selfie" loading="lazy"></a><figcaption><a href="assets/images/ugc3-familia-selfie.jpg" data-dl>ugc3-familia-selfie.jpg</a><a class="full" href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101729_7479527e-9a9c-4ec1-9ad0-a3761acfc222.png" target="_blank" rel="noopener">PNG original</a></figcaption></figure>
+<figure><a href="assets/images/ugc4-sobre-selfie.jpg" data-dl><img src="assets/images/ugc4-sobre-selfie.jpg" alt="ugc4-sobre-selfie" loading="lazy"></a><figcaption><a href="assets/images/ugc4-sobre-selfie.jpg" data-dl>ugc4-sobre-selfie.jpg</a><a class="full" href="https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101730_6d4c4170-49b1-41f6-ac59-a751c72525b7.png" target="_blank" rel="noopener">PNG original</a></figcaption></figure>
+</div></section>
+<section><div class="eyebrow">04</div><h2>Voces de Ana · MP3</h2><p>ElevenLabs, voz "Ana". Pista limpia sin música. Escúchalas aquí; la descarga va en un .zip con las cinco.</p><ul class="list aud">
+<li><div class="ar"><b>VO1 · Cena (24.7 s) · va con UGC-1</b><audio controls preload="none" src="assets/audio/vo1-cena.mp3"></audio><a href="#" data-zip="voces" data-name="pausa-voces-ana.zip">Descargar las 5 voces (.zip)</a></div></li>
+<li><div class="ar"><b>VO2 · Tarea (22.2 s) · va con UGC-2</b><audio controls preload="none" src="assets/audio/vo2-tarea.mp3"></audio><a href="#" data-zip="voces" data-name="pausa-voces-ana.zip">Descargar las 5 voces (.zip)</a></div></li>
+<li><div class="ar"><b>VO3 · Familia (29.2 s) · va con UGC-3</b><audio controls preload="none" src="assets/audio/vo3-familia.mp3"></audio><a href="#" data-zip="voces" data-name="pausa-voces-ana.zip">Descargar las 5 voces (.zip)</a></div></li>
+<li><div class="ar"><b>VO4 · Landing explainer (52.4 s)</b><audio controls preload="none" src="assets/audio/vo4-landing.mp3"></audio><a href="#" data-zip="voces" data-name="pausa-voces-ana.zip">Descargar las 5 voces (.zip)</a></div></li>
+<li><div class="ar"><b>VO5 · Retargeting / sobre (11.6 s) · va con UGC-4</b><audio controls preload="none" src="assets/audio/vo5-retargeting.mp3"></audio><a href="#" data-zip="voces" data-name="pausa-voces-ana.zip">Descargar las 5 voces (.zip)</a></div></li>
+</ul></section>
+<section><div class="eyebrow">05</div><h2>Guía Familiar · PDF</h2><ul class="list"><li><a href="pdf/programa-pausa.pdf" data-dl><b>programa-pausa.pdf</b><span>11 páginas · Letter · va dentro del sobre o por email tras la compra</span><i>Descargar</i></a></li><li><a href="assets/manifest.json" data-dl><b>manifest.json</b><span>Todos los links en JSON</span><i>Descargar</i></a></li></ul></section>
+</div><div id="toast"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+var ZIPS={"fotos": ["assets/images/01-hero-disco.jpg", "assets/images/02-mano-toque.jpg", "assets/images/03-hijo-cocina-9x16.jpg", "assets/images/04-cena.jpg", "assets/images/05-tarea.jpg", "assets/images/06-antes-despues.jpg", "assets/images/07-sobre.jpg", "assets/images/08-abuela.jpg", "assets/images/09-flatlay-pack.jpg", "assets/images/10-entrada-9x16.jpg", "assets/images/11-familia.jpg", "assets/images/12-macro-sobre.jpg", "assets/images/ugc-static-notes-4x5.jpg", "assets/images/ugc-static-whatsapp-4x5.jpg", "assets/images/ugc1-cena-selfie.jpg", "assets/images/ugc2-tarea-selfie.jpg", "assets/images/ugc3-familia-selfie.jpg", "assets/images/ugc4-sobre-selfie.jpg"], "voces": ["assets/audio/vo1-cena.mp3", "assets/audio/vo2-tarea.mp3", "assets/audio/vo3-familia.mp3", "assets/audio/vo4-landing.mp3", "assets/audio/vo5-retargeting.mp3"], "todo": ["assets/images/01-hero-disco.jpg", "assets/images/02-mano-toque.jpg", "assets/images/03-hijo-cocina-9x16.jpg", "assets/images/04-cena.jpg", "assets/images/05-tarea.jpg", "assets/images/06-antes-despues.jpg", "assets/images/07-sobre.jpg", "assets/images/08-abuela.jpg", "assets/images/09-flatlay-pack.jpg", "assets/images/10-entrada-9x16.jpg", "assets/images/11-familia.jpg", "assets/images/12-macro-sobre.jpg", "assets/images/ugc-static-notes-4x5.jpg", "assets/images/ugc-static-whatsapp-4x5.jpg", "assets/images/ugc1-cena-selfie.jpg", "assets/images/ugc2-tarea-selfie.jpg", "assets/images/ugc3-familia-selfie.jpg", "assets/images/ugc4-sobre-selfie.jpg", "assets/audio/vo1-cena.mp3", "assets/audio/vo2-tarea.mp3", "assets/audio/vo3-familia.mp3", "assets/audio/vo4-landing.mp3", "assets/audio/vo5-retargeting.mp3", "pdf/programa-pausa.pdf", "assets/manifest.json"]};
+(function(){
+  var dl=null, ready=(window.claude&&claude.use)?claude.use("downloads"):Promise.resolve(null);
+  ready.then(function(ns){ dl=ns; if(!ns){ document.querySelectorAll("[data-dl]").forEach(function(a){ a.setAttribute("download",""); }); } });
+  var toast=document.getElementById("toast"), t;
+  function say(m){ toast.textContent=m; toast.style.display="block"; clearTimeout(t); t=setTimeout(function(){toast.style.display="none";},3200); }
+  document.addEventListener("click",function(e){
+    var z=e.target.closest("[data-zip]");
+    if(z){ e.preventDefault(); if(!dl||!window.JSZip){ say("La descarga no está disponible en esta vista"); return; }
+      var paths=ZIPS[z.dataset.zip], name=z.dataset.name, zip=new JSZip(), n=0; z.classList.add("busy"); say("Empaquetando 0/"+paths.length+"…");
+      Promise.all(paths.map(function(pth){ return fetch(pth).then(function(r){ if(!r.ok) throw new Error(pth); return r.blob(); }).then(function(b){ zip.file(pth,b); n++; say("Empaquetando "+n+"/"+paths.length+"…"); }); }))
+        .then(function(){ return zip.generateAsync({type:"blob"}); })
+        .then(function(b){ return dl.save({filename:name,data:b}); })
+        .then(function(){ say("Guardado: "+name); })
+        .catch(function(err){ var c=err&&err.code; say(c==="declined"?"Cancelado":c==="rate_limited"?"Espera un momento y vuelve a intentar":"No se pudo crear "+name); })
+        .finally(function(){ z.classList.remove("busy"); });
+      return; }
+    var a=e.target.closest("[data-dl]"); if(!a) return;
+    if(!dl){ return; } // falls back to the plain download attribute
+    e.preventDefault();
+    var href=a.getAttribute("href"), name=a.dataset.name||href.split("/").pop();
+    a.classList.add("busy"); say("Preparando "+name+"…");
+    fetch(href).then(function(r){ if(!r.ok) throw new Error("fetch"); return r.blob(); })
+      .then(function(b){ return dl.save({filename:name,data:b}); })
+      .then(function(){ say("Guardado: "+name); })
+      .catch(function(err){ var c=err&&err.code; say(c==="declined"?"Cancelado":c==="rate_limited"?"Espera un momento y vuelve a intentar":"No se pudo descargar "+name); })
+      .finally(function(){ a.classList.remove("busy"); });
+  });
+})();
+</script>
+</body></html>
