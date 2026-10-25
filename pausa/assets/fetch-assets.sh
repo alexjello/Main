@@ -13,3 +13,7 @@ jq -r '.video_clips|to_entries[]|"\(.key) \(.value)"' manifest.json | while read
   [ -s "video/$name.mp4" ] || curl -sSL -o "video/$name.mp4" "$url" && echo "clip   $name"
 done
 echo "done. now run: bash build-videos.sh"
+mkdir -p video/ugc
+jq -r '.ugc_videos_lipsync_9x16|to_entries[]|select(.value|startswith("http"))|"\(.key|split(" ")[0]) \(.value)"' manifest.json | while read -r name url; do
+  [ -s "video/ugc/$name.mp4" ] || curl -sSL -o "video/ugc/$name.mp4" "$url" && echo "ugc    $name"
+done

@@ -32,7 +32,45 @@
     "vo5-retargeting": "audio/vo5-retargeting.mp3 (11.6 s)"
   },
   "higgsfield_job_ids": {
-    "images": ["33ea4eb1-5fb9-48e6-a2f0-6d12c44cee50","c9c7c8ba-4c1d-4230-b358-cd4032d42b60","15a2ffe2-6547-4130-92fe-36b7570d245c","900682dd-1840-4f6a-8c5e-403de3732c8a","f4dc52b4-380a-4b9b-b74b-0b91e54c06d4","11003cdd-4f31-44a3-8cad-360003c0863b","f3756e71-92cc-4430-b485-3458063104bd","7f7a6038-051a-46c1-a41f-5c90d917886d","4873a080-0d19-436c-b860-dfff6b91c370","88dae3ec-c16b-4ac2-a57c-3da5a01d8f48","976669d6-51fa-44d8-9b2d-de4bf324960c","92830bf9-fb41-44ef-b58a-6e207138bd0e"],
-    "videos": ["06c17f64-1177-47c8-bea9-11804b0890c9","ff9c7809-6325-4d0a-919a-f92e73b7b84c","bdd9356e-c527-469b-ba08-c9b598de16b7","418fffb8-4b86-4534-92ca-c4354fb281cf","a48a71a1-c783-4f79-878c-7cbc426aae7f","c2547bd6-7029-4654-b668-493e9d011d3b","7382ff3f-7908-4bb3-8cbf-9e7ba6701706","baaee3e3-b070-4271-a0df-06798b823a8a"]
-  }
+    "images": [
+      "33ea4eb1-5fb9-48e6-a2f0-6d12c44cee50",
+      "c9c7c8ba-4c1d-4230-b358-cd4032d42b60",
+      "15a2ffe2-6547-4130-92fe-36b7570d245c",
+      "900682dd-1840-4f6a-8c5e-403de3732c8a",
+      "f4dc52b4-380a-4b9b-b74b-0b91e54c06d4",
+      "11003cdd-4f31-44a3-8cad-360003c0863b",
+      "f3756e71-92cc-4430-b485-3458063104bd",
+      "7f7a6038-051a-46c1-a41f-5c90d917886d",
+      "4873a080-0d19-436c-b860-dfff6b91c370",
+      "88dae3ec-c16b-4ac2-a57c-3da5a01d8f48",
+      "976669d6-51fa-44d8-9b2d-de4bf324960c",
+      "92830bf9-fb41-44ef-b58a-6e207138bd0e"
+    ],
+    "videos": [
+      "06c17f64-1177-47c8-bea9-11804b0890c9",
+      "ff9c7809-6325-4d0a-919a-f92e73b7b84c",
+      "bdd9356e-c527-469b-ba08-c9b598de16b7",
+      "418fffb8-4b86-4534-92ca-c4354fb281cf",
+      "a48a71a1-c783-4f79-878c-7cbc426aae7f",
+      "c2547bd6-7029-4654-b668-493e9d011d3b",
+      "7382ff3f-7908-4bb3-8cbf-9e7ba6701706",
+      "baaee3e3-b070-4271-a0df-06798b823a8a"
+    ]
+  },
+  "ugc_videos_lipsync_9x16": {
+    "ugc1-cena-25s (VO1)": "PENDING job 86f946c4-4535-4b1d-9ab3-0b054e8f80f2 (check Higgsfield library)",
+    "ugc2-tarea-23s (VO2)": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101826_1933ea8f-7049-4551-885e-b205b412cf54.mp4",
+    "ugc3-familia-30s (VO3)": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101825_e0d27459-4910-4382-8dc5-40445246a7ef.mp4",
+    "ugc4-sobre-12s (VO5)": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101826_6c69fdb7-8152-4085-8345-a9e5b90d61ba.mp4"
+  },
+  "ugc_selfie_frames": {
+    "ugc1-cena-selfie": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101730_046689a6-f58c-471d-a94c-28ac5781b390.png",
+    "ugc2-tarea-selfie": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101730_a69d43bd-c69e-450f-8cf9-6822f02f3fbe.png",
+    "ugc3-familia-selfie": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101729_7479527e-9a9c-4ec1-9ad0-a3761acfc222.png",
+    "ugc4-sobre-selfie": "https://d8j0ntlcm91z4.cloudfront.net/user_328JzDaHedkEtXQwe5qBciijbwJ/hf_20261025_101730_6d4c4170-49b1-41f6-ac59-a751c72525b7.png"
+  },
+  "ugc_statics_local": [
+    "ads/ugc-statics/ugc-static-whatsapp-4x5.jpg",
+    "ads/ugc-statics/ugc-static-notes-4x5.jpg"
+  ]
 }

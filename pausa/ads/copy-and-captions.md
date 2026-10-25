@@ -190,3 +190,38 @@ Guion completo en `landing/` (misma voz). Secuencia: problema → nacimiento en 
 - "Horas recuperadas" se refiere a horas con apps bloqueadas, medidas por la app.
 - Compatible con iPhone y Android con NFC (aclarar en landing: "la mayoría de teléfonos desde 2016").
 - Garantía: 30 días, reembolso completo, el cliente conserva el disco.
+
+---
+
+## 8. Anuncios UGC (los que de verdad corren)
+
+Cuatro videos selfie, cámara frontal, una mamá hablando a cámara en español con la voz de Ana, sincronizada a labios. Sin música, sin logo, sin estudio. Los subtítulos van quemados estilo TikTok (texto blanco, fondo negro al 60%, 2 líneas máximo). Cada uno existe en 9:16; el feed 4:5 es un recorte.
+
+| ID | Quién / dónde | Voz | Duración | Etapa | Primera línea en pantalla |
+|---|---|---|---|---|---|
+| UGC-1 | Mamá ~38, cocina de noche, sostiene el disco | VO1 "La cena" | 25 s | TOF | ¿Cuándo fue la última cena sin teléfonos? |
+| UGC-2 | Mamá ~42, mesa con cuadernos, luz de día | VO2 "La tarea" | 23 s | TOF / MOF | mi hijo "hacía la tarea" 🙃 |
+| UGC-3 | Mamá ~45, sofá, pared de fotos | VO3 "Somos familia" | 30 s | BOF | no somos una empresa de tecnología |
+| UGC-4 | Mamá ~35, porche, abre el sobre | VO5 "Sigue aquí" | 12 s | Retargeting | llegó 📬 |
+
+### Captions para UGC (cortos, como los escribiría ella)
+- UGC-1: ok esto sonaba a truco pero llevamos 9 días cenando sin teléfonos. el disco está en la cocina y ya. #mamalatina #cenaenfamilia
+- UGC-2: para desbloquear tiene que venir A LA COCINA. donde estoy yo. se acabó la "tarea" de 3 horas 😌 #tarea #adolescentes
+- UGC-3: no es una app más. es una familia que hizo un disco. y funciona. link en bio #negociofamiliar #familia
+- UGC-4: llegó en un sobre, lo pegué junto a las llaves, 5 minutos. hoy cenamos juntos 🤍
+
+### Primary text para Meta (versión UGC, sin mayúsculas, como un post)
+- UGC-1: no soy mala madre por querer cenar en paz. puse un disco en la cocina y las apps se apagan solas a las 7. para encenderlas hay que tocar el disco. sin contraseñas, sin pelea. $34, llega en un sobre, 30 días de garantía.
+- UGC-2: mi hijo juraba que estaba haciendo la tarea. ahora de 4 a 7 no hay tiktok ni juegos y para desbloquear tiene que venir a la cocina. yo lo veo, él lo sabe, la tarea se termina. app gratis, llega en un sobre.
+- UGC-3: no le compré esto a una empresa. se lo compré a una familia de aquí que se cansó de lo mismo que yo. un disco, nada más. y cambió la casa. cada disco ayuda a otra familia.
+- UGC-4: el disco sigue ahí. la cena sigue esperando. llega en un sobre, garantía de 30 días, pídelo hoy.
+
+### Subtítulos quemados (línea por línea, UGC-1)
+0.0 ¿cuándo fue la última vez / 1.6 que cenaron sin un teléfono en la mesa? / 4.2 no eres mala madre por preguntártelo / 7.0 pausa es un disco pequeño / 8.6 que vive en tu cocina / 10.4 las apps de tus hijos se apagan / 12.0 a la hora que tú eliges / 13.8 y solo se encienden / 15.0 cuando el teléfono toca el disco / 17.2 sin peleas. sin contraseñas. / 19.4 un toque, y la familia vuelve a la mesa / 22.0 somos una familia como la tuya / 23.4 y lo hicimos para la nuestra
+(Los tiempos son aproximados a la pista de Ana; ajústalos en CapCut con auto-captions en español y corrige "Pausa".)
+
+### Reglas UGC
+- Nunca abrir con el producto. Abrir con la frase.
+- Un solo corte de "prueba": el toque del teléfono al disco. Si no se ve, el ad no funciona.
+- El precio y la garantía solo en el último tercio o en el caption.
+- Rotar las cuatro mamás; no repetir la misma cara en dos ad sets.
