@@ -1,0 +1,548 @@
+{
+"w": 1080,
+"h": 1920,
+"fps": 24,
+"duration": 49.71,
+"audio": "../assets/vo/ad-m1.mp3",
+"vars": {
+"sand": "#F1E9DC",
+"night": "#121A16",
+"ink": "#1F2A24",
+"sage": "#6E8B74",
+"clay": "#C96F4A",
+"clay-ink": "#9A4E2E",
+"sage-soft": "#DCE6DD"
+},
+"scenes": [
+{
+"start": 0.2,
+"end": 3.4268852459016395,
+"bg": "#121A16",
+"layers": [
+{
+"t": "img",
+"src": "../assets/ill/ill1-teen-asleep.png",
+"kb": [
+1.12,
+1.22
+],
+"pan": [
+0,
+0,
+-40,
+0
+]
+},
+{
+"t": "rect",
+"style": {
+"left": "0",
+"top": "0",
+"width": "100%",
+"height": "100%",
+"background": "linear-gradient(to top,rgba(18,26,22,.96) 0%,rgba(18,26,22,.75) 38%,rgba(18,26,22,0) 70%)"
+}
+},
+{
+"t": "pill",
+"html": "1:04 a.m.",
+"style": {
+"left": "80px",
+"top": "1270px",
+"font-size": "34px",
+"padding": "15.3px 30.6px",
+"background": "rgba(255,255,255,.12)",
+"color": "#F2F5F2"
+},
+"fx": "up",
+"in": 0.2
+},
+{
+"t": "text",
+"html": "Si tu hijo se duerme con el teléfono en la mano.",
+"style": {
+"left": "80px",
+"top": "1380px",
+"width": "920px",
+"font-size": "66px",
+"color": "#F2F5F2"
+},
+"display": true,
+"fx": "words",
+"wordsEnd": 2.4
+}
+]
+},
+{
+"start": 3.4268852459016395,
+"end": 7.594945355191258,
+"bg": "#121A16",
+"layers": [
+{
+"t": "img",
+"src": "../assets/ill/ill2-silent-dinner.png",
+"kb": [
+1.15,
+1.25
+],
+"pan": [
+20,
+0,
+-30,
+0
+]
+},
+{
+"t": "rect",
+"style": {
+"left": "0",
+"top": "0",
+"width": "100%",
+"height": "100%",
+"background": "linear-gradient(to top,rgba(18,26,22,.96) 0%,rgba(18,26,22,.75) 38%,rgba(18,26,22,0) 70%)"
+}
+},
+{
+"t": "text",
+"html": "Si la cena se come en silencio. Cada uno mirando una pantalla.",
+"style": {
+"left": "80px",
+"top": "1380px",
+"width": "920px",
+"font-size": "66px",
+"color": "#F2F5F2"
+},
+"display": true,
+"fx": "words",
+"wordsEnd": 2.6
+}
+]
+},
+{
+"start": 7.594945355191258,
+"end": 13.64535519125683,
+"bg": "#121A16",
+"layers": [
+{
+"t": "img",
+"src": "../assets/ill/ill3-rules-fail.png",
+"kb": [
+1.1,
+1.2
+]
+},
+{
+"t": "rect",
+"style": {
+"left": "0",
+"top": "0",
+"width": "100%",
+"height": "100%",
+"background": "linear-gradient(to top,rgba(18,26,22,.96) 0%,rgba(18,26,22,.75) 38%,rgba(18,26,22,0) 70%)"
+}
+},
+{
+"t": "text",
+"html": "Gritaste. Escondiste. Quitaste el teléfono.",
+"style": {
+"left": "80px",
+"top": "1380px",
+"width": "920px",
+"font-size": "66px",
+"color": "#F2F5F2"
+},
+"display": true,
+"fx": "words",
+"wordsEnd": 1.8
+},
+{
+"t": "text",
+"html": "Y a la semana, todo volvió a ser igual.",
+"style": {
+"left": "80px",
+"top": "1660px",
+"width": "920px",
+"font-size": "50px",
+"color": "#D3DDD5",
+"font-weight": "700"
+},
+"fx": "up",
+"in": 2.6
+}
+]
+},
+{
+"start": 13.64535519125683,
+"end": 16.7377868852459,
+"bg": "#F1E9DC",
+"layers": [
+{
+"t": "text",
+"html": "No es<br>tu culpa.",
+"style": {
+"left": "90px",
+"top": "560px",
+"width": "900px",
+"font-size": "150px",
+"color": "#1F2A24"
+},
+"display": true,
+"fx": "pop"
+},
+{
+"t": "text",
+"html": "Y tampoco es culpa<br>de tu hijo.",
+"style": {
+"left": "90px",
+"top": "1040px",
+"width": "900px",
+"font-size": "88px",
+"color": "#C96F4A"
+},
+"display": true,
+"fx": "up",
+"in": 1.546215846994535
+}
+]
+},
+{
+"start": 16.7377868852459,
+"end": 23.66214480874317,
+"bg": "#F1E9DC",
+"layers": [
+{
+"t": "text",
+"html": "Hay una razón,<br>comprobada en estudios,",
+"style": {
+"left": "90px",
+"top": "200px",
+"width": "900px",
+"font-size": "74px",
+"color": "#1F2A24"
+},
+"display": true,
+"fx": "up"
+},
+{
+"t": "card",
+"src": "../assets/ill/ill4-brain-drain.png",
+"style": {
+"left": "90px",
+"top": "520px",
+"width": "900px",
+"height": "506px"
+},
+"kb": [
+1,
+1.06
+],
+"fx": "pop",
+"in": 0.4
+},
+{
+"t": "text",
+"html": "por la que ninguna regla de pantallas aguanta más de",
+"style": {
+"left": "90px",
+"top": "1120px",
+"width": "900px",
+"font-size": "60px",
+"color": "#1F2A24",
+"font-weight": "700",
+"line-height": "1.2"
+},
+"fx": "words",
+"wordsEnd": 3.8083968579235,
+"in": 2.0773073770491814
+},
+{
+"t": "text",
+"html": "7 días",
+"style": {
+"left": "90px",
+"top": "1330px",
+"width": "900px",
+"font-size": "230px",
+"color": "#C96F4A"
+},
+"display": true,
+"fx": "pop",
+"in": 4.985537704918036
+}
+]
+},
+{
+"start": 23.66214480874317,
+"end": 31.527677595628415,
+"bg": "#121A16",
+"layers": [
+{
+"t": "text",
+"html": "Mi familia y yo<br>la encontramos.",
+"style": {
+"left": "90px",
+"top": "300px",
+"width": "900px",
+"font-size": "96px",
+"color": "#F2F5F2"
+},
+"display": true,
+"fx": "up"
+},
+{
+"t": "text",
+"html": "Y la solución no fue:",
+"style": {
+"left": "90px",
+"top": "720px",
+"width": "900px",
+"font-size": "52px",
+"color": "#B9C4BC",
+"font-weight": "700"
+},
+"fx": "up",
+"in": 2.359659836065573
+},
+{
+"t": "strike",
+"html": "Una app de control",
+"svg": "<svg viewBox=\"0 0 24 24\" width=\"60%\" height=\"60%\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" rx=\"2\"/><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\" rx=\"2\"/><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\" rx=\"2\"/><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\" rx=\"2\"/></svg>",
+"ico": "92.80000000000001px",
+"style": {
+"left": "90px",
+"top": "860px",
+"font-size": "58px",
+"color": "#F2F5F2"
+},
+"in": 3.303523770491802
+},
+{
+"t": "strike",
+"html": "Una contraseña",
+"svg": "<svg viewBox=\"0 0 24 24\" width=\"60%\" height=\"60%\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"4\" y=\"10\" width=\"16\" height=\"11\" rx=\"2\"/><path d=\"M8 10V7a4 4 0 0 1 8 0v3\"/></svg>",
+"ico": "92.80000000000001px",
+"style": {
+"left": "90px",
+"top": "1020px",
+"font-size": "58px",
+"color": "#F2F5F2"
+},
+"in": 4.876630327868851
+},
+{
+"t": "strike",
+"html": "Quitarles el teléfono",
+"svg": "<svg viewBox=\"0 0 24 24\" width=\"60%\" height=\"60%\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"6\" y=\"2\" width=\"12\" height=\"20\" rx=\"3\"/><path d=\"M10 18h4\"/></svg>",
+"ico": "92.80000000000001px",
+"style": {
+"left": "90px",
+"top": "1180px",
+"font-size": "58px",
+"color": "#F2F5F2"
+},
+"in": 6.2924262295081945
+}
+]
+},
+{
+"start": 31.527677595628415,
+"end": 35.69573770491804,
+"bg": "#121A16",
+"layers": [
+{
+"t": "rect",
+"style": {
+"left": "0px",
+"top": "0px",
+"width": "1080px",
+"height": "1920px",
+"background": "radial-gradient(circle at 50% 42%,rgba(201,111,74,.35),rgba(18,26,22,0) 45%)"
+}
+},
+{
+"t": "ring",
+"style": {
+"left": "340px",
+"top": "560px",
+"width": "400px",
+"height": "400px"
+},
+"per": 1.8,
+"in": 0.3
+},
+{
+"t": "ring",
+"style": {
+"left": "340px",
+"top": "560px",
+"width": "400px",
+"height": "400px"
+},
+"per": 1.8,
+"in": 1.2
+},
+{
+"t": "disc",
+"style": {
+"filter": "blur(2px) brightness(.55)"
+},
+"breathe": true,
+"fx": "pop"
+},
+{
+"t": "text",
+"html": "Fue algo que cabe en la palma de tu mano.",
+"style": {
+"left": "90px",
+"top": "1180px",
+"width": "900px",
+"font-size": "72px",
+"color": "#F2F5F2"
+},
+"display": true,
+"fx": "words",
+"wordsEnd": 1.8
+},
+{
+"t": "text",
+"html": "Y vive en la cocina.",
+"style": {
+"left": "90px",
+"top": "1500px",
+"width": "900px",
+"font-size": "72px",
+"color": "#E8B79F"
+},
+"display": true,
+"fx": "up",
+"in": 2.500836065573774
+}
+]
+},
+{
+"start": 35.69573770491804,
+"end": 44.43521857923498,
+"bg": "#F1E9DC",
+"layers": [
+{
+"t": "text",
+"html": "Responde 5 preguntas<br>sobre tu casa.",
+"style": {
+"left": "90px",
+"top": "170px",
+"width": "900px",
+"font-size": "80px",
+"color": "#1F2A24"
+},
+"display": true,
+"fx": "up"
+},
+{
+"t": "phone",
+"html": "<div style=\"padding:44px 40px;font-size:30px;color:#1F2A24\"><div style=\"font:600 22px JetBrains Mono,monospace;letter-spacing:.12em;color:#C96F4A\">PREGUNTA 1 DE 5</div><div style=\"height:10px;background:#E4DED3;border-radius:6px;margin:16px 0 34px\"><div style=\"width:20%;height:100%;background:#C96F4A;border-radius:6px\"></div></div><div style=\"font:600 46px/1.1 Fraunces,serif;margin-bottom:30px\">¿Dónde duerme el teléfono de tu hijo?</div><div style=\"display:grid;gap:14px;font-weight:800\"><div style=\"border:3px solid #C96F4A;background:#F6E2D7;border-radius:16px;padding:20px\">En su cuarto, con él</div><div style=\"border:3px solid #E4DED3;border-radius:16px;padding:20px\">En su cuarto, lejos de la cama</div><div style=\"border:3px solid #E4DED3;border-radius:16px;padding:20px\">Fuera de su cuarto</div></div></div>",
+"style": {
+"left": "190px",
+"top": "520px",
+"width": "700px",
+"height": "1000px"
+},
+"fx": "up",
+"in": 0.5
+},
+{
+"t": "text",
+"html": "y te mostramos qué está pasando en realidad.",
+"style": {
+"left": "90px",
+"top": "1620px",
+"width": "900px",
+"font-size": "50px",
+"color": "#4A5650",
+"font-weight": "700"
+},
+"fx": "up",
+"in": 4.36974043715847
+}
+]
+},
+{
+"start": 44.43521857923498,
+"end": 49.72,
+"bg": "#F1E9DC",
+"layers": [
+{
+"t": "text",
+"html": "Son 2 minutos.",
+"style": {
+"left": "90px",
+"top": "420px",
+"width": "900px",
+"font-size": "120px",
+"color": "#1F2A24"
+},
+"display": true,
+"fx": "pop"
+},
+{
+"t": "text",
+"html": "Y puede cambiar cómo se siente<br>tu casa esta misma semana.",
+"style": {
+"left": "90px",
+"top": "620px",
+"width": "900px",
+"font-size": "62px",
+"color": "#4A5650",
+"font-weight": "700",
+"line-height": "1.25"
+},
+"fx": "up",
+"in": 1.8461734972677581
+},
+{
+"t": "btn",
+"html": "Responder las 5 preguntas →",
+"style": {
+"left": "120px",
+"top": "1040px",
+"width": "840px",
+"height": "150px",
+"font-size": "52px"
+},
+"pulse": true,
+"fx": "pop",
+"in": 1.5824344262295071
+},
+{
+"t": "text",
+"html": "Gratis · sin tarjeta · una familia de tu comunidad",
+"style": {
+"left": "90px",
+"top": "1230px",
+"width": "900px",
+"font-size": "36px",
+"color": "#8A948E",
+"font-weight": "700",
+"text-align": "center"
+},
+"fx": "up",
+"in": 2.637390710382512
+},
+{
+"t": "text",
+"html": "Pausa",
+"style": {
+"left": "90px",
+"top": "1700px",
+"width": "900px",
+"font-size": "64px",
+"color": "#6E8B74",
+"text-align": "center"
+},
+"display": true,
+"fx": "up",
+"in": 2.637390710382512
+}
+]
+}
+]
+}

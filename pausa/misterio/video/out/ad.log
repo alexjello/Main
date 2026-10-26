@@ -1,0 +1,6 @@
+frame 0/1194 0s
+frame 240/1194 22s
+frame 480/1194 38s
+frame 720/1194 53s
+frame 960/1194 68s
+done out/ad-m1-9x16.mp4

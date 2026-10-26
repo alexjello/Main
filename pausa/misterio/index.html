@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pausa Funnel Misterio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Nunito:wght@400;700;800;900&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+:root{--bg:#F7F3EC;--paper:#fff;--ink:#1F2A24;--ink-2:#4A5650;--muted:#8A948E;--line:#E4DED3;--sage:#6E8B74;--sage-ink:#3E5A45;--sage-soft:#DCE6DD;--clay:#C96F4A;--clay-soft:#F6E2D7}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121A16;--paper:#1A241F;--ink:#EEF2EE;--ink-2:#B9C4BC;--muted:#7E8A82;--line:#2A3630;--sage:#8FAC95;--sage-ink:#CFE0D2;--sage-soft:#243229;--clay:#E08A63;--clay-soft:#3A2A22;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121A16;--paper:#1A241F;--ink:#EEF2EE;--ink-2:#B9C4BC;--muted:#7E8A82;--line:#2A3630;--sage:#8FAC95;--sage-ink:#CFE0D2;--sage-soft:#243229;--clay:#E08A63;--clay-soft:#3A2A22;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Nunito,system-ui,sans-serif}img,video{max-width:100%;display:block}
+.in{max-width:1100px;margin:0 auto;padding:28px 16px 64px}
+h1{font:600 clamp(34px,5vw,54px)/1.05 Fraunces,Georgia,serif;margin:8px 0 10px}h2{font:600 28px/1.15 Fraunces,Georgia,serif;margin:0 0 10px}h3{font:800 17px;margin:0 0 4px}
+p{color:var(--ink-2);max-width:66ch;margin:0 0 12px}.eyebrow{font:500 12px "JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--clay)}
+section{margin-top:44px}.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;counter-reset:s}
+.step{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px;text-decoration:none;color:var(--ink);display:grid;gap:6px;position:relative}
+.step:hover{border-color:var(--clay)}.step::before{counter-increment:s;content:counter(s);font:600 26px Fraunces,serif;color:var(--clay)}.step small{color:var(--muted)}.step .m{font:500 11px "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--sage-ink);background:var(--sage-soft);padding:4px 8px;border-radius:999px;justify-self:start}
+.vids{display:grid;grid-template-columns:300px 1fr;gap:20px;align-items:start}.v9{background:#000;border-radius:14px;overflow:hidden;aspect-ratio:9/16}.v16{background:#000;border-radius:14px;overflow:hidden;aspect-ratio:16/9}video{width:100%;height:100%}
+table{width:100%;border-collapse:collapse;font-size:15px;font-variant-numeric:tabular-nums}td,th{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}th{font:800 12px Nunito;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}td:last-child,th:last-child{text-align:right}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.ill{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}.ill img{border-radius:10px;aspect-ratio:16/9;object-fit:cover}
+.btn{display:inline-flex;font:800 15px Nunito;padding:12px 18px;border-radius:999px;background:var(--clay);color:#FFF8F3;text-decoration:none}
+@media(max-width:800px){.vids,.grid2{grid-template-columns:1fr}.v9{max-width:320px}}
+</style></head><body><div class="in">
+<div class="eyebrow">Pausa · funnel "Misterio" · vendemos el resultado</div>
+<h1>Del anuncio al recibo, tal como lo vive un padre.</h1>
+<p>Cada paso de abajo es una página real que puedes abrir y recorrer. El orden es el que pediste: anuncio con misterio → quiz → resultado + VSL → programa de $7 → discos → OTO 2 → OTO 4/6 → gracias. Nada toca GHL; se pega como código.</p>
+<a class="btn" href="pages/quiz.html">Recorrer el funnel desde el quiz →</a>
+
+<section><div class="eyebrow">Paso 0 y paso 3</div><h2>Los dos videos</h2>
+<div class="vids">
+ <div><div class="v9"><video controls playsinline preload="metadata" poster="assets/ill/ill1-teen-asleep.jpg" src="video/out/ad-m1-9x16.mp4"></video></div><p style="margin-top:8px"><b>AD-M1</b> · 50 s · 9:16 · "No es tu culpa". Explainer 2D, voz Ana, subtítulos integrados. Para Meta Reels/Stories y TikTok.</p></div>
+ <div><div class="v16"><video controls playsinline preload="metadata" poster="assets/ill/ill7-dinner-after.jpg" src="video/out/vsl-m-720p-web.mp4"></video></div><p style="margin-top:8px"><b>VSL-M</b> · 5:48 · 16:9 · siete secciones: promesa → dolor → ciencia (UT Austin, AAP, phubbing) → la idea "no es tiempo, es lugar" → el programa $7 → la tecnología → cierre. La oferta aparece en la página al minuto 3:48.</p></div>
+</div></section>
+
+<section><div class="eyebrow">El mapa</div><h2>Ocho pasos, siete páginas</h2>
+<div class="flow">
+ <a class="step" href="#"><h3>Video ad 9:16</h3><small>Misterio + dolor + "mi familia encontró la solución". CTA: responde 5 preguntas.</small><span class="m">Meta · TikTok</span></a>
+ <a class="step" href="pages/quiz.html"><h3>Quiz</h3><small>5 preguntas con puntaje, luego nombre + correo + WhatsApp para ver el resultado.</small><span class="m">Lead</span></a>
+ <a class="step" href="pages/resultado.html?score=64&name=María"><h3>Resultado + VSL</h3><small>Puntaje y banda, el VSL, y la oferta de $7 que aparece a los 3:48.</small><span class="m">ViewContent</span></a>
+ <a class="step" href="pages/checkout.html"><h3>Checkout $7</h3><small>Un paso. Order bump $9: audio narrado por Ana + plantillas.</small><span class="m">Purchase</span></a>
+ <a class="step" href="pages/pucks.html"><h3>Discos · cantidad</h3><small>"¿Cuántos lugares quieres asegurar?" $39 c/u, 6 ubicaciones explicadas, 1–6.</small><span class="m">Upsell 1</span></a>
+ <a class="step" href="pages/oto-2.html?discs=1"><h3>OTO · 2 más al 30%</h3><small>Solo si eligió 1. $55 por dos más.</small><span class="m">OTO 2</span></a>
+ <a class="step" href="pages/oto-4.html?discs=1"><h3>OTO · 4 al 50% / 6 al 65%</h3><small>$78 por 4 o $82 por 6. Escalera: 1=$39 · 2=$55 · 4=$78 · 6=$82.</small><span class="m">OTO 3</span></a>
+ <a class="step" href="pages/gracias.html"><h3>Gracias</h3><small>Recibo, próximos pasos, WhatsApp de la familia.</small><span class="m">Entrega</span></a>
+</div></section>
+
+<section class="grid2">
+ <div class="card"><div class="eyebrow">Economía (supuestos)</div><h2>Lo que tiene que pasar por cada 100 leads</h2>
+ <table><tr><th>Métrica</th><th>Supuesto</th><th>Valor</th></tr>
+ <tr><td>Costo por lead (quiz)</td><td>CPM $15 · CTR 2% · quiz 55% · opt-in 70%</td><td>$1.80</td></tr>
+ <tr><td>Compradores $7</td><td>10% de leads</td><td>10</td></tr>
+ <tr><td>Bump $9</td><td>30% de compradores</td><td>+$27</td></tr>
+ <tr><td>Discos (upsell 1)</td><td>35% @ $62 promedio</td><td>+$217</td></tr>
+ <tr><td>OTO adicional</td><td>15% @ $40</td><td>+$60</td></tr>
+ <tr><td>Ingreso por 100 leads</td><td>$70 + 27 + 217 + 60</td><td>$374</td></tr>
+ <tr><td>Costo de 100 leads</td><td></td><td>$180</td></tr>
+ <tr><td>AOV por comprador</td><td></td><td>$37</td></tr>
+ <tr><td>Break-even CPA</td><td>AOV menos COGS (~$12)</td><td>≈ $25</td></tr></table>
+ <p style="margin-top:10px;font-size:14px">El $7 pierde dinero a propósito. La utilidad está en los discos y en la secuencia de 14 días por correo/SMS para quienes no compraron discos.</p></div>
+ <div class="card"><div class="eyebrow">Lo que GHL necesita</div><h2>Montaje</h2>
+ <ul style="padding-left:18px;color:var(--ink-2);margin:0"><li><b>7 páginas</b> como código personalizado (los HTML de esta carpeta). Imágenes en /assets/ill, videos en /video/out.</li><li><b>Productos:</b> Programa $7 · Kit $9 · Disco $39 (cantidad) · OTO-2 $55 · Pack 4 $78 · Pack 6 $82.</li><li><b>Workflows:</b> lead del quiz → tag + 3 emails/2 SMS en 72 h con el link del resultado · comprador $7 → entrega PDF + 14 días hacia discos · comprador discos → tracking + guía.</li><li><b>Eventos ya cableados:</b> QuizStart, QuizComplete, Lead, VideoPlay, VideoWatched50/75, OfferRevealed, InitiateCheckout, Purchase (valor dinámico).</li><li><b>Placeholders:</b> precios, WhatsApp, historia de la familia, el bloque de pago (widget de Stripe en GHL).</li></ul></div>
+</section>
+
+<section><div class="eyebrow">Ilustraciones 2D</div><h2>Las ocho escenas</h2><div class="ill">
+<img src="assets/ill/ill1-teen-asleep.jpg" alt=""><img src="assets/ill/ill2-silent-dinner.jpg" alt=""><img src="assets/ill/ill3-rules-fail.jpg" alt=""><img src="assets/ill/ill4-brain-drain.jpg" alt=""><img src="assets/ill/ill5-house-zones.jpg" alt=""><img src="assets/ill/ill6-disc-tap.jpg" alt=""><img src="assets/ill/ill7-dinner-after.jpg" alt=""><img src="assets/ill/ill8-car-work-church.jpg" alt=""></div>
+<p style="margin-top:10px;font-size:14px">Estilo plano, paleta Pausa, familia latina. Sirven también como estáticos (recortar a 4:5) y como fondos de las páginas.</p></section>
+
+<section class="card"><div class="eyebrow">Honestidad del copy</div><h2>Tres líneas que no cruzamos</h2>
+<ul style="padding-left:18px;color:var(--ink-2);margin:0"><li>Los estudios se citan como son: Ward et al. 2017 (UT Austin) es experimental; AAP es una recomendación; phubbing es correlacional y el copy dice "se asocia".</li><li>El disco no geolocaliza ni "apaga el teléfono en una zona": las apps se apagan por horario y se desbloquean al tocarlo. Así está escrito en todas las páginas.</li><li>No hay testimonios inventados. Las escenas son ilustraciones de "cómo se ve", no de clientes reales.</li></ul></section>
+</div></body></html>

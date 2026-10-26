@@ -1,0 +1,1816 @@
+{
+"w": 1920,
+"h": 1080,
+"fps": 24,
+"duration": 348.18,
+"audio": "../assets/vo/vsl-full.mp3",
+"vars": {
+"sand": "#F1E9DC",
+"night": "#121A16",
+"ink": "#1F2A24",
+"sage": "#6E8B74",
+"clay": "#C96F4A",
+"clay-ink": "#9A4E2E",
+"sage-soft": "#DCE6DD"
+},
+"scenes": [
+{
+"start": 0,
+"end": 36.52,
+"bg": "#F1E9DC",
+"layers": [
+{
+"t": "text",
+"html": "Tu resultado está en pantalla.",
+"style": {
+"left": "120px",
+"top": "150px",
+"width": "900px",
+"font-size": "70px",
+"color": "#1F2A24"
+},
+"display": true,
+"fx": "up",
+"out": 6.174470588235295
+},
+{
+"t": "pill",
+"html": "↑ Mira tu puntaje arriba",
+"style": {
+"left": "120px",
+"top": "290px",
+"font-size": "30px",
+"padding": "13.5px 27.0px",
+"background": "#DCE6DD",
+"color": "#3E5A45"
+},
+"fx": "up",
+"in": 0.6,
+"out": 6.174470588235295
+},
+{
+"t": "text",
+"html": "Una promesa:",
+"style": {
+"left": "120px",
+"top": "150px",
+"width": "900px",
+"font-size": "44px",
+"color": "#C96F4A",
+"font-weight": "900",
+"letter-spacing": ".04em",
+"text-transform": "uppercase"
+},
+"fx": "up",
+"in": 6.174470588235295
+},
+{
+"t": "text",
+"html": "Quédate hasta el final.",
+"style": {
+"left": "120px",
+"top": "220px",
+"width": "900px",
+"font-size": "92px",
+"color": "#1F2A24"
+},
+"display": true,
+"fx": "pop",
+"in": 6.374470588235295
+},
+{
+"t": "check",
+"html": "El sistema exacto que usamos en casa, sin una sola pelea",
+"ico": "44.0px",
+"icoF": "28.0px",
+"style": {
+"left": "120px",
+"top": "420px",
+"width": "860px",
+"font-size": "40px"
+},
+"fx": "up",
+"in": 8.546268907563027
+},
+{
+"t": "check",
+"html": "Una tecnología pequeña que crees que cuesta miles",
+"ico": "44.0px",
+"icoF": "28.0px",
+"style": {
+"left": "120px",
+"top": "520px",
+"width": "860px",
+"font-size": "40px"
+},
+"fx": "up",
+"in": 17.962957983193277
+},
+{
+"t": "check",
+"html": "No cuesta eso. Y no necesitas ser experto",
+"ico": "44.0px",
+"icoF": "28.0px",
+"style": {
+"left": "120px",
+"top": "620px",
+"width": "860px",
+"font-size": "40px"
+},
+"fx": "up",
+"in": 22.73880672268908
+},
+{
+"t": "card",
+"src": "../assets/ill/ill7-dinner-after.png",
+"style": {
+"left": "1060px",
+"top": "140px",
+"width": "760px",
+"height": "428px"
+},
+"kb": [
+1,
+1.07
+],
+"fx": "right",
+"in": 0.3
+},
+{
+"t": "card",
+"src": "../assets/ill/ill5-house-zones.png",
+"style": {
+"left": "1060px",
+"top": "610px",
+"width": "760px",
+"height": "330px"
+},
+"kb": [
+1.02,
+1.1
+],
+"fx": "right",
+"in": 17.962957983193277
+},
+{
+"t": "rect",
+"style": {
+"left": "120px",
+"top": "780px",
+"width": "860px",
+"height": "3px",
+"background": "#E4DED3"
+},
+"in": 26.789210084033616
+},
+{
+"t": "text",
+"html": "Somos una familia de tu comunidad. No una empresa grande.",
+"style": {
+"left": "120px",
+"top": "820px",
+"width": "860px",
+"font-size": "40px",
+"color": "#4A5650",
+"font-weight": "800"
+},
+"fx": "up",
+"in": 26.789210084033616
+},
+{
+"t": "text",
+"html": "Pasamos por lo mismo que tú estás viviendo.",
+"style": {
+"left": "120px",
+"top": "880px",
+"width": "860px",
+"font-size": "40px",
+"color": "#C96F4A",
+"font-weight": "800"
+},
+"fx": "up",
+"in": 30.839613445378156
+}
+]
+},
+{
+"start": 36.52,
+"end": 95.03,
+"bg": "#121A16",
+"layers": [
+{
+"t": "img",
+"src": "../assets/ill/ill2-silent-dinner.png",
+"kb": [
+1.05,
+1.12
+],
+"in": 0,
+"out": 14.216265060240964
+},
+{
+"t": "img",
+"src": "../assets/ill/ill1-teen-asleep.png",
+"kb": [
+1.05,
+1.14
+],
+"in": 14.216265060240964,
+"out": 22.177036144578313
+},
+{
+"t": "img",
+"src": "../assets/ill/ill3-rules-fail.png",
+"kb": [
+1.02,
+1.1
+],
+"in": 22.177036144578313,
+"out": 41.10132530120482
+},
+{
+"t": "rect",
+"style": {
+"left": "0",
+"top": "0",
+"width": "100%",
+"height": "100%",
+"background": "linear-gradient(to right,rgba(18,26,22,.94) 0%,rgba(18,26,22,.78) 42%,rgba(18,26,22,.05) 75%)"
+},
+"out": 41.10132530120482
+},
+{
+"t": "text",
+"html": "¿Te suena?",
+"style": {
+"left": "120px",
+"top": "150px",
+"width": "900px",
+"font-size": "44px",
+"color": "#E8B79F",
+"font-weight": "900",
+"letter-spacing": ".04em",
+"text-transform": "uppercase"
+},
+"fx": "up",
+"in": 0.2,
+"out": 22.177036144578313
+},
+{
+"t": "text",
+"html": "Desaparece dentro del teléfono. Responde \"ajá\" sin mirarte.",
+"style": {
+"left": "120px",
+"top": "760px",
+"width": "1000px",
+"font-size": "60px",
+"color": "#F2F5F2"
+},
+"display": true,
+"fx": "words",
+"wordsEnd": 3.386289156626506,
+"in": 1.7862891566265062,
+"out": 9.188409638554218
+},
+{
+"t": "text",
+"html": "La tarea toma 3 horas. Una notificación cada 5 minutos.",
+"style": {
+"left": "120px",
+"top": "760px",
+"width": "1000px",
+"font-size": "60px",
+"color": "#F2F5F2"
+},
+"display": true,
+"fx": "words",
+"wordsEnd": 10.788409638554217,
+"in": 9.188409638554218,
+"out": 14.216265060240964
+},
+{
+"t": "text",
+"html": "La cena se volvió silenciosa.",
+"style": {
+"left": "120px",
+"top": "760px",
+"width": "1000px",
+"font-size": "60px",
+"color": "#F2F5F2"
+},
+"display": true,
+"fx": "words",
+"wordsEnd": 15.816265060240964,
+"in": 14.216265060240964,
+"out": 16.241373493975903
+},
+{
+"t": "text",
+"html": "1:00 a.m. La luz azul sigue encendida.",
+"style": {
+"left": "120px",
+"top": "760px",
+"width": "1000px",
+"font-size": "60px",
+"color": "#F2F5F2"
+},
+"display": true,
+"fx": "words",
+"wordsEnd": 17.841373493975905,
+"in": 16.241373493975903,
+"out": 22.177036144578313
+},
+{
+"t": "text",
+"html": "Probaste de todo",
+"style": {
+"left": "120px",
+"top": "150px",
+"width": "900px",
+"font-size": "44px",
+"color": "#E8B79F",
+"font-weight": "900",
+"letter-spacing": ".04em",
+"text-transform": "uppercase"
+},
+"fx": "up",
+"in": 22.177036144578313,
+"out": 41.10132530120482
+},
+{
+"t": "strike",
+"html": "Contraseñas · adivinadas en 1 semana",
+"svg": "<svg viewBox=\"0 0 24 24\" width=\"60%\" height=\"60%\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"4\" y=\"10\" width=\"16\" height=\"11\" rx=\"2\"/><path d=\"M8 10V7a4 4 0 0 1 8 0v3\"/></svg>",
+"ico": "73.60000000000001px",
+"style": {
+"left": "120px",
+"top": "330px",
+"font-size": "46px",
+"color": "#F2F5F2"
+},
+"in": 22.477036144578314,
+"out": 41.10132530120482
+},
+{
+"t": "strike",
+"html": "App de control · la vuelta en 2",
+"svg": "<svg viewBox=\"0 0 24 24\" width=\"60%\" height=\"60%\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" rx=\"2\"/><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\" rx=\"2\"/><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\" rx=\"2\"/><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\" rx=\"2\"/></svg>",
+"ico": "73.60000000000001px",
+"style": {
+"left": "120px",
+"top": "450px",
+"font-size": "46px",
+"color": "#F2F5F2"
+},
+"in": 26.15742168674699,
+"out": 41.10132530120482
+},
+{
+"t": "strike",
+"html": "Quitarle el teléfono · hasta que saliste",
+"svg": "<svg viewBox=\"0 0 24 24\" width=\"60%\" height=\"60%\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"6\" y=\"2\" width=\"12\" height=\"20\" rx=\"3\"/><path d=\"M10 18h4\"/></svg>",
+"ico": "73.60000000000001px",
+"style": {
+"left": "120px",
+"top": "570px",
+"font-size": "46px",
+"color": "#F2F5F2"
+},
+"in": 29.160168674698795,
+"out": 41.10132530120482
+},
+{
+"t": "text",
+"html": "Gritos. Portazos. Y tú, la policía de tu propia casa.",
+"style": {
+"left": "120px",
+"top": "760px",
+"width": "1000px",
+"font-size": "54px",
+"color": "#F2F5F2",
+"font-weight": "800"
+},
+"fx": "words",
+"wordsEnd": 35.55004819277109,
+"in": 33.350048192771084,
+"out": 41.10132530120482
+},
+{
+"t": "rect",
+"style": {
+"left": "0px",
+"top": "0px",
+"width": "1920px",
+"height": "1080px",
+"background": "#F1E9DC"
+},
+"in": 41.10132530120482
+},
+{
+"t": "text",
+"html": "No es tu culpa.",
+"style": {
+"left": "120px",
+"top": "300px",
+"width": "1680px",
+"font-size": "160px",
+"color": "#1F2A24",
+"text-align": "center"
+},
+"display": true,
+"fx": "pop",
+"in": 41.10132530120482,
+"out": 47.80513253012048
+},
+{
+"t": "text",
+"html": "Y no es que tu hijo sea débil o malcriado.",
+"style": {
+"left": "120px",
+"top": "520px",
+"width": "1680px",
+"font-size": "56px",
+"color": "#C96F4A",
+"font-weight": "800",
+"text-align": "center"
+},
+"fx": "up",
+"in": 44.87221686746988,
+"out": 47.80513253012048
+},
+{
+"t": "text",
+"html": "Tu voz",
+"style": {
+"left": "120px",
+"top": "330px",
+"width": "760px",
+"font-size": "150px",
+"color": "#1F2A24",
+"text-align": "right"
+},
+"display": true,
+"fx": "left",
+"in": 47.80513253012048
+},
+{
+"t": "text",
+"html": "vs.",
+"style": {
+"left": "960px",
+"top": "370px",
+"width": "80px",
+"font-size": "60px",
+"color": "#8A948E",
+"font-weight": "900",
+"text-align": "center"
+},
+"fx": "pop",
+"in": 48.10513253012048
+},
+{
+"t": "text",
+"html": "miles de<br>ingenieros",
+"style": {
+"left": "1060px",
+"top": "300px",
+"width": "760px",
+"font-size": "120px",
+"color": "#C96F4A"
+},
+"display": true,
+"fx": "right",
+"in": 48.20513253012048
+},
+{
+"t": "text",
+"html": "Estás peleando con la herramienta equivocada.",
+"style": {
+"left": "120px",
+"top": "720px",
+"width": "1680px",
+"font-size": "50px",
+"color": "#4A5650",
+"font-weight": "800",
+"text-align": "center"
+},
+"fx": "up",
+"in": 54.15978313253012
+}
+]
+},
+{
+"start": 95.03,
+"end": 178.01999999999998,
+"bg": "#F1E9DC",
+"layers": [
+{
+"t": "text",
+"html": "Lo que dicen los estudios",
+"style": {
+"left": "120px",
+"top": "420px",
+"width": "1680px",
+"font-size": "96px",
+"color": "#1F2A24",
+"text-align": "center"
+},
+"display": true,
+"fx": "pop",
+"in": 0,
+"out": 4.8555865921787715
+},
+{
+"t": "text",
+"html": "y lo que cambió todo para nosotros",
+"style": {
+"left": "120px",
+"top": "560px",
+"width": "1680px",
+"font-size": "46px",
+"color": "#4A5650",
+"font-weight": "800",
+"text-align": "center"
+},
+"fx": "up",
+"in": 1.2,
+"out": 4.8555865921787715
+},
+{
+"t": "pill",
+"html": "1 · Universidad de Texas · casi 800 personas",
+"style": {
+"left": "120px",
+"top": "130px",
+"font-size": "30px",
+"padding": "13.5px 27.0px",
+"background": "#1F2A24",
+"color": "#F2F5F2"
+},
+"fx": "up",
+"in": 4.8555865921787715,
+"out": 38.936927374301675
+},
+{
+"t": "card",
+"src": "../assets/ill/ill4-brain-drain.png",
+"style": {
+"left": "120px",
+"top": "220px",
+"width": "900px",
+"height": "506px"
+},
+"kb": [
+1,
+1.05
+],
+"fx": "up",
+"in": 4.8555865921787715,
+"out": 38.936927374301675
+},
+{
+"t": "text",
+"html": "Mismo examen. Tres lugares para el teléfono.",
+"style": {
+"left": "120px",
+"top": "770px",
+"width": "900px",
+"font-size": "40px",
+"color": "#4A5650",
+"font-weight": "800"
+},
+"fx": "up",
+"in": 12.94826017557861,
+"out": 38.936927374301675
+},
+{
+"t": "bars",
+"items": [
+{
+"h": "52%",
+"v": "escritorio",
+"l": "a la vista"
+},
+{
+"h": "68%",
+"v": "bolsillo",
+"l": "guardado"
+},
+{
+"h": "100%",
+"v": "otro cuarto",
+"l": "fuera de vista"
+}
+],
+"style": {
+"left": "1120px",
+"top": "260px",
+"width": "680px",
+"height": "400px",
+"font-size": "30px",
+"color": "#1F2A24"
+},
+"in": 12.94826017557861,
+"out": 38.936927374301675
+},
+{
+"t": "text",
+"html": "Rendimiento en tareas de concentración",
+"style": {
+"left": "1120px",
+"top": "730px",
+"width": "680px",
+"font-size": "28px",
+"color": "#8A948E",
+"font-weight": "800",
+"text-align": "center"
+},
+"fx": "up",
+"in": 12.94826017557861,
+"out": 38.936927374301675
+},
+{
+"t": "text",
+"html": "No sonaba. Nadie lo tocó.",
+"style": {
+"left": "1120px",
+"top": "820px",
+"width": "680px",
+"font-size": "44px",
+"color": "#1F2A24",
+"text-align": "center"
+},
+"display": true,
+"fx": "up",
+"in": 20.646169193934554,
+"out": 38.936927374301675
+},
+{
+"t": "text",
+"html": "\"Fuga de cerebro\": su sola presencia consume capacidad de pensar.",
+"style": {
+"left": "1120px",
+"top": "900px",
+"width": "680px",
+"font-size": "34px",
+"color": "#C96F4A",
+"font-weight": "800",
+"text-align": "center"
+},
+"fx": "up",
+"in": 30.186312849162007,
+"out": 38.936927374301675
+},
+{
+"t": "pill",
+"html": "2 · Academia Americana de Pediatría",
+"style": {
+"left": "120px",
+"top": "130px",
+"font-size": "30px",
+"padding": "13.5px 27.0px",
+"background": "#1F2A24",
+"color": "#F2F5F2"
+},
+"fx": "up",
+"in": 38.936927374301675,
+"out": 54.20115722266561
+},
+{
+"t": "card",
+"src": "../assets/ill/ill5-house-zones.png",
+"style": {
+"left": "960px",
+"top": "220px",
+"width": "840px",
+"height": "472px"
+},
+"kb": [
+1,
+1.06
+],
+"fx": "right",
+"in": 38.936927374301675,
+"out": 54.20115722266561
+},
+{
+"t": "text",
+"html": "No cuentes minutos.",
+"style": {
+"left": "120px",
+"top": "240px",
+"width": "800px",
+"font-size": "90px",
+"color": "#1F2A24"
+},
+"display": true,
+"fx": "up",
+"in": 38.936927374301675,
+"out": 54.20115722266561
+},
+{
+"t": "check",
+"html": "Dormitorios sin pantallas",
+"ico": "46.2px",
+"icoF": "29.4px",
+"style": {
+"left": "120px",
+"top": "420px",
+"width": "780px",
+"font-size": "42px"
+},
+"fx": "up",
+"in": 45.32680766161213,
+"out": 54.20115722266561
+},
+{
+"t": "check",
+"html": "La mesa sin pantallas",
+"ico": "46.2px",
+"icoF": "29.4px",
+"style": {
+"left": "120px",
+"top": "510px",
+"width": "780px",
+"font-size": "42px"
+},
+"fx": "up",
+"in": 46.32680766161213,
+"out": 54.20115722266561
+},
+{
+"t": "check",
+"html": "La hora antes de dormir",
+"ico": "46.2px",
+"icoF": "29.4px",
+"style": {
+"left": "120px",
+"top": "600px",
+"width": "780px",
+"font-size": "42px"
+},
+"fx": "up",
+"in": 47.32680766161213,
+"out": 54.20115722266561
+},
+{
+"t": "text",
+"html": "Lugares, no límites de tiempo.",
+"style": {
+"left": "120px",
+"top": "740px",
+"width": "800px",
+"font-size": "54px",
+"color": "#C96F4A"
+},
+"display": true,
+"fx": "pop",
+"in": 49.22680766161213,
+"out": 54.20115722266561
+},
+{
+"t": "pill",
+"html": "3 · Phubbing · lo que los hijos copian",
+"style": {
+"left": "120px",
+"top": "130px",
+"font-size": "30px",
+"padding": "13.5px 27.0px",
+"background": "#1F2A24",
+"color": "#F2F5F2"
+},
+"fx": "up",
+"in": 54.20115722266561,
+"out": 76.6369433359936
+},
+{
+"t": "img",
+"src": "../assets/ill/ill2-silent-dinner.png",
+"kb": [
+1.05,
+1.1
+],
+"alpha": 0.22,
+"in": 54.20115722266561,
+"out": 76.6369433359936
+},
+{
+"t": "text",
+"html": "Los hijos copian el uso del teléfono de sus padres.",
+"style": {
+"left": "120px",
+"top": "260px",
+"width": "1200px",
+"font-size": "72px",
+"color": "#1F2A24"
+},
+"display": true,
+"fx": "words",
+"wordsEnd": 57.20115722266561,
+"in": 54.20115722266561,
+"out": 76.6369433359936
+},
+{
+"t": "text",
+"html": "Cuando los padres lo usan frente a ellos, la relación y la autoestima de los hijos se asocian con peores resultados.",
+"style": {
+"left": "120px",
+"top": "480px",
+"width": "1200px",
+"font-size": "46px",
+"color": "#4A5650",
+"font-weight": "800",
+"line-height": "1.3"
+},
+"fx": "words",
+"wordsEnd": 68.6624181963288,
+"in": 64.6624181963288,
+"out": 76.6369433359936
+},
+{
+"t": "text",
+"html": "Nosotros también lo hacíamos.",
+"style": {
+"left": "120px",
+"top": "760px",
+"width": "1200px",
+"font-size": "54px",
+"color": "#C96F4A"
+},
+"display": true,
+"fx": "up",
+"in": 72.68929768555468,
+"out": 76.6369433359936
+},
+{
+"t": "rect",
+"style": {
+"left": "0px",
+"top": "0px",
+"width": "1920px",
+"height": "1080px",
+"background": "#121A16"
+},
+"in": 76.6369433359936
+},
+{
+"t": "text",
+"html": "El problema nunca fue<br>cuántos minutos.",
+"style": {
+"left": "120px",
+"top": "260px",
+"width": "1680px",
+"font-size": "96px",
+"color": "#B9C4BC",
+"text-align": "center"
+},
+"display": true,
+"fx": "up",
+"in": 76.6369433359936
+},
+{
+"t": "text",
+"html": "Es dónde está el teléfono.",
+"style": {
+"left": "120px",
+"top": "600px",
+"width": "1680px",
+"font-size": "120px",
+"color": "#E8B79F",
+"text-align": "center"
+},
+"display": true,
+"fx": "pop",
+"in": 80.18982442138866
+}
+]
+},
+{
+"start": 178.01999999999998,
+"end": 228.07,
+"bg": "#F1E9DC",
+"layers": [
+{
+"t": "text",
+"html": "La idea que cambió nuestra casa",
+"style": {
+"left": "120px",
+"top": "440px",
+"width": "1680px",
+"font-size": "90px",
+"color": "#1F2A24",
+"text-align": "center"
+},
+"display": true,
+"fx": "pop",
+"in": 0,
+"out": 3.048115746971736
+},
+{
+"t": "rect",
+"style": {
+"left": "120px",
+"top": "200px",
+"width": "820px",
+"height": "560px",
+"background": "#FFFFFF",
+"border-radius": "28px",
+"border": "2px solid #E4DED3"
+},
+"fx": "up",
+"in": 3.048115746971736,
+"out": 18.637617765814266
+},
+{
+"t": "rect",
+"style": {
+"left": "980px",
+"top": "200px",
+"width": "820px",
+"height": "560px",
+"background": "#DCE6DD",
+"border-radius": "28px"
+},
+"fx": "up",
+"in": 8.64434724091521,
+"out": 18.637617765814266
+},
+{
+"t": "text",
+"html": "Una regla que vive<br>en tu boca",
+"style": {
+"left": "170px",
+"top": "250px",
+"width": "720px",
+"font-size": "64px",
+"color": "#1F2A24"
+},
+"display": true,
+"fx": "up",
+"in": 3.048115746971736,
+"out": 18.637617765814266
+},
+{
+"t": "text",
+"html": "Se repite cada noche.<br>Cada noche cuesta más.",
+"style": {
+"left": "170px",
+"top": "480px",
+"width": "720px",
+"font-size": "40px",
+"color": "#C96F4A",
+"font-weight": "800"
+},
+"fx": "up",
+"in": 4.548115746971736,
+"out": 18.637617765814266
+},
+{
+"t": "text",
+"html": "Una regla que vive<br>en un lugar",
+"style": {
+"left": "1030px",
+"top": "250px",
+"width": "720px",
+"font-size": "64px",
+"color": "#2F4536"
+},
+"display": true,
+"fx": "up",
+"in": 8.64434724091521,
+"out": 18.637617765814266
+},
+{
+"t": "text",
+"html": "Se cumple sola.",
+"style": {
+"left": "1030px",
+"top": "480px",
+"width": "720px",
+"font-size": "56px",
+"color": "#3E5A45"
+},
+"display": true,
+"fx": "pop",
+"in": 10.244347240915209,
+"out": 18.637617765814266
+},
+{
+"t": "text",
+"html": "Las llaves en la entrada. Los zapatos en la puerta. Nadie pelea por eso.",
+"style": {
+"left": "120px",
+"top": "820px",
+"width": "1680px",
+"font-size": "44px",
+"color": "#4A5650",
+"font-weight": "800",
+"text-align": "center"
+},
+"fx": "words",
+"wordsEnd": 14.77557200538358,
+"in": 11.77557200538358,
+"out": 18.637617765814266
+},
+{
+"t": "img",
+"src": "../assets/ill/ill5-house-zones.png",
+"kb": [
+1.02,
+1.1
+],
+"in": 18.637617765814266,
+"out": 42.421601615074024
+},
+{
+"t": "rect",
+"style": {
+"left": "0",
+"top": "0",
+"width": "100%",
+"height": "100%",
+"background": "linear-gradient(to right,rgba(18,26,22,.94) 0%,rgba(18,26,22,.78) 42%,rgba(18,26,22,.05) 75%)"
+},
+"in": 18.637617765814266,
+"out": 42.421601615074024
+},
+{
+"t": "text",
+"html": "Un lugar. Una hora. Una regla visible, igual para todos.",
+"style": {
+"left": "120px",
+"top": "200px",
+"width": "900px",
+"font-size": "66px",
+"color": "#F2F5F2"
+},
+"display": true,
+"fx": "words",
+"wordsEnd": 22.137617765814266,
+"in": 18.637617765814266,
+"out": 29.16386271870794
+},
+{
+"t": "text",
+"html": "Adultos incluidos.",
+"style": {
+"left": "120px",
+"top": "520px",
+"width": "900px",
+"font-size": "54px",
+"color": "#E8B79F"
+},
+"display": true,
+"fx": "up",
+"in": 23.637617765814266,
+"out": 29.16386271870794
+},
+{
+"t": "pill",
+"html": "Uso con espacio y tiempo dedicados",
+"style": {
+"left": "120px",
+"top": "160px",
+"font-size": "34px",
+"padding": "15.3px 30.6px",
+"background": "#C96F4A",
+"color": "#FFF8F3"
+},
+"fx": "up",
+"in": 29.16386271870794,
+"out": 42.421601615074024
+},
+{
+"t": "text",
+"html": "Monitorear no es espiar.",
+"style": {
+"left": "120px",
+"top": "300px",
+"width": "900px",
+"font-size": "80px",
+"color": "#F2F5F2"
+},
+"display": true,
+"fx": "up",
+"in": 32.69481830417227,
+"out": 42.421601615074024
+},
+{
+"t": "text",
+"html": "Saber el patrón. Nunca el contenido.",
+"style": {
+"left": "120px",
+"top": "480px",
+"width": "900px",
+"font-size": "48px",
+"color": "#D3DDD5",
+"font-weight": "800"
+},
+"fx": "up",
+"in": 34.09481830417227,
+"out": 42.421601615074024
+},
+{
+"t": "text",
+"html": "Un límite claro, en un lugar claro. Y el lugar hace el trabajo.",
+"style": {
+"left": "120px",
+"top": "620px",
+"width": "900px",
+"font-size": "48px",
+"color": "#E8B79F",
+"font-weight": "800"
+},
+"fx": "words",
+"wordsEnd": 39.45861372812921,
+"in": 36.95861372812921,
+"out": 42.421601615074024
+},
+{
+"t": "rect",
+"style": {
+"left": "0px",
+"top": "0px",
+"width": "1920px",
+"height": "1080px",
+"background": "#F1E9DC"
+},
+"in": 42.421601615074024
+},
+{
+"t": "text",
+"html": "Los límites claros crían hijos que confían en ti.",
+"style": {
+"left": "120px",
+"top": "300px",
+"width": "1680px",
+"font-size": "76px",
+"color": "#3E5A45",
+"text-align": "center"
+},
+"display": true,
+"fx": "up",
+"in": 42.421601615074024
+},
+{
+"t": "text",
+"html": "La vigilancia escondida cría hijos que aprenden a esconderse.",
+"style": {
+"left": "120px",
+"top": "560px",
+"width": "1680px",
+"font-size": "76px",
+"color": "#C96F4A",
+"text-align": "center"
+},
+"display": true,
+"fx": "up",
+"in": 45.68606998654105
+}
+]
+},
+{
+"start": 228.07,
+"end": 270.44,
+"bg": "#F1E9DC",
+"layers": [
+{
+"t": "rect",
+"html": "<div style=\"position:absolute;inset:0;background:linear-gradient(160deg,#6E8B74,#2F4536);padding:60px 54px;color:#F2F5F2\"><div style=\"font:600 22px JetBrains Mono,monospace;letter-spacing:.14em;opacity:.8\">PROGRAMA FAMILIAR</div><div style=\"font:600 86px/1 Fraunces,serif;margin:18px 0 10px\">Pausa</div><div style=\"font:800 30px Nunito;opacity:.9\">30 días para recuperar<br>la cena, la tarea y el sueño</div><div style=\"position:absolute;left:54px;bottom:54px;width:110px;height:110px;border-radius:50%;background:#C96F4A;box-shadow:0 20px 40px -10px rgba(0,0,0,.5)\"></div><div style=\"position:absolute;right:54px;bottom:60px;font:700 22px Nunito;opacity:.8\">Una familia de tu comunidad</div></div>",
+"style": {
+"left": "1180px",
+"top": "140px",
+"width": "600px",
+"height": "800px",
+"border-radius": "22px",
+"overflow": "hidden",
+"box-shadow": "0 60px 120px -40px rgba(0,0,0,.45)"
+},
+"fx": "right",
+"in": 0.3,
+"rot": -3
+},
+{
+"t": "text",
+"html": "Programa Familiar Pausa",
+"style": {
+"left": "120px",
+"top": "170px",
+"width": "980px",
+"font-size": "84px",
+"color": "#1F2A24"
+},
+"display": true,
+"fx": "up"
+},
+{
+"t": "pill",
+"html": "30 días · PDF + plan",
+"style": {
+"left": "120px",
+"top": "330px",
+"font-size": "32px",
+"padding": "14.4px 28.8px",
+"background": "#DCE6DD",
+"color": "#3E5A45"
+},
+"fx": "up",
+"in": 1
+},
+{
+"t": "check",
+"html": "Cómo presentar la regla sin que sea castigo: las palabras exactas por edad",
+"ico": "41.800000000000004px",
+"icoF": "26.599999999999998px",
+"style": {
+"left": "120px",
+"top": "450px",
+"width": "960px",
+"font-size": "38px"
+},
+"fx": "up",
+"in": 6.764985163204749
+},
+{
+"t": "check",
+"html": "Horarios que funcionan a los 8, a los 12, a los 16",
+"ico": "41.800000000000004px",
+"icoF": "26.599999999999998px",
+"style": {
+"left": "120px",
+"top": "560px",
+"width": "960px",
+"font-size": "38px"
+},
+"fx": "up",
+"in": 13.962492581602373
+},
+{
+"t": "check",
+"html": "Dónde poner la zona sin teléfono, y por qué el lugar lo es todo",
+"ico": "41.800000000000004px",
+"icoF": "26.599999999999998px",
+"style": {
+"left": "120px",
+"top": "650px",
+"width": "960px",
+"font-size": "38px"
+},
+"fx": "up",
+"in": 18.181721068249256
+},
+{
+"t": "check",
+"html": "Plan semana por semana: qué va a pasar y cuándo viene la resistencia",
+"ico": "41.800000000000004px",
+"icoF": "26.599999999999998px",
+"style": {
+"left": "120px",
+"top": "760px",
+"width": "960px",
+"font-size": "38px"
+},
+"fx": "up",
+"in": 22.83528189910979
+},
+{
+"t": "check",
+"html": "Acuerdo familiar para firmar juntos",
+"ico": "41.800000000000004px",
+"icoF": "26.599999999999998px",
+"style": {
+"left": "120px",
+"top": "870px",
+"width": "960px",
+"font-size": "38px"
+},
+"fx": "up",
+"in": 27.737032640949554
+},
+{
+"t": "rect",
+"style": {
+"left": "0px",
+"top": "0px",
+"width": "1920px",
+"height": "1080px",
+"background": "#121A16"
+},
+"in": 30.280979228486647
+},
+{
+"t": "text",
+"html": "$47",
+"style": {
+"left": "120px",
+"top": "300px",
+"width": "1680px",
+"font-size": "200px",
+"color": "#7E8A82",
+"text-align": "center",
+"text-decoration": "line-through",
+"text-decoration-color": "#C96F4A",
+"text-decoration-thickness": "12px"
+},
+"display": true,
+"fx": "pop",
+"in": 30.280979228486647,
+"out": 33.44540059347181
+},
+{
+"t": "text",
+"html": "$7",
+"style": {
+"left": "120px",
+"top": "220px",
+"width": "1680px",
+"font-size": "340px",
+"color": "#E8B79F",
+"text-align": "center"
+},
+"display": true,
+"fx": "pop",
+"in": 33.44540059347181
+},
+{
+"t": "text",
+"html": "Para que llegue a todas las familias de nuestra comunidad.",
+"style": {
+"left": "120px",
+"top": "700px",
+"width": "1680px",
+"font-size": "52px",
+"color": "#D3DDD5",
+"font-weight": "800",
+"text-align": "center"
+},
+"fx": "words",
+"wordsEnd": 37.44540059347181,
+"in": 34.94540059347181
+}
+]
+},
+{
+"start": 270.44,
+"end": 320.23,
+"bg": "#121A16",
+"layers": [
+{
+"t": "text",
+"html": "Lo que te prometí.",
+"style": {
+"left": "120px",
+"top": "440px",
+"width": "1680px",
+"font-size": "110px",
+"color": "#F2F5F2",
+"text-align": "center"
+},
+"display": true,
+"fx": "pop",
+"in": 0,
+"out": 2.0039313984168867
+},
+{
+"t": "text",
+"html": "Nos faltaba una cosa: que el teléfono obedeciera<br>aunque nosotros no estuviéramos.",
+"style": {
+"left": "120px",
+"top": "380px",
+"width": "1680px",
+"font-size": "64px",
+"color": "#D3DDD5",
+"text-align": "center"
+},
+"display": true,
+"fx": "words",
+"wordsEnd": 6.003931398416887,
+"in": 2.0039313984168867,
+"out": 9.084617414248022
+},
+{
+"t": "rect",
+"style": {
+"left": "0px",
+"top": "0px",
+"width": "1920px",
+"height": "1080px",
+"background": "radial-gradient(circle at 50% 50%,rgba(201,111,74,.35),rgba(18,26,22,0) 40%)"
+},
+"in": 9.084617414248022,
+"out": 12.0078364116095
+},
+{
+"t": "ring",
+"style": {
+"left": "760px",
+"top": "340px",
+"width": "400px",
+"height": "400px"
+},
+"per": 1.8,
+"in": 9.484617414248023,
+"out": 12.0078364116095
+},
+{
+"t": "ring",
+"style": {
+"left": "760px",
+"top": "340px",
+"width": "400px",
+"height": "400px"
+},
+"per": 1.8,
+"in": 10.384617414248023,
+"out": 12.0078364116095
+},
+{
+"t": "disc",
+"style": {
+"left": "810px",
+"top": "390px",
+"width": "300px",
+"height": "300px"
+},
+"breathe": true,
+"fx": "pop",
+"in": 9.084617414248022,
+"out": 12.0078364116095
+},
+{
+"t": "text",
+"html": "Un disco. Del tamaño de un posavasos.",
+"style": {
+"left": "120px",
+"top": "800px",
+"width": "1680px",
+"font-size": "64px",
+"color": "#F2F5F2",
+"text-align": "center"
+},
+"display": true,
+"fx": "words",
+"wordsEnd": 11.584617414248022,
+"in": 9.084617414248022,
+"out": 12.0078364116095
+},
+{
+"t": "img",
+"src": "../assets/ill/ill5-house-zones.png",
+"kb": [
+1.02,
+1.12
+],
+"in": 12.0078364116095,
+"out": 19.478284960422165
+},
+{
+"t": "rect",
+"style": {
+"left": "0",
+"top": "0",
+"width": "100%",
+"height": "100%",
+"background": "linear-gradient(to right,rgba(18,26,22,.94) 0%,rgba(18,26,22,.78) 42%,rgba(18,26,22,.05) 75%)"
+},
+"in": 12.0078364116095,
+"out": 19.478284960422165
+},
+{
+"t": "text",
+"html": "Cocina. Entrada. Tu mesa de noche.",
+"style": {
+"left": "120px",
+"top": "220px",
+"width": "900px",
+"font-size": "70px",
+"color": "#F2F5F2"
+},
+"display": true,
+"fx": "words",
+"wordsEnd": 14.5078364116095,
+"in": 12.0078364116095,
+"out": 19.478284960422165
+},
+{
+"t": "text",
+"html": "Las apps que tú elijas se apagan a la hora que tú elijas.",
+"style": {
+"left": "120px",
+"top": "500px",
+"width": "900px",
+"font-size": "50px",
+"color": "#E8B79F",
+"font-weight": "800"
+},
+"fx": "words",
+"wordsEnd": 18.775540897097628,
+"in": 15.775540897097626,
+"out": 19.478284960422165
+},
+{
+"t": "img",
+"src": "../assets/ill/ill6-disc-tap.png",
+"kb": [
+1.0,
+1.1
+],
+"in": 19.478284960422165,
+"out": 36.17311345646438
+},
+{
+"t": "rect",
+"style": {
+"left": "0",
+"top": "0",
+"width": "100%",
+"height": "100%",
+"background": "linear-gradient(to right,rgba(18,26,22,.94) 0%,rgba(18,26,22,.78) 42%,rgba(18,26,22,.05) 75%)"
+},
+"in": 19.478284960422165,
+"out": 36.17311345646438
+},
+{
+"t": "text",
+"html": "Solo vuelven cuando el teléfono toca el disco.",
+"style": {
+"left": "120px",
+"top": "220px",
+"width": "900px",
+"font-size": "68px",
+"color": "#F2F5F2"
+},
+"display": true,
+"fx": "words",
+"wordsEnd": 22.478284960422165,
+"in": 19.478284960422165,
+"out": 36.17311345646438
+},
+{
+"t": "text",
+"html": "Físicamente. Donde tú lo dejaste.",
+"style": {
+"left": "120px",
+"top": "460px",
+"width": "900px",
+"font-size": "50px",
+"color": "#E8B79F",
+"font-weight": "800"
+},
+"fx": "up",
+"in": 22.978284960422165,
+"out": 36.17311345646438
+},
+{
+"t": "strike",
+"html": "Sin contraseña que adivinar",
+"svg": "<svg viewBox=\"0 0 24 24\" width=\"60%\" height=\"60%\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"4\" y=\"10\" width=\"16\" height=\"11\" rx=\"2\"/><path d=\"M8 10V7a4 4 0 0 1 8 0v3\"/></svg>",
+"ico": "70.4px",
+"style": {
+"left": "120px",
+"top": "600px",
+"font-size": "44px",
+"color": "#F2F5F2"
+},
+"in": 25.64952506596306,
+"out": 36.17311345646438
+},
+{
+"t": "strike",
+"html": "Sin botón que apretar",
+"svg": "<svg viewBox=\"0 0 24 24\" width=\"60%\" height=\"60%\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" rx=\"2\"/><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\" rx=\"2\"/><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\" rx=\"2\"/><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\" rx=\"2\"/></svg>",
+"ico": "70.4px",
+"style": {
+"left": "120px",
+"top": "710px",
+"font-size": "44px",
+"color": "#F2F5F2"
+},
+"in": 27.14952506596306,
+"out": 36.17311345646438
+},
+{
+"t": "text",
+"html": "Si el disco está en la cocina, tu hijo viene a la cocina. Tú lo ves. Él lo sabe.",
+"style": {
+"left": "120px",
+"top": "860px",
+"width": "1000px",
+"font-size": "44px",
+"color": "#F2F5F2",
+"font-weight": "800"
+},
+"fx": "words",
+"wordsEnd": 33.3522691292876,
+"in": 29.3522691292876,
+"out": 36.17311345646438
+},
+{
+"t": "rect",
+"style": {
+"left": "0px",
+"top": "0px",
+"width": "1920px",
+"height": "1080px",
+"background": "#F1E9DC"
+},
+"in": 36.17311345646438
+},
+{
+"t": "text",
+"html": "¿Miles de dólares?",
+"style": {
+"left": "120px",
+"top": "330px",
+"width": "1680px",
+"font-size": "130px",
+"color": "#8A948E",
+"text-align": "center"
+},
+"display": true,
+"fx": "pop",
+"in": 36.17311345646438,
+"out": 39.680976253298155
+},
+{
+"t": "text",
+"html": "Un disco y una app gratuita.",
+"style": {
+"left": "120px",
+"top": "280px",
+"width": "1680px",
+"font-size": "110px",
+"color": "#1F2A24",
+"text-align": "center"
+},
+"display": true,
+"fx": "pop",
+"in": 39.680976253298155
+},
+{
+"t": "text",
+"html": "Cabe en un sobre.",
+"style": {
+"left": "120px",
+"top": "460px",
+"width": "1680px",
+"font-size": "80px",
+"color": "#C96F4A",
+"text-align": "center"
+},
+"display": true,
+"fx": "up",
+"in": 41.28097625329816
+},
+{
+"t": "card",
+"src": "../assets/ill/ill8-car-work-church.png",
+"style": {
+"left": "360px",
+"top": "620px",
+"width": "1200px",
+"height": "330px"
+},
+"kb": [
+1,
+1.05
+],
+"fx": "up",
+"in": 42.86403693931399
+},
+{
+"t": "text",
+"html": "Te lo mostramos justo después del programa.",
+"style": {
+"left": "120px",
+"top": "980px",
+"width": "1680px",
+"font-size": "36px",
+"color": "#8A948E",
+"font-weight": "800",
+"text-align": "center"
+},
+"fx": "up",
+"in": 43.86403693931399
+}
+]
+},
+{
+"start": 320.23,
+"end": 348.19,
+"bg": "#F1E9DC",
+"layers": [
+{
+"t": "img",
+"src": "../assets/ill/ill7-dinner-after.png",
+"kb": [
+1.05,
+1.12
+],
+"alpha": 0.18
+},
+{
+"t": "text",
+"html": "Esto es lo que va a pasar ahora.",
+"style": {
+"left": "120px",
+"top": "140px",
+"width": "1680px",
+"font-size": "60px",
+"color": "#4A5650",
+"text-align": "center"
+},
+"display": true,
+"fx": "up"
+},
+{
+"t": "btn",
+"html": "Obtener el Programa Familiar · $7 →",
+"style": {
+"left": "460px",
+"top": "260px",
+"width": "1000px",
+"height": "130px",
+"font-size": "48px"
+},
+"pulse": true,
+"fx": "pop",
+"in": 0.8
+},
+{
+"t": "text",
+"html": "En 2 minutos lo tienes en tu correo.",
+"style": {
+"left": "120px",
+"top": "420px",
+"width": "1680px",
+"font-size": "36px",
+"color": "#8A948E",
+"font-weight": "800",
+"text-align": "center"
+},
+"fx": "up",
+"in": 1.6
+},
+{
+"t": "seal",
+"html": "30 días<br>garantía",
+"style": {
+"left": "120px",
+"top": "560px",
+"width": "200px",
+"height": "200px",
+"font-size": "34px"
+},
+"fx": "pop",
+"in": 8.355077262693156
+},
+{
+"t": "text",
+"html": "Si tu casa no se siente distinta, te devolvemos los $7. Sin preguntas.",
+"style": {
+"left": "360px",
+"top": "590px",
+"width": "1000px",
+"font-size": "44px",
+"color": "#1F2A24",
+"font-weight": "800"
+},
+"fx": "words",
+"wordsEnd": 11.355077262693156,
+"in": 8.355077262693156
+},
+{
+"t": "text",
+"html": "Una familia que decidió no rendirse. Cada programa ayuda a las familias que vienen detrás.",
+"style": {
+"left": "120px",
+"top": "800px",
+"width": "1680px",
+"font-size": "38px",
+"color": "#4A5650",
+"font-weight": "800",
+"text-align": "center"
+},
+"fx": "up",
+"in": 15.129470198675495
+},
+{
+"t": "text",
+"html": "Tu casa puede sentirse distinta esta misma semana.",
+"style": {
+"left": "120px",
+"top": "920px",
+"width": "1680px",
+"font-size": "52px",
+"color": "#C96F4A",
+"text-align": "center"
+},
+"display": true,
+"fx": "up",
+"in": 23.718432671081676
+}
+]
+}
+]
+}
